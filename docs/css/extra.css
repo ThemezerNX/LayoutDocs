@@ -1,0 +1,10 @@
+:root {
+	--md-primary-fg-color: #0ab379;
+	--md-primary-fg-color--dark: #0ab379;
+	--md-primary-fg-color--light: #0ab379;
+	--md-accent-fg-color: #b40a86;
+}
+
+.wy-nav-content {
+	max-width: none;
+}

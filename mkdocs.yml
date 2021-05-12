@@ -1,0 +1,8 @@
+site_name: Layout Docs
+extra_css: [css/extra.css]
+theme:
+    name: material
+    palette:
+        scheme: slate
+nav:
+    - Home: index.md
