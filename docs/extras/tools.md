@@ -3,7 +3,7 @@
 Here are some tools that might be useful for theming and other types of modding.
 
 <!-- prettier-ignore -->
-!!! Note
+!!! Info
     Some of these tools are used in LayoutKit. Those that are, are marked with :octicons-tasklist-16:.
 
 ## Theming Tools

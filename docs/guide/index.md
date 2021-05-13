@@ -14,7 +14,7 @@ For this guide it is expected that you already have basic knowledge on how to in
     -   [sys-ftpd with reboot support](https://github.com/ThemezerNX/sys-ftpd-light-reboot/releases/latest)
 
 <!-- prettier-ignore -->
-!!! Note
+!!! Info
     LayoutKit comes packed with the most-used tools. If you are unable to or don't want to use LayoutKit, see [this list of other tools](../extras/tools.md).
 
 ## Initial Setup

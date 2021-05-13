@@ -41,9 +41,7 @@ A theme that makes use of this functionality is [Blue by Mazu/Maximum](https://t
 }
 ```
 
----
-
-These main menu elements need to be changed in the common.szs, which is applied as a patch in Theme Injector.
+These main menu elements need to be changed in the `common.szs`, which is applied as a patch in Theme Injector.
 
 Footer (Bottom Line) - blyt/LineFooter.bflyt
 
@@ -53,12 +51,10 @@ Controller/Switch Icon - blyt/FooterCtrl.bflyt
 
 Start/A/Options/+ - blyt/FooterBtn.bflyt
 
-## Important Notes
-
-Notes:
-
--   Since the color format is actually "AABBGGRR" you'll have to swap the red and blue values to get the right color. For example, the hex color code "C02BE1" would become "FFE12BC0"
--   It is currently unknown know how to change the cursor's default blue pulse color, but adding the color code to `blyt/Cursor3.bflyt` will change the secondary pulse color.
+<!-- prettier-ignore -->
+!!! Info
+	-   Since the color format is actually `AABBGGRR` you'll have to swap the red and blue values to get the right color. For example, the hex color code `C02BE1` would become `FFE12BC0`.
+	-   It is currently unknown how exactly to change the cursor's default blue pulse color, but `P_Grow` and `P_Main` in `Cursor3.bflyt` contain colour codes. Changing these will change the secondary pulse color. The primary pulse colour is probabily a combination of these panes and their [`usd` sections](../../definitions.md#usd-section).
 
 -   To hide the default circle around the menu icon:
 
@@ -68,3 +64,7 @@ Notes:
 	"Visible": false
 },
 ```
+
+---
+
+_Credits to Mazu/Maxim and Exelix_

@@ -43,4 +43,4 @@ For custom layouts we only touch the files in `anim` and `blyt`. However, it is 
 
 `bflyt` files, or _'**B**inary ca**F**e **L**a**Y**ou**T**'_ files,
 
-# [Continue to Example Modifications](./examples/index.md) :octicons-arrow-right-16:
+# [Continue to Layouts](./layouts.md) :octicons-arrow-right-16:

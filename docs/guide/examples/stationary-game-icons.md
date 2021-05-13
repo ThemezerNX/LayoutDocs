@@ -3,7 +3,7 @@
 Examples of layouts that show what stationary game icons look like are [Doge Layout](https://themezer.net/layouts/homemenu/Doge-Layout-e) and [Two Row layout](https://themezer.net/layouts/homemenu/Two-Row-Layout-Compact--1c).
 
 <!-- prettier-ignore -->
-!!! Warning
+!!! Info
     If you don't actually want to make the icons stationary, but want to *move* the gamerow, see [Repositioning and Scaling the Gamerow](./reposition-gamerow.md).
 
 ## Firmware ≥8.x
@@ -33,7 +33,7 @@ In order to get stationary icons to function properly from this version onwards,
 
 <!-- prettier-ignore -->
 !!! Warning
-    Even slightly deviating from the values above might cause the cursor not being able to reach the icon, or not being able to tap the icon on the touch screen. However, if you find that these values do not work in your case, the only option would be to mess around with the positions of the panes (not the scale).
+    Even slightly deviating from the values above might cause the cursor not being able to reach the icon, or not being able to tap the icon using the touch screen. However, if you find that these values do not work in your case, the only option would be to mess around with the positions of the panes (not the scale).
 
 ## Firmware <8.x
 
@@ -42,3 +42,7 @@ On firware version 7.x and lower, it is fairly easy to move the game icons aroun
 1. Change the X,Y scale of `RootPane` in `RdtBtnIconGame.bflyt` to your likings
 2. Change the X scale of `N_Game` in `RdtBase.bflyt` to `100000.0`
 3. Reposition the game icons `N_Icon_XX` in `RdtBase.bflyt` to your likings
+
+---
+
+_Credits to Migush_
