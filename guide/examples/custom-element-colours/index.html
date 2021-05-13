@@ -243,6 +243,30 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/" class="md-nav__link">
+        Layouts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../animations/" class="md-nav__link">
+        Animations
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -250,14 +274,14 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" checked>
       
-      <label class="md-nav__link" for="__nav_2_4">
+      <label class="md-nav__link" for="__nav_2_6">
         Examples
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Examples" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_4">
+        <label class="md-nav__title" for="__nav_2_6">
           <span class="md-nav__icon md-icon"></span>
           Examples
         </label>
@@ -355,13 +379,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#important-notes" class="md-nav__link">
-    Important Notes
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -411,7 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../menus/" class="md-nav__link">
+      <a href="../../../menu-docs/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -423,9 +440,48 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../menus/list-of-parts/" class="md-nav__link">
+      <a href="../../../menu-docs/list-of-parts/" class="md-nav__link">
         List of Parts
       </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      <label class="md-nav__link" for="__nav_3_3">
+        Menus
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Menus" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Menus
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../menu-docs/menus/ResidentMenu" class="md-nav__link">
+        Home Menu
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -549,13 +605,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#important-notes" class="md-nav__link">
-    Important Notes
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -607,28 +656,29 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
     <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
-<hr />
-<p>These main menu elements need to be changed in the common.szs, which is applied as a patch in Theme Injector.</p>
+<p>These main menu elements need to be changed in the <code>common.szs</code>, which is applied as a patch in Theme Injector.</p>
 <p>Footer (Bottom Line) - blyt/LineFooter.bflyt</p>
 <p>Footer (?) - blyt/FooterAll.bflyt</p>
 <p>Controller/Switch Icon - blyt/FooterCtrl.bflyt</p>
 <p>Start/A/Options/+ - blyt/FooterBtn.bflyt</p>
-<h2 id="important-notes">Important Notes<a class="headerlink" href="#important-notes" title="Permanent link">&para;</a></h2>
-<p>Notes:</p>
+<!-- prettier-ignore -->
+<div class="admonition info">
+<p class="admonition-title">Info</p>
 <ul>
-<li>Since the color format is actually "AABBGGRR" you'll have to swap the red and blue values to get the right color. For example, the hex color code "C02BE1" would become "FFE12BC0"</li>
-<li>
-<p>It is currently unknown know how to change the cursor's default blue pulse color, but adding the color code to <code>blyt/Cursor3.bflyt</code> will change the secondary pulse color.</p>
-</li>
-<li>
-<p>To hide the default circle around the menu icon:</p>
-</li>
+<li>Since the color format is actually <code>AABBGGRR</code> you'll have to swap the red and blue values to get the right color. For example, the hex color code <code>C02BE1</code> would become <code>FFE12BC0</code>.</li>
+<li>It is currently unknown how exactly to change the cursor's default blue pulse color, but <code>P_Grow</code> and <code>P_Main</code> in <code>Cursor3.bflyt</code> contain colour codes. Changing these will change the secondary pulse color. The primary pulse colour is probabily a combination of these panes and their <a href="../../../definitions/#usd-section"><code>usd</code> sections</a>.</li>
+</ul>
+</div>
+<ul>
+<li>To hide the default circle around the menu icon:</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;L_Balloon&quot;</span><span class="p">,</span>
     <span class="nt">&quot;Visible&quot;</span><span class="p">:</span> <span class="kc">false</span>
 <span class="p">},</span>
 </code></pre></div>
+<hr />
+<p><em>Credits to Mazu/Maxim and Exelix</em></p>
                 
               
               
@@ -662,7 +712,7 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
         </a>
       
       
-        <a href="../../../menus/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../../../menu-docs/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">

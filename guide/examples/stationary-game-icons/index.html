@@ -243,6 +243,30 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/" class="md-nav__link">
+        Layouts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../animations/" class="md-nav__link">
+        Animations
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -250,14 +274,14 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" checked>
       
-      <label class="md-nav__link" for="__nav_2_4">
+      <label class="md-nav__link" for="__nav_2_6">
         Examples
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Examples" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_4">
+        <label class="md-nav__title" for="__nav_2_6">
           <span class="md-nav__icon md-icon"></span>
           Examples
         </label>
@@ -431,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../menus/" class="md-nav__link">
+      <a href="../../../menu-docs/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -443,9 +467,48 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../menus/list-of-parts/" class="md-nav__link">
+      <a href="../../../menu-docs/list-of-parts/" class="md-nav__link">
         List of Parts
       </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      <label class="md-nav__link" for="__nav_3_3">
+        Menus
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Menus" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Menus
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../menu-docs/menus/ResidentMenu" class="md-nav__link">
+        Home Menu
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -612,8 +675,8 @@
                 <h1 id="stationary-game-icons">Stationary Game Icons<a class="headerlink" href="#stationary-game-icons" title="Permanent link">&para;</a></h1>
 <p>Examples of layouts that show what stationary game icons look like are <a href="https://themezer.net/layouts/homemenu/Doge-Layout-e">Doge Layout</a> and <a href="https://themezer.net/layouts/homemenu/Two-Row-Layout-Compact--1c">Two Row layout</a>.</p>
 <!-- prettier-ignore -->
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
 <p>If you don't actually want to make the icons stationary, but want to <em>move</em> the gamerow, see <a href="../reposition-gamerow/">Repositioning and Scaling the Gamerow</a>.</p>
 </div>
 <h2 id="firmware-8x">Firmware ≥8.x<a class="headerlink" href="#firmware-8x" title="Permanent link">&para;</a></h2>
@@ -643,7 +706,7 @@
 <!-- prettier-ignore -->
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Even slightly deviating from the values above might cause the cursor not being able to reach the icon, or not being able to tap the icon on the touch screen. However, if you find that these values do not work in your case, the only option would be to mess around with the positions of the panes (not the scale).</p>
+<p>Even slightly deviating from the values above might cause the cursor not being able to reach the icon, or not being able to tap the icon using the touch screen. However, if you find that these values do not work in your case, the only option would be to mess around with the positions of the panes (not the scale).</p>
 </div>
 <h2 id="firmware-8x_1">Firmware &lt;8.x<a class="headerlink" href="#firmware-8x_1" title="Permanent link">&para;</a></h2>
 <p>On firware version 7.x and lower, it is fairly easy to move the game icons around. In order to make them stationary do the following:</p>
@@ -652,6 +715,8 @@
 <li>Change the X scale of <code>N_Game</code> in <code>RdtBase.bflyt</code> to <code>100000.0</code></li>
 <li>Reposition the game icons <code>N_Icon_XX</code> in <code>RdtBase.bflyt</code> to your likings</li>
 </ol>
+<hr />
+<p><em>Credits to Migush</em></p>
                 
               
               
