@@ -1,5 +1,3 @@
-# Possible Modifications
-
 This part of the guide contains examples and instructions how to do specific things. The list can be seen on the left.
 
 <!-- prettier-ignore -->

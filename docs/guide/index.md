@@ -23,6 +23,6 @@ For this guide it is expected that you already have basic knowledge on how to in
 2. Open the NXThemes Installer at least once so that the menus are extracted.
 3. Copy the `SD://themes/systemData` folder to your computer.
 4. Download and install LayoutKit.
-5. Copy the contents of the sys-ftpd archive to the root of your MicroxSD.
+5. Copy the contents of the sys-ftpd archive to the root of your MicroSD.
 
 # [Continue to Menu Files](menu-files.md) :octicons-arrow-right-16:

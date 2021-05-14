@@ -1,5 +1,3 @@
-# RdtBase.bflyt
-
 ## Tree
 
 -   `RdtBase.bflyt`

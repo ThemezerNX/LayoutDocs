@@ -1,6 +1,8 @@
+##### :octicons-arrow-left-16: [Back to Getting Started](index.md)
+
 ## USD sections
 
-This is a simplified of a `usd` section:
+This is a simplified example of a pane followed by a `usd` section:
 
 ```json
 {
@@ -24,7 +26,7 @@ This is a simplified of a `usd` section:
 				"name": "S_DropShadowColor",
 				"type": 2,
 				"unk1": 0,
-				"data": [0.0, 0.0, 0.0, 1.0] // note that this is not rgba
+				"data": [0.0, 0.0, 0.0, 1.0]
 			},
 			{
 				"name": "S_DropShadowAngle",
@@ -45,4 +47,6 @@ This is a simplified of a `usd` section:
 
 ## List of known USD sections
 
-# [Continue to Animations](../animations/index.md) :octicons-arrow-right-16:
+_TODO_
+
+# [Continue to Animations](../diffing.md) :octicons-arrow-right-16:

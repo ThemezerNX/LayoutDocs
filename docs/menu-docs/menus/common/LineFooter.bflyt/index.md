@@ -1,5 +1,3 @@
-# LineFooter
-
 ![Selection](selection.jpg)
 
 ---

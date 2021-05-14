@@ -10,7 +10,7 @@ An archive. In the Switch's menu files it contains the layout files, animations 
 
 ### Applet
 
-A kind of title/app/game. `Qlaunch`, `playerSelect`, `photoViewer` are all applets. [_More Examples_](guide/menu-files.md#menu-files)
+A kind of title/app/game. `Qlaunch`, `playerSelect`, `photoViewer` are all applets. [_More Info_](guide/menu-files.md#menu-files)
 
 ### nxtheme
 
@@ -30,7 +30,7 @@ Another name for elements in `bflyt` files. For example `P_Pict`, `N_Button`.
 
 ### usd section
 
-`usd` (officially called 'extended user information') is a part of the `bflyt` file that holds extra data and define, for example, shadows, radius, etc. Panes are often followed by these `usd` sections. [_More Info_](guide/)
+`usd` (officially called 'extended user information') is a part of the `bflyt` file that holds extra data and defines, for example, shadows, radius, etc. Panes are often followed by `usd` sections. [_More Info_](guide/layouts/usd-sections.md)
 
 ### Sysupdate
 
