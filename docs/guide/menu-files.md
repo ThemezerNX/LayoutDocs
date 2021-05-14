@@ -1,8 +1,8 @@
-##### :octicons-arrow-left-16: [Back to Introduction](./index.md)
+##### :octicons-arrow-left-16: [Back to Introduction](index.md)
 
 # Menu Files
 
-The Switch's menus can be found in multiple firmware files. They are a kind of title/app/game: 'applets'. The following table shows which menus (supported in themes) can be found where:
+The Switch's menus can be found in multiple firmware files. Separated into multiple [applets](../definitions.md#applet). The following table shows which menus (supported in themes) can be found where:
 
 | Applet CodeName | TitleID            | Menus                                           |
 | --------------- | ------------------ | ----------------------------------------------- |
@@ -26,4 +26,4 @@ Every menu has its own file. Here is a list of the supported menus and their fil
 | Player Select | `Psl.szs`          |
 | User Page     | `MyPage.szs`       |
 
-# [Continue to Filetypes](./filetypes.md) :octicons-arrow-right-16:
+# [Continue to Filetypes](filetypes.md) :octicons-arrow-right-16:
