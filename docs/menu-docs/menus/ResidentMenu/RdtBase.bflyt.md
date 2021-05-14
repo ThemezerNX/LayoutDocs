@@ -1,0 +1,24 @@
+# RdtBase.bflyt
+
+## Tree
+
+-   `RdtBase.bflyt`
+    -   `L_BgNml`: contains the original light/dark background, but the 'exelixbg' panel as well after being patched with a custom background
+    -   `N_Root`
+        -   `N_GameRoot`: contains all items that will be scrolled
+            -   [`N_Icon[00-11]`](RdtBtnIconGame.bflyt.md): all 12 game icons. They make use of the same layout
+            -   `N_Icon_12`
+                -   `L_BtnFlc`: the 13th icon in the gameroot: the 'all apps' button`
+        -   `N_System`: contains all six system applets
+            -   `L_BtnNoti`: the notifications button
+            -   `L_BtnShop`: the eshop button
+            -   `L_BtnCtrl`: the album button
+            -   `L_BtnPvr`: the controllers button
+            -   `L_BtnSet`: the settings button
+            -   `L_BtnPow`: the power button
+        -   `L_ChildLock`: the childlock button
+        -   `N_Balloon`
+        -   `N_MyPage`
+            -   `L_BtnAccount\_[00-07]`:`all usericons which make use of a single layout
+        -   `L_Hud`: the hud (clock, network, battery)
+        -   `L_BalloonCtrl`: the balloon that pops up when (dis)connecting a controller

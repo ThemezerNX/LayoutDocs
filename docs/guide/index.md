@@ -25,4 +25,4 @@ For this guide it is expected that you already have basic knowledge on how to in
 4. Download and install LayoutKit.
 5. Copy the contents of the sys-ftpd archive to the root of your MicroxSD.
 
-# [Continue to Menu Files](./menu-files.md) :octicons-arrow-right-16:
+# [Continue to Menu Files](menu-files.md) :octicons-arrow-right-16:

@@ -33,5 +33,6 @@ Here are some tools that might be useful for theming and other types of modding.
 
 ## Other Tools
 
--   [Kuriimu](https://github.com/IcySon55/Kuriimu)  
-    A general purpose game translation toolkit for authors of fan translations. This tool also works for the Switch's menus. [Here's an example](https://github.com/bandithedoge/switch-pl) of a fan-translation in Polish.
+-   [Kuriimu2](https://github.com/FanTranslatorsInternational/Kuriimu2)  
+    **Supported filetypes:** [See this list](https://docs.google.com/spreadsheets/d/1LbRqXkJUi4WD0awJMWInEfSiGtTIc2hu7ag2ngdoVC0)  
+    Kuriimu2 is a general purpose game translation project manager and toolkit for authors of fan translations and game mods. This tool also works for the Switch's menus. [Here's an example](https://github.com/bandithedoge/switch-pl) of a fan-translation in Polish.

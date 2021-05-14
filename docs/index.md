@@ -1,17 +1,5 @@
-# Welcome to MkDocs
+# Welcome to Layout Docs!
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+<!-- prettier-ignore -->
+!!! Warning
+    If you're looking for a guide on how to create a theme, this is not the right place. This guide is specifically for the process of creating custom *layouts*: the actual layout of menu components. The difference is that a layout can be used in many themes. For example, [these themes](https://themezer.net/themes/homemenu?sort=updated&order=desc&layouts=e) all use [Doge Layout](https://themezer.net/layouts/homemenu/Doge-Layout-e).

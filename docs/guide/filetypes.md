@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Back to Menu Files](./menu-files.md)
+##### :octicons-arrow-left-16: [Back to Menu Files](menu-files.md)
 
 # Filetypes
 
@@ -11,7 +11,7 @@ They are actually `SARC` (aka `ARC`) files. The compression algorithm that is us
 
 ### Structure
 
-The structure of an `SZS` file is generally the same:
+The structure of a menu `SZS` file is generally the same:
 
 ```
 📦ResidentMenu_11.0.1_original
@@ -33,7 +33,7 @@ The folders contain the following:
 -   `blyt`: Layout files (`.bflyt`)
 -   `timg`: Menu images (`.bntx`)
 
-For custom layouts we only touch the files in `anim` and `blyt`. However, it is interesting to note that the NXTheme Installer internally injects the nxtheme background image in the `__Combined.bntx` file.
+For custom layouts we only touch the files in `anim` and `blyt`. However, it is interesting to note that the NXTheme Installer internally injects the [nxtheme](../definitions.md#nxtheme) background image in the `__Combined.bntx` file.
 
 #### bflan Files
 
@@ -43,4 +43,4 @@ For custom layouts we only touch the files in `anim` and `blyt`. However, it is 
 
 `bflyt` files, or _'**B**inary ca**F**e **L**a**Y**ou**T**'_ files,
 
-# [Continue to Layouts](./layouts.md) :octicons-arrow-right-16:
+# [Continue to Layouts](layouts/index.md) :octicons-arrow-right-16:

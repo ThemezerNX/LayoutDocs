@@ -1,10 +1,15 @@
 # Stationary Game Icons
 
+![Preview](preview.jpg)
+_[Doge Layout](https://themezer.net/themes/homemenu/BLK--6be) by Such Meme, Many Skill_
+
+---
+
 Examples of layouts that show what stationary game icons look like are [Doge Layout](https://themezer.net/layouts/homemenu/Doge-Layout-e) and [Two Row layout](https://themezer.net/layouts/homemenu/Two-Row-Layout-Compact--1c).
 
 <!-- prettier-ignore -->
 !!! Info
-    If you don't actually want to make the icons stationary, but want to *move* the gamerow, see [Repositioning and Scaling the Gamerow](./reposition-gamerow.md).
+    If you don't actually want to make the icons stationary, but want to *move* the gamerow, see [Repositioning and Scaling the Gamerow](../reposition-gamerow/index.md).
 
 ## Firmware ≥8.x
 

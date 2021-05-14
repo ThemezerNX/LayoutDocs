@@ -2,6 +2,8 @@ site_name: Layout Docs
 extra_css: [css/extra.css]
 theme:
     name: material
+    #     features:
+    #   - search.highlight <--- in the future
     palette:
         scheme: slate
 markdown_extensions:
@@ -21,21 +23,34 @@ nav:
           - Introduction: guide/index.md
           - Menu Files: guide/menu-files.md
           - Filetypes: guide/filetypes.md
-          - Layouts: guide/layouts.md
-          - Animations: guide/animations.md
+          - Layouts:
+                - Getting Started: guide/layouts/index.md
+                - USD Sections: guide/layouts/usd-sections.md
+          - Animations:
+                - Getting Started: guide/animations/index.md
+          - Diffing: guide/diffing.md
           - Examples:
                 Getting Started: guide/examples/index.md
-                Changing Component Sizes: guide/examples/changing-component-sizes.md
-                Repositioning the Gamerow: guide/examples/reposition-gamerow.md
-                Stationary Game Icons: guide/examples/stationary-game-icons.md
-                Custom Element Colours: guide/examples/custom-element-colours.md
+                Changing Component Sizes: guide/examples/changing-component-sizes/index.md
+                Repositioning the Gamerow: guide/examples/reposition-gamerow/index.md
+                Stationary Game Icons: guide/examples/stationary-game-icons/index.md
+                Custom Element Colours: guide/examples/custom-element-colours/index.md
+                Hide Footer Line: guide/examples/hide-footer-line/index.md
     - Menu Documentation:
           - Introduction: menu-docs/index.md
-          - List of Parts: menu-docs/list-of-parts.md
+          - List of Components: menu-docs/list-of-components.md
           - Menus:
-                - Home Menu: menu-docs/menus/ResidentMenu
+                - common: menu-docs/menus/common/index.md
+                - Home Menu: menu-docs/menus/ResidentMenu/index.md
+                - Lockscren: menu-docs/menus/Entrance/index.md
+                - All Apps: menu-docs/menus/Flaunch/index.md
+                - Settings: menu-docs/menus/Set/index.md
+                - Player Select: menu-docs/Psl/index.md
+                - User Page: menu-docs/MyPage/index.md
+                - News: menu-docs/Notification/index.md
     - Definitions: definitions.md
     - Extras:
           - Guides: extras/guides.md
           - Tools: extras/tools.md
           - Discord Servers: extras/discord-servers.md
+          - Other: extras/other.md
