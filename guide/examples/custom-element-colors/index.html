@@ -14,7 +14,7 @@
     
     
       
-        <title>Custom Element Colours - Layout Docs</title>
+        <title>Custom Element Colors - Layout Docs</title>
       
     
     
@@ -91,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Custom Element Colours
+              Custom Element Colors
             
           </span>
         </div>
@@ -426,12 +426,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Custom Element Colours
+          Custom Element Colors
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Custom Element Colours
+        Custom Element Colors
       </a>
       
         
@@ -466,8 +466,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../hide-footer-line/" class="md-nav__link">
-        Hide Footer Line
+      <a href="../hide-header-footer-lines/" class="md-nav__link">
+        Hide Header & Footer Lines
       </a>
     </li>
   
@@ -786,13 +786,13 @@
               
                 
                 
-                  <h1>Custom Element Colours</h1>
+                  <h1>Custom Element Colors</h1>
                 
                 <p><img alt="Preview" src="preview.jpg" />
 <em><a href="https://themezer.net/themes/homemenu/Blue-Menu-Home-bd2">Blue Menu - Home</a> by Maxu/Maximum</em></p>
 <hr />
-<p>Modifying the colours of for example buttons, text, lines icons is possible.
-A theme that makes use of this functionality is <a href="https://themezer.net/packs/Blue-Menu-1b4">Blue by Mazu/Maximum</a>. Any colour is supported and the idea is the same in every menu.</p>
+<p>Modifying the colors of for example buttons, text, lines icons is possible.
+A theme that makes use of this functionality is <a href="https://themezer.net/packs/Blue-Menu-1b4">Blue by Mazu/Maximum</a>. Any color is supported and the idea is the same in every menu.</p>
 <h2 id="example-code">Example Code<a class="headerlink" href="#example-code" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;TargetName&quot;</span><span class="p">:</span> <span class="s2">&quot;ResidentMenu.szs&quot;</span><span class="p">,</span>
@@ -827,11 +827,17 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
 </code></pre></div>
 <p>These main menu elements need to be changed in the <code>common.szs</code>, which is applied as a patch in Theme Injector.</p>
 <!-- prettier-ignore -->
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<ul>
+<li>Since the color format is actually <code>AABBGGRR</code> you'll have to swap the red and blue values to get the right color. For example, the hex color code <code>C02BE1</code> would become <code>FFE12BC0</code>.</li>
+</ul>
+</div>
+<!-- prettier-ignore -->
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <ul>
-<li>Since the color format is actually <code>AABBGGRR</code> you'll have to swap the red and blue values to get the right color. For example, the hex color code <code>C02BE1</code> would become <code>FFE12BC0</code>.</li>
-<li>It is currently unknown how exactly to change the cursor's default blue pulse color, but <code>P_Grow</code> and <code>P_Main</code> in <code>Cursor3.bflyt</code> contain colour codes. Changing these will change the secondary pulse color. The primary pulse colour is probabily a combination of these panes and their <a href="../../../definitions/#usd-section"><code>usd</code> sections</a>.</li>
+<li>It is currently unknown how exactly to change the cursor's default blue pulse color, but <code>P_Grow</code> and <code>P_Main</code> in <code>Cursor3.bflyt</code> contain color codes. Changing these will change the secondary pulse color. The primary pulse color is probabily a combination of these panes and their <a href="../../../definitions/#usd-section"><code>usd</code> sections</a>.</li>
 </ul>
 </div>
 <ul>
@@ -877,13 +883,13 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
         </a>
       
       
-        <a href="../hide-footer-line/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../hide-header-footer-lines/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Hide Footer Line
+              Hide Header & Footer Lines
             </div>
           </div>
           <div class="md-footer__button md-icon">
