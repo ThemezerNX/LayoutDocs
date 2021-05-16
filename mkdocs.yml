@@ -34,8 +34,8 @@ nav:
                 Changing Component Sizes: guide/examples/changing-component-sizes/index.md
                 Repositioning the Gamerow: guide/examples/reposition-gamerow/index.md
                 Stationary Game Icons: guide/examples/stationary-game-icons/index.md
-                Custom Element Colours: guide/examples/custom-element-colours/index.md
-                Hide Footer Line: guide/examples/hide-footer-line/index.md
+                Custom Element Colors: guide/examples/custom-element-colors/index.md
+                Hide Header & Footer Lines: guide/examples/hide-header-footer-lines/index.md
     - Menu Documentation:
           - Introduction: menu-docs/index.md
           - Menus:

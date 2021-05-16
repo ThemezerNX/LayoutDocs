@@ -1,5 +1,3 @@
-# Stationary Game Icons
-
 ![Preview](preview.jpg)
 _[Doge Layout](https://themezer.net/themes/homemenu/BLK--6be) by Such Meme, Many Skill_
 
@@ -31,7 +29,7 @@ In order to get stationary icons to function properly from this version onwards,
 7. Set the `x coordinate` of `N_Game` to `0.0` (!)
 8. Set the `x scale` of `N_Game` to `100000.0`
 9. Set the `x,y coordinate` of `N_Icon_00` to `0.0`
-10. Set the `x,y coordinate` of `N_Icon_[01-11]` to the positions you want. Move icons that you don't want to be shown to `(1;9999)`. If I remember correctly, the scale `p` has an influence on this.
+10. Set the `x,y coordinate` of `N_Icon_[01-11]` to the positions you want. If I remember correctly, the scale `p` has an influence on this. Move icons that you don't want to be shown to `(1;9999)`.
 11. Set the `x,y scale` of `L_BtnFlc` to `p`.
 12. Change the `y scale` of `N_ScrollArea` and `N_ScrollWindow` to increase the size of the touch area. You will notice that some icons cannot be tapped if you haven't configured this correctly.
     - Optionally change the `y coordinate`
@@ -42,7 +40,7 @@ In order to get stationary icons to function properly from this version onwards,
 
 ## Firmware <8.x
 
-On firware version 7.x and lower, it is fairly easy to move the game icons around. In order to make them stationary do the following:
+On firmware version 7.x and lower, it is fairly easy to move the game icons around. In order to make them stationary do the following:
 
 1. Change the X,Y scale of `RootPane` in `RdtBtnIconGame.bflyt` to your likings
 2. Change the X scale of `N_Game` in `RdtBase.bflyt` to `100000.0`

@@ -17,6 +17,6 @@
         -   `L_ChildLock`: the childlock button
         -   `N_Balloon`
         -   `N_MyPage`
-            -   `L_BtnAccount\_[00-07]`:`all usericons which make use of a single layout
+            -   `L_BtnAccount_[00-07]`:`all usericons which make use of a single layout
         -   `L_Hud`: the hud (clock, network, battery)
         -   `L_BalloonCtrl`: the balloon that pops up when (dis)connecting a controller
