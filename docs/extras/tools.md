@@ -22,7 +22,7 @@ Here are some tools that might be useful for theming and other types of modding.
     A tool for extracting and packing SARC/SZS files. Makes use of SarcLib and libyaz0.
 -   [BNTX-Extractor](https://github.com/aboood40091/BNTX-Extractor)  
     **Supported filetypes:** `bntx`  
-    Extracts textures from the Binary NX Texture ('BNTX' / .bntx file extension) format used in Switch games, and saves them as DDS.
+    Extracts textures from the Binary NX Texture (`BNTX` / `.bntx` file extension) format used in Switch games, and saves them as `DDS`.
 -   [BNTX-Editor](https://github.com/aboood40091/BNTX-Editor)  
     **Supported filetypes:** `bntx`  
     A tool for editing Binary Resources Texture (BNTX) files.
@@ -36,3 +36,6 @@ Here are some tools that might be useful for theming and other types of modding.
 -   [Kuriimu2](https://github.com/FanTranslatorsInternational/Kuriimu2)  
     **Supported filetypes:** [See this list](https://docs.google.com/spreadsheets/d/1LbRqXkJUi4WD0awJMWInEfSiGtTIc2hu7ag2ngdoVC0)  
     Kuriimu2 is a general purpose game translation project manager and toolkit for authors of fan translations and game mods. This tool also works for the Switch's menus. [Here's an example](https://github.com/bandithedoge/switch-pl) of a fan-translation in Polish.
+-   [Game Icon Customizer](https://github.com/hotshotz79/NX-Game-Icon-Customizer)  
+    **Supported filetype:** N/A  
+    An application to simplify the method of changing game icons in Atmosphere.

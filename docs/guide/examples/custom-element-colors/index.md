@@ -3,8 +3,8 @@ _[Blue Menu - Home](https://themezer.net/themes/homemenu/Blue-Menu-Home-bd2) by 
 
 ---
 
-Modifying the colours of for example buttons, text, lines icons is possible.
-A theme that makes use of this functionality is [Blue by Mazu/Maximum](https://themezer.net/packs/Blue-Menu-1b4). Any colour is supported and the idea is the same in every menu.
+Modifying the colors of for example buttons, text, lines icons is possible.
+A theme that makes use of this functionality is [Blue by Mazu/Maximum](https://themezer.net/packs/Blue-Menu-1b4). Any color is supported and the idea is the same in every menu.
 
 ## Example Code
 
@@ -44,9 +44,12 @@ A theme that makes use of this functionality is [Blue by Mazu/Maximum](https://t
 These main menu elements need to be changed in the `common.szs`, which is applied as a patch in Theme Injector.
 
 <!-- prettier-ignore -->
-!!! Info
+!!! Important
 	-   Since the color format is actually `AABBGGRR` you'll have to swap the red and blue values to get the right color. For example, the hex color code `C02BE1` would become `FFE12BC0`.
-	-   It is currently unknown how exactly to change the cursor's default blue pulse color, but `P_Grow` and `P_Main` in `Cursor3.bflyt` contain colour codes. Changing these will change the secondary pulse color. The primary pulse colour is probabily a combination of these panes and their [`usd` sections](../../../definitions.md#usd-section).
+
+<!-- prettier-ignore -->
+!!! Info
+	-   It is currently unknown how exactly to change the cursor's default blue pulse color, but `P_Grow` and `P_Main` in `Cursor3.bflyt` contain color codes. Changing these will change the secondary pulse color. The primary pulse color is probabily a combination of these panes and their [`usd` sections](../../../definitions.md#usd-section).
 
 -   To hide the default circle around the menu icon:
 
