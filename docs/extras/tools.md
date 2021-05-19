@@ -14,10 +14,10 @@ Here are some tools that might be useful for theming and other types of modding.
 -   [SwitchLayoutEditor](https://github.com/FuryBaguette/SwitchLayoutEditor)  
     **Supported filetypes:** `blfyt`, `bflan`  
     The Switch Layout Editor was specially developed for creating custom layouts. This is a visual editor. A basic introduction to the tool is available [here](https://github.com/FuryBaguette/SwitchLayoutEditor/wiki).
--   [3DSKit](https://github.com/Tyulis/3DSkit) :octicons-tasklist-16:  
+-   [3DSKit](https://github.com/Tyulis/3DSkit)
     **Supported filetypes:** [See this list](https://github.com/Tyulis/3DSkit#supported-formats)  
     3DSKit can convert many Nintendo formats to more common file formats and vice versa. A few output types are: audio files, images, json, and txt. You need a text editor to modify the output.
--   [SARC-Tool](https://github.com/aboood40091/SARC-Tool) :octicons-tasklist-16:  
+-   [SARC-Tool](https://github.com/aboood40091/SARC-Tool)
     **Supported filetypes:** `sarc`, `arc`, `szs`  
     A tool for extracting and packing SARC/SZS files. Makes use of SarcLib and libyaz0.
 -   [BNTX-Extractor](https://github.com/aboood40091/BNTX-Extractor)  

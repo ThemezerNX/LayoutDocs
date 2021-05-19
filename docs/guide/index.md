@@ -10,7 +10,7 @@ For this guide it is expected that you already have basic knowledge on how to in
 -   A computer
 -   [The NXThemes Installer](https://github.com/exelix11/SwitchThemeInjector/releases/latest)
 -   [LayoutKit](https://github.com/ThemezerNX/LayoutKit/releases/latest)
-    -   LayoutKit requires a Windows installation. While this guide might refer to LayoutKit, everything should be doable without it.
+    -   LayoutKit requires a Windows installation. While this guide might be built around LayoutKit, everything should be doable without it.
     -   [sys-ftpd with reboot support](https://github.com/ThemezerNX/sys-ftpd-light-reboot/releases/latest)
 
 <!-- prettier-ignore -->
@@ -19,10 +19,10 @@ For this guide it is expected that you already have basic knowledge on how to in
 
 ## Initial Setup
 
-1. Make sure the NXThemes Installer is working and you're running version ≥2.6.2.
-2. Open the NXThemes Installer at least once so that the menus are extracted.
-3. Copy the `SD://themes/systemData` folder to your computer.
-4. Download and install LayoutKit.
+1. Download and install LayoutKit.
+2. Make sure the NXThemes Installer is working and you're running version ≥2.6.2.
+3. Open the NXThemes Installer at least once so that the menus are extracted.
+4. Copy the `SD://themes/systemData` folder to your computer.
 5. Copy the contents of the sys-ftpd archive to the root of your MicroSD.
 
 # [Continue to Menu Files](menu-files.md) :octicons-arrow-right-16:
