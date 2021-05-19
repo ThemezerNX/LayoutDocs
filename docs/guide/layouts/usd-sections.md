@@ -1,6 +1,6 @@
 ##### :octicons-arrow-left-16: [Back to Getting Started](index.md)
 
-## USD sections
+# USD Sections
 
 This is a simplified example of a pane followed by a `usd` section:
 
