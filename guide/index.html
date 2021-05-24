@@ -861,8 +861,8 @@
 <h3 id="what-youll-need">What You'll Need<a class="headerlink" href="#what-youll-need" title="Permanent link">&para;</a></h3>
 <ul>
 <li>A hacked Switch, connected to LAN (use, for example, <a href="https://gbatemp.net/threads/90dns-dns-server-for-blocking-all-nintendo-servers.516234/">90dns</a> to block connections to Nintendo)</li>
-<li>A computer</li>
-<li><a href="https://github.com/exelix11/SwitchThemeInjector/releases/latest">NXThemes Installer</a><ul>
+<li>A Windows computer</li>
+<li><a href="https://github.com/exelix11/SwitchThemeInjector/releases/latest">NXThemes Installer</a> version ≥2.6.2 (not out yet)<ul>
 <li>You probably already have this.</li>
 <li>You only need the <code>NXThemesInstaller.nro</code>.</li>
 <li>You can also install this homebrew app from the HB App Store.</li>
@@ -883,8 +883,17 @@
 <ol>
 <li>Download and install LayoutKit.</li>
 <li>Install the NXThemes Installer.</li>
-<li>Make sure the NXThemes Installer is working and you're running version ≥2.6.2.</li>
-<li>Open the NXThemes Installer and follow the instructions if this is the first time you open it. Go to the 'Extract home menu' tab and click the button. You have to do it this way, because else it won't extract the player select and user page menus.</li>
+<li>
+<p>Make sure the NXThemes Installer is working and you're running version ≥2.6.2.</p>
+<!-- prettier-ignore -->
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This version has not been released yet. Currently, the player select and user page menu are only extracted when you install a theme for them. You can do that, or wait for the new version to release. When it has, you can go to <code>Firmwares</code>, click 'Open Folder' and place <code>Psl.szs</code> and <code>MyPage.szs</code> there.</p>
+</div>
+</li>
+<li>
+<p>Open the NXThemes Installer and follow the instructions if this is the first time you open it.</p>
+</li>
 <li>Copy the <code>SD://themes/systemData</code> folder to your computer.</li>
 <li>Copy the contents of the sys-ftpd archive to the root of your MicroSD.<ul>
 <li>It is recommended that you change sys-ftpd's password. Do this by editing <code>SD://config/sys-ftpd/config.ini</code>. Remember the value you set.</li>
@@ -1015,6 +1024,8 @@
     
     
       <script src="../assets/javascripts/bundle.a1609d9a.min.js"></script>
+      
+        <script src="../js/color_blocks.js"></script>
       
     
   </body>
