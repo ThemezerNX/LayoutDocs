@@ -2,6 +2,8 @@
 
 # USD Sections
 
+USD sections define additional data about another pane. It usually just follows the pane it is related to, but can be in any order as long as it has the name of the pane it belongs to.
+
 This is a simplified example of a pane followed by a `usd` section:
 
 ```json
@@ -47,7 +49,8 @@ This is a simplified example of a pane followed by a `usd` section:
 
 <!-- prettier-ignore -->
 !!! Important
-	The JSON code shown above is from 3DSKit and cannot be directly copied to a layout.
+	The JSON code shown above is from 3DSKit and cannot be directly copied to a layout.  
+	All examples below *are* compatible.
 
 ## Structure
 
@@ -66,9 +69,9 @@ Data: Array of values of specified type
 
 These are the USD sections found throughout the home menu. They cannot be applied to every pane.
 
-### Color-related
-
 ---
+
+### Color-related
 
 #### **`C_W`**
 
