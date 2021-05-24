@@ -2,7 +2,7 @@
 
 # Animations
 
-[This tool guide](https://github.com/KillzXGaming/Switch-Toolbox/wiki/BFLYT-Editing#animations) shows how you can create animations
+[This tool guide](https://github.com/KillzXGaming/Switch-Toolbox/wiki/BFLYT-Editing#animations) shows how you can create animations.
 
 [This guide](https://www.reddit.com/r/NXThemes/comments/biu5hc/making_your_own_custom_animations/) shows how you have to implement the groups so that the animations work with the Switch Theme Injector
 

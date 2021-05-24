@@ -11,7 +11,7 @@ Examples of layouts that show what stationary game icons look like are [Doge Lay
 
 ## Firmware ≥8.x
 
-Ever since 8.0 came out, stationary game icons have been a bit of a mess to get working properly. This is because 8.0 introduced looped scrolling in the home menu. Another factor was that some behaviour regarding hitboxes was changed.
+Ever since 8.0 came out, stationary game icons have been a bit of a pain to get working properly. This is because 8.0 introduced looped scrolling in the home menu. Another factor was that some behaviour regarding hitboxes was changed.
 
 In order to get stationary icons to function properly from this version onwards, the following steps should be followed:
 
@@ -30,8 +30,9 @@ In order to get stationary icons to function properly from this version onwards,
 8. Set the `x scale` of `N_Game` to `100000.0`
 9. Set the `x,y coordinate` of `N_Icon_00` to `0.0`
 10. Set the `x,y coordinate` of `N_Icon_[01-11]` to the positions you want. If I remember correctly, the scale `p` has an influence on this. Move icons that you don't want to be shown to `(1;9999)`.
-11. Set the `x,y scale` of `L_BtnFlc` to `p`.
-12. Change the `y scale` of `N_ScrollArea` and `N_ScrollWindow` to increase the size of the touch area. You will notice that some icons cannot be tapped if you haven't configured this correctly.
+11. Set the `x,y coordinate` of `N_Icon_12` (the all apps button) to the position you want. If I remember correctly, the scale `p` has an influence on this.
+12. Set the `x,y scale` of `L_BtnFlc` to `p`.
+13. Change the `y scale` of `N_ScrollArea` and `N_ScrollWindow` to increase the size of the touch area. You will notice that some icons cannot be tapped if you haven't configured this correctly.
     - Optionally change the `y coordinate`
 
 <!-- prettier-ignore -->
@@ -42,9 +43,9 @@ In order to get stationary icons to function properly from this version onwards,
 
 On firmware version 7.x and lower, it is fairly easy to move the game icons around. In order to make them stationary do the following:
 
-1. Change the X,Y scale of `RootPane` in `RdtBtnIconGame.bflyt` to your likings
-2. Change the X scale of `N_Game` in `RdtBase.bflyt` to `100000.0`
-3. Reposition the game icons `N_Icon_XX` in `RdtBase.bflyt` to your likings
+1. Change the `x,y scale` of `RootPane` in `RdtBtnIconGame.bflyt` to your likings
+2. Change the `x scale` of `N_Game` in `RdtBase.bflyt` to `100000.0`
+3. Reposition the game icons `N_Icon_[01-12]` in `RdtBase.bflyt` to your likings
 
 ---
 
