@@ -46,12 +46,12 @@ This is a simplified example of a pane followed by a `usd` section:
 ```
 
 <!-- prettier-ignore -->
-!!! Info
+!!! Important
 	The JSON code shown above is from 3DSKit and cannot be directly copied to a layout.
 
 ## Structure
 
-A USD entry has a `name`, Type, `unk1` and Data section.
+A USD entry has a name, type and data section.
 
 Name: `String`  
 Type: `Int`
@@ -60,7 +60,6 @@ Type: `Int`
 -   `1`: Int
 -   `2`: Float
 
-Unk1: _unknown, always `0`_  
 Data: Array of values of specified type
 
 ## List of known USD sections
@@ -82,10 +81,9 @@ Type: `1 Data: `[X, X, X, X]` Often only the first`X`is different from`0`. Somet
 
 ```json
 {
-	"name": "C_W",
+	"PropName": "C_W",
 	"type": 1,
-	"unk1": 0,
-	"data": [5, 0, 0, 0]
+	"PropValues": [5, 0, 0, 0]
 }
 ```
 
@@ -232,10 +230,9 @@ Data: `[X, X, X, X]`
 
 ```json
 {
-	"name": "C_B",
+	"PropName": "C_B",
 	"type": 1,
-	"unk1": 0,
-	"data": [0, 0, 0, 0]
+	"PropValues": [0, 0, 0, 0]
 }
 ```
 
@@ -256,10 +253,9 @@ Data: `[X]`
 
 ```json
 {
-	"name": "C_Id",
+	"PropName": "C_Id",
 	"type": 1,
-	"unk1": 0,
-	"data": [0]
+	"PropValues": [0]
 }
 ```
 
@@ -307,10 +303,9 @@ Data: `[X]`
 
 ```json
 {
-	"name": "C_Ti",
+	"PropName": "C_Ti",
 	"type": 1,
-	"unk1": 0,
-	"data": [0]
+	"PropValues": [0]
 }
 ```
 
@@ -339,10 +334,9 @@ Data: `[X]`
 
 ```json
 {
-	"name": "S_RoundRadius",
+	"PropName": "S_RoundRadius",
 	"type": 2,
-	"unk1": 0,
-	"data": [50.0]
+	"PropValues": [50.0]
 }
 ```
 
@@ -363,10 +357,9 @@ Example usage: `Cursor3`
 
 ```json
 {
-	"name": "S_BorderDrawMode",
+	"PropName": "S_BorderDrawMode",
 	"type": 1,
-	"unk1": 0,
-	"data": [1]
+	"PropValues": [1]
 }
 ```
 
@@ -384,10 +377,9 @@ Example usage: `Cursor3`
 
 ```json
 {
-	"name": "S_BorderVolume",
+	"PropName": "S_BorderVolume",
 	"type": 2,
-	"unk1": 0,
-	"data": [1.5]
+	"PropValues": [1.5]
 }
 ```
 
@@ -405,10 +397,9 @@ Example usage: `Cursor3`
 
 ```json
 {
-	"name": "S_BorderSize",
+	"PropName": "S_BorderSize",
 	"type": 2,
-	"unk1": 0,
-	"data": [5.0]
+	"PropValues": [5.0]
 }
 ```
 
@@ -428,10 +419,9 @@ Example usage: `Cursor3`
 
 ```json
 {
-	"name": "S_BorderColorSelect0",
+	"PropName": "S_BorderColorSelect0",
 	"type": 1,
-	"unk1": 0,
-	"data": [1]
+	"PropValues": [1]
 }
 ```
 
@@ -452,10 +442,9 @@ Example usage: `Cursor3`
 
 ```json
 {
-	"name": "S_BorderColor0",
+	"PropName": "S_BorderColor0",
 	"type": 2,
-	"unk1": 0,
-	"data": [5.0, 0, 0, 0]
+	"PropValues": [5.0, 0, 0, 0]
 }
 ```
 
@@ -478,10 +467,9 @@ Example usage: `RdtBtnIconGame`
 
 ```json
 {
-	"name": "S_DropShadowDrawMode",
+	"PropName": "S_DropShadowDrawMode",
 	"type": 1,
-	"unk1": 0,
-	"data": [1]
+	"PropValues": [1]
 }
 ```
 
@@ -499,10 +487,9 @@ Example usage: `RdtBtnIconGame`
 
 ```json
 {
-	"name": "S_DropShadowVolume",
+	"PropName": "S_DropShadowVolume",
 	"type": 2,
-	"unk1": 0,
-	"data": [5.0]
+	"PropValues": [5.0]
 }
 ```
 
@@ -521,10 +508,9 @@ Example usage: `RdtBtnIconGame`
 
 ```json
 {
-	"name": "S_DropShadowColorSelect",
+	"PropName": "S_DropShadowColorSelect",
 	"type": 1,
-	"unk1": 0,
-	"data": [1]
+	"PropValues": [1]
 }
 ```
 
@@ -543,10 +529,9 @@ Example usage: `RdtBtnIconGame`
 
 ```json
 {
-	"name": "S_DropShadowColor",
+	"PropName": "S_DropShadowColor",
 	"type": 2,
-	"unk1": 0,
-	"data": [0.0, 0.0, 0.0, 1.0]
+	"PropValues": [0.0, 0.0, 0.0, 1.0]
 }
 ```
 
@@ -564,10 +549,9 @@ Example usage: `RdtBtnIconGame`
 
 ```json
 {
-	"name": "S_DropShadowAngle",
+	"PropName": "S_DropShadowAngle",
 	"type": 2,
-	"unk1": 0,
-	"data": [1.5]
+	"PropValues": [1.5]
 }
 ```
 
@@ -605,10 +589,9 @@ Example usage: `RdtBtnIconGame`
 
 ```json
 {
-	"name": "S_DropShadowDistance",
+	"PropName": "S_DropShadowDistance",
 	"type": 2,
-	"unk1": 0,
-	"data": [5.2]
+	"PropValues": [5.2]
 }
 ```
 
@@ -626,10 +609,9 @@ Example usage: `RdtBtnIconGame`
 
 ```json
 {
-	"name": "S_DropShadowSize",
+	"PropName": "S_DropShadowSize",
 	"type": 2,
-	"unk1": 0,
-	"data": [10.0]
+	"PropValues": [10.0]
 }
 ```
 
@@ -649,10 +631,9 @@ Example usage: `RdtBtnIconGame`
 
 ```json
 {
-	"name": "S_DropShadowFunction",
+	"PropName": "S_DropShadowFunction",
 	"type": 1,
-	"unk1": 0,
-	"data": [5]
+	"PropValues": [5]
 }
 ```
 
@@ -672,10 +653,9 @@ Example usage: `RdtBtnIconGame`
 
 ```json
 {
-	"name": "S_DropShadowKnockout",
+	"PropName": "S_DropShadowKnockout",
 	"type": 1,
-	"unk1": 0,
-	"data": [1]
+	"PropValues": [1]
 }
 ```
 
