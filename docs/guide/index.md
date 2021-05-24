@@ -5,8 +5,8 @@ For this guide it is expected that you already have basic knowledge on how to in
 ### What You'll Need
 
 -   A hacked Switch, connected to LAN (use, for example, [90dns](https://gbatemp.net/threads/90dns-dns-server-for-blocking-all-nintendo-servers.516234/) to block connections to Nintendo)
--   A computer
--   [NXThemes Installer](https://github.com/exelix11/SwitchThemeInjector/releases/latest)
+-   A Windows computer
+-   [NXThemes Installer](https://github.com/exelix11/SwitchThemeInjector/releases/latest) version ≥2.6.2 (not out yet)
     -   You probably already have this.
     -   You only need the `NXThemesInstaller.nro`.
     -   You can also install this homebrew app from the HB App Store.
@@ -23,7 +23,12 @@ For this guide it is expected that you already have basic knowledge on how to in
 1. Download and install LayoutKit.
 2. Install the NXThemes Installer.
 3. Make sure the NXThemes Installer is working and you're running version ≥2.6.2.
-4. Open the NXThemes Installer and follow the instructions if this is the first time you open it. Go to the 'Extract home menu' tab and click the button. You have to do it this way, because else it won't extract the player select and user page menus.
+
+    <!-- prettier-ignore -->
+    !!! Warning
+        This version has not been released yet. Currently, the player select and user page menu are only extracted when you install a theme for them. You can do that, or wait for the new version to release. When it has, you can go to `Firmwares`, click 'Open Folder' and place `Psl.szs` and `MyPage.szs` there.
+
+4. Open the NXThemes Installer and follow the instructions if this is the first time you open it.
 5. Copy the `SD://themes/systemData` folder to your computer.
 6. Copy the contents of the sys-ftpd archive to the root of your MicroSD.
     - It is recommended that you change sys-ftpd's password. Do this by editing `SD://config/sys-ftpd/config.ini`. Remember the value you set.
