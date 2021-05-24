@@ -65,6 +65,12 @@ Type: `Int`
 
 Data: Array of values of specified type
 
+## Supported properties
+
+_Supported by the Switch Theme Injector_
+
+-   All, even undocumented ones.
+
 ## List of known USD sections
 
 These are the USD sections found throughout the home menu. They cannot be applied to every pane.
@@ -662,4 +668,4 @@ Example usage: `RdtBtnIconGame`
 }
 ```
 
-# [Continue to Animations](../diffing.md) :octicons-arrow-right-16:
+# [Continue to Animations](../animations/index.md) :octicons-arrow-right-16:
