@@ -1,5 +1,6 @@
 site_name: LayoutDocs
 extra_css: [css/extra.css]
+extra_javascript: [js/color_blocks.js]
 theme:
     name: material
     #     features:
@@ -11,6 +12,7 @@ markdown_extensions:
     - toc: # https://python-markdown.github.io/extensions/toc/
           permalink: True
           toc_depth: 4
+    - md_in_html
     - pymdownx.emoji:
           emoji_index: !!python/name:materialx.emoji.twemoji
           emoji_generator: !!python/name:materialx.emoji.to_svg
