@@ -1217,12 +1217,12 @@
 <span class="p">}</span>
 </code></pre></div>
 <!-- prettier-ignore -->
-<div class="admonition info">
-<p class="admonition-title">Info</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p>The JSON code shown above is from 3DSKit and cannot be directly copied to a layout.</p>
 </div>
 <h2 id="structure">Structure<a class="headerlink" href="#structure" title="Permanent link">&para;</a></h2>
-<p>A USD entry has a <code>name</code>, Type, <code>unk1</code> and Data section.</p>
+<p>A USD entry has a name, type and data section.</p>
 <p>Name: <code>String</code><br />
 Type: <code>Int</code></p>
 <ul>
@@ -1230,8 +1230,7 @@ Type: <code>Int</code></p>
 <li><code>1</code>: Int</li>
 <li><code>2</code>: Float</li>
 </ul>
-<p>Unk1: <em>unknown, always <code>0</code></em><br />
-Data: Array of values of specified type</p>
+<p>Data: Array of values of specified type</p>
 <h2 id="list-of-known-usd-sections">List of known USD sections<a class="headerlink" href="#list-of-known-usd-sections" title="Permanent link">&para;</a></h2>
 <p>These are the USD sections found throughout the home menu. They cannot be applied to every pane.</p>
 <h3 id="color-related">Color-related<a class="headerlink" href="#color-related" title="Permanent link">&para;</a></h3>
@@ -1242,10 +1241,9 @@ Used almost everywhere (all menus have to support dark and light theme).</p>
 <p>Type: <code>1 Data:</code>[X, X, X, X]<code>Often only the first</code>X<code>is different from</code>0<code>. Sometimes multiple</code>X<code>s are non-zero, but changing them to</code>0` seems to have no effect on appearance.</p>
 <h5 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <h5 id="tested-values">Tested values<a class="headerlink" href="#tested-values" title="Permanent link">&para;</a></h5>
@@ -1980,10 +1978,9 @@ Doesn't really seem to do much. Seems to be used in e.g. cursor: is set to 37 so
 Data: <code>[X, X, X, X]</code></p>
 <h5 id="example_1">Example<a class="headerlink" href="#example_1" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;C_B&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_B&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
@@ -1996,10 +1993,9 @@ All stuff here was tested on the lockscreen, and does vary per menu.</p>
 Data: <code>[X]</code></p>
 <h5 id="example_2">Example<a class="headerlink" href="#example_2" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;C_Id&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_Id&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <h5 id="tested-values_1">Tested values<a class="headerlink" href="#tested-values_1" title="Permanent link">&para;</a></h5>
@@ -2133,10 +2129,9 @@ Data: <code>[X]</code></p>
 Data: <code>[X]</code></p>
 <h5 id="example_3">Example<a class="headerlink" href="#example_3" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;C_Ti&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_Ti&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <h5 id="tested-values_2">Tested values<a class="headerlink" href="#tested-values_2" title="Permanent link">&para;</a></h5>
@@ -2175,10 +2170,9 @@ Percentage/pixels?</p>
 Data: <code>[X]</code></p>
 <h5 id="example_4">Example<a class="headerlink" href="#example_4" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;S_RoundRadius&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_RoundRadius&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">50.0</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">50.0</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
@@ -2191,10 +2185,9 @@ Common value: <code>1</code><br />
 Example usage: <code>Cursor3</code></p>
 <h5 id="example_5">Example<a class="headerlink" href="#example_5" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;S_BorderDrawMode&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_BorderDrawMode&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
@@ -2205,10 +2198,9 @@ Data: <code>[X]</code><br />
 Example usage: <code>Cursor3</code></p>
 <h5 id="example_6">Example<a class="headerlink" href="#example_6" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;S_BorderVolume&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_BorderVolume&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
@@ -2219,10 +2211,9 @@ Data: <code>[X]</code><br />
 Example usage: <code>Cursor3</code></p>
 <h5 id="example_7">Example<a class="headerlink" href="#example_7" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;S_BorderSize&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_BorderSize&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
@@ -2234,10 +2225,9 @@ Data: <code>[X]</code><br />
 Example usage: <code>Cursor3</code></p>
 <h5 id="example_8">Example<a class="headerlink" href="#example_8" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;S_BorderColorSelect0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_BorderColorSelect0&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
@@ -2250,10 +2240,9 @@ Common value: <code>[1.0, 1.0, 1.0, 1.0]</code><br />
 Example usage: <code>Cursor3</code></p>
 <h5 id="example_9">Example<a class="headerlink" href="#example_9" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;S_BorderColor0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_BorderColor0&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
@@ -2267,10 +2256,9 @@ Common value: <code>1</code><br />
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_10">Example<a class="headerlink" href="#example_10" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowDrawMode&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowDrawMode&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
@@ -2281,10 +2269,9 @@ Data: <code>[X]</code><br />
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_11">Example<a class="headerlink" href="#example_11" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowVolume&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowVolume&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
@@ -2296,10 +2283,9 @@ Data: <code>[X]</code><br />
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_12">Example<a class="headerlink" href="#example_12" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowColorSelect&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowColorSelect&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
@@ -2311,10 +2297,9 @@ Common value: <code>[0.0, 0.0, 0.0, 1.0]</code> (R, G, B, A)?
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_13">Example<a class="headerlink" href="#example_13" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowColor&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowColor&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
@@ -2325,10 +2310,9 @@ Data: <code>[X]</code><br />
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_14">Example<a class="headerlink" href="#example_14" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowAngle&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowAngle&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <h5 id="tested-values_3">Tested values<a class="headerlink" href="#tested-values_3" title="Permanent link">&para;</a></h5>
@@ -2399,10 +2383,9 @@ Data: <code>[X]</code><br />
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_15">Example<a class="headerlink" href="#example_15" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowDistance&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowDistance&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">5.2</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">5.2</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
@@ -2413,10 +2396,9 @@ Data: <code>[X]</code><br />
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_16">Example<a class="headerlink" href="#example_16" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowSize&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowSize&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">10.0</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">10.0</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
@@ -2429,10 +2411,9 @@ Common value: <code>5</code> and <code>4</code>
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_17">Example<a class="headerlink" href="#example_17" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowFunction&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowFunction&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
@@ -2445,10 +2426,9 @@ Common value: <code>1</code>
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_18">Example<a class="headerlink" href="#example_18" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowKnockout&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowKnockout&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <h1 id="continue-to-animations"><a href="../../diffing/">Continue to Animations</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06l2.97-2.97H3.75a.75.75 0 0 1 0-1.5h7.44L8.22 4.03a.75.75 0 0 1 0-1.06z"/></svg></span><a class="headerlink" href="#continue-to-animations" title="Permanent link">&para;</a></h1>
