@@ -1,4 +1,4 @@
-site_name: Layout Docs
+site_name: LayoutDocs
 extra_css: [css/extra.css]
 theme:
     name: material
@@ -20,7 +20,7 @@ markdown_extensions:
 nav:
     - Home: index.md
     - Creating Custom Layouts:
-          - Introduction: guide/index.md
+          - Getting Started: guide/index.md
           - Menu Files: guide/menu-files.md
           - Filetypes: guide/filetypes.md
           - Layouts:
@@ -36,6 +36,7 @@ nav:
                 Stationary Game Icons: guide/examples/stationary-game-icons/index.md
                 Custom Element Colors: guide/examples/custom-element-colors/index.md
                 Hide Header & Footer Lines: guide/examples/hide-header-footer-lines/index.md
+                Pulling & Pushing Panes: guide/examples/pull-push-front-back/index.md
     - Menu Documentation:
           - Introduction: menu-docs/index.md
           - Menus:

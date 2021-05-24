@@ -11,6 +11,11 @@ Here are some tools that might be useful for theming and other types of modding.
 -   [Switch-Toolbox](https://github.com/KillzXGaming/Switch-Toolbox) :octicons-tasklist-16:  
     **Supported filetypes:** [See this list](https://github.com/KillzXGaming/Switch-Toolbox#features)  
     The Switch Toolbox can open and modify many file formats you might encounter when, for example, modding games. This is a visual editor. It also has support for the Switch's menu files and can often even preview them!
+-   [Switch Theme Injector](https://github.com/exelix11/SwitchThemeInjector) :octicons-tasklist-16:  
+    **Supported filetypes:** `szs`, `nxtheme`, `json`
+    -   Switch Theme Injector (Windows app) :octicons-tasklist-16:: An app to create and edit custom themes.
+    -   [Switch Theme Injector Online](http://exelix11.github.io/SwitchThemeInjector/v2) (also called WebInjector): A port of the windows injector as a web app, however, it lacks some features like custom icons and `common.szs` support.
+    -   NXThemes Installer: An homebrew app that runs on the switch itself and can be used to install and manage themes.
 -   [SwitchLayoutEditor](https://github.com/FuryBaguette/SwitchLayoutEditor)  
     **Supported filetypes:** `blfyt`, `bflan`  
     The Switch Layout Editor was specially developed for creating custom layouts. This is a visual editor. A basic introduction to the tool is available [here](https://github.com/FuryBaguette/SwitchLayoutEditor/wiki).
@@ -26,10 +31,6 @@ Here are some tools that might be useful for theming and other types of modding.
 -   [BNTX-Editor](https://github.com/aboood40091/BNTX-Editor)  
     **Supported filetypes:** `bntx`  
     A tool for editing Binary Resources Texture (BNTX) files.
--   [Switch Theme Injector](https://github.com/exelix11/SwitchThemeInjector)
-    -   Switch Theme Injector (Windows app): An app to create and edit custom themes.
-    -   [Switch Theme Injector Online](http://exelix11.github.io/SwitchThemeInjector/v2) (also called WebInjector): A port of the windows injector as a web app, however, it lacks some features like custom icons and `common.szs` support.
-    -   NXThemes Installer: An homebrew app that runs on the switch itself and can be used to install and manage themes.
 
 ## Other Tools
 

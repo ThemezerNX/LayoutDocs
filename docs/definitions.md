@@ -26,7 +26,7 @@ A layout is created by comparing a modified `SZS` file with the original unmodif
 
 ### Panes
 
-Another name for elements in `bflyt` files. For example `P_Pict`, `N_Button`.
+Another term for elements in `bflyt` files. For example `P_Pict`, `N_Button`.
 
 ### usd section
 
