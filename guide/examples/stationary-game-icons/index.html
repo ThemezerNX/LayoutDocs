@@ -864,7 +864,7 @@
 <p>If you don't actually want to make the icons stationary, but want to <em>move</em> the gamerow, see <a href="../reposition-gamerow/">Repositioning and Scaling the Gamerow</a>.</p>
 </div>
 <h2 id="firmware-8x">Firmware ≥8.x<a class="headerlink" href="#firmware-8x" title="Permanent link">&para;</a></h2>
-<p>Ever since 8.0 came out, stationary game icons have been a bit of a mess to get working properly. This is because 8.0 introduced looped scrolling in the home menu. Another factor was that some behaviour regarding hitboxes was changed.</p>
+<p>Ever since 8.0 came out, stationary game icons have been a bit of a pain to get working properly. This is because 8.0 introduced looped scrolling in the home menu. Another factor was that some behaviour regarding hitboxes was changed.</p>
 <p>In order to get stationary icons to function properly from this version onwards, the following steps should be followed:</p>
 <h3 id="rdtbtnicongamebflyt"><code>RdtBtnIconGame.bflyt</code><a class="headerlink" href="#rdtbtnicongamebflyt" title="Permanent link">&para;</a></h3>
 <ol>
@@ -881,6 +881,7 @@
 <li>Set the <code>x scale</code> of <code>N_Game</code> to <code>100000.0</code></li>
 <li>Set the <code>x,y coordinate</code> of <code>N_Icon_00</code> to <code>0.0</code></li>
 <li>Set the <code>x,y coordinate</code> of <code>N_Icon_[01-11]</code> to the positions you want. If I remember correctly, the scale <code>p</code> has an influence on this. Move icons that you don't want to be shown to <code>(1;9999)</code>.</li>
+<li>Set the <code>x,y coordinate</code> of <code>N_Icon_12</code> (the all apps button) to the position you want. If I remember correctly, the scale <code>p</code> has an influence on this.</li>
 <li>Set the <code>x,y scale</code> of <code>L_BtnFlc</code> to <code>p</code>.</li>
 <li>Change the <code>y scale</code> of <code>N_ScrollArea</code> and <code>N_ScrollWindow</code> to increase the size of the touch area. You will notice that some icons cannot be tapped if you haven't configured this correctly.<ul>
 <li>Optionally change the <code>y coordinate</code></li>
@@ -895,9 +896,9 @@
 <h2 id="firmware-8x_1">Firmware &lt;8.x<a class="headerlink" href="#firmware-8x_1" title="Permanent link">&para;</a></h2>
 <p>On firmware version 7.x and lower, it is fairly easy to move the game icons around. In order to make them stationary do the following:</p>
 <ol>
-<li>Change the X,Y scale of <code>RootPane</code> in <code>RdtBtnIconGame.bflyt</code> to your likings</li>
-<li>Change the X scale of <code>N_Game</code> in <code>RdtBase.bflyt</code> to <code>100000.0</code></li>
-<li>Reposition the game icons <code>N_Icon_XX</code> in <code>RdtBase.bflyt</code> to your likings</li>
+<li>Change the <code>x,y scale</code> of <code>RootPane</code> in <code>RdtBtnIconGame.bflyt</code> to your likings</li>
+<li>Change the <code>x scale</code> of <code>N_Game</code> in <code>RdtBase.bflyt</code> to <code>100000.0</code></li>
+<li>Reposition the game icons <code>N_Icon_[01-12]</code> in <code>RdtBase.bflyt</code> to your likings</li>
 </ol>
 <hr />
 <p><em>Credits to Migush</em></p>
