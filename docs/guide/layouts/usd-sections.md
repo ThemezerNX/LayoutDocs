@@ -84,7 +84,10 @@ These are the USD sections found throughout the home menu. They cannot be applie
 A property that is used to give elements certain colors. These colors are dynamic and can change based on the system theme.
 Used almost everywhere (all menus have to support dark and light theme).
 
-Type: `1 Data: `[X, X, X, X]` Often only the first`X`is different from`0`. Sometimes multiple `X`s are non-zero, but changing them to `0` seems to have no effect on appearance.
+Type: `1`  
+Data: `[X, X, X, X]`
+
+Often only the first `X` is non-`0`. Sometimes multiple `X`s are non-`0`, but changing the second, third and fourth to `0` seems to have no effect on appearance.
 
 ##### Example
 

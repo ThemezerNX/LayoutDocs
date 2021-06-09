@@ -63,7 +63,7 @@ For this guide it is expected that you already have basic knowledge on how to in
 
 ### Optional Steps
 
--   If you did not include all menu's when creating the project you can click the green pencil button next to 'Copy' and select more.
+-   If you did not include all menus when creating the project you can click the green pencil button next to 'Copy' and select more.
 -   You can copy a project if you want to test something and not mess up your original. You can do so by clicking 'Copy'.
 -   You can delete firmwares, projects, or project menus by clicking the red delete button.
 
