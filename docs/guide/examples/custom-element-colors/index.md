@@ -41,8 +41,6 @@ A theme that makes use of this functionality is [Blue by Mazu/Maximum](https://t
 }
 ```
 
-These main menu elements need to be changed in the `common.szs`, which is applied as a patch in Theme Injector.
-
 <!-- prettier-ignore -->
 !!! Important
 	-   Since the color format is actually `AABBGGRR` you'll have to swap the red and blue values to get the right color. For example, the hex color code `C02BE1` would become `FFE12BC0`.
@@ -51,13 +49,38 @@ These main menu elements need to be changed in the `common.szs`, which is applie
 !!! Info
 	-   It is currently unknown how exactly to change the cursor's default blue pulse color, but `P_Grow` and `P_Main` in `Cursor3.bflyt` contain color codes. Changing these will change the secondary pulse color. The primary pulse color is probabily a combination of these panes and their [`usd` sections](../../../definitions.md#usd-section).
 
--   To hide the default circle around the menu icon:
+---
+
+## Specific Examples
+
+### Battery Percent sign
 
 ```json
 {
-	"PaneName": "L_Balloon",
-	"Visible": false
-},
+	"FileName": "blyt/HudBatteryNum.bflyt",
+	"Patches": [
+		{
+			"PaneName": "P_Per",
+			"UsdPatches": [
+				{
+					"PropName": "C_W",
+					"PropValues": ["0", "0", "0", "0"],
+					"type": 1
+				}
+			],
+			"ColorTL": "AABBGGRR",
+			"ColorTR": "AABBGGRR",
+			"ColorBL": "AABBGGRR",
+			"ColorBR": "AABBGGRR"
+		}
+	],
+	"Materials": [
+		{
+			"MaterialName": "P_Per",
+			"BackgroundColor": "FFFFFFFF"
+		}
+	]
+}
 ```
 
 ---
