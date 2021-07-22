@@ -19,7 +19,7 @@ In order to get stationary icons to function properly from this version onwards,
 
 1. Set the `x,y scale` of `RootPane` to a custom value. Remember this value and let's call it `p`.
 2. Set the `x,y scale` of `B_Hit` to `1.0/p`
-3. Set the `width,height` of `B_Hit` to `256*p`. `256` is the default value for width and height, but it might get changed in a future version.
+3. Set the `width,height` of `B_Hit` to `264*p`. `264` is the default value for width and height, but it might get changed in a future version.
 
 ### `RdtBase.bflyt`
 
