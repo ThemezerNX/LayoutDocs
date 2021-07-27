@@ -388,30 +388,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../changing-component-sizes/" class="md-nav__link">
-        Changing Component Sizes
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../reposition-gamerow/" class="md-nav__link">
-        Repositioning the Gamerow
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../stationary-game-icons/" class="md-nav__link">
         Stationary Game Icons
       </a>
@@ -492,8 +468,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../hide-header-footer-lines/" class="md-nav__link">
-        Hide Header & Footer Lines
+      <a href="../custom-applet-icons/" class="md-nav__link">
+        Custom Applet Icons
       </a>
     </li>
   
@@ -504,8 +480,20 @@
   
   
     <li class="md-nav__item">
-      <a href="../changing-applet-cursor-size/" class="md-nav__link">
-        Changing Applet Cursor Size
+      <a href="../hide-footer-line/" class="md-nav__link">
+        Hide Footer Line
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hide-header-lines/" class="md-nav__link">
+        Hide Header Lines
       </a>
     </li>
   
@@ -810,37 +798,43 @@
                 
                   <h1>Custom Element Colors</h1>
                 
-                <p><img alt="Preview" src="preview.jpg" />
+                <p><img alt="Preview" src="preview.jpg" /><br />
 <em><a href="https://themezer.net/themes/homemenu/Blue-Menu-Home-bd2">Blue Menu - Home</a> by Maxu/Maximum</em></p>
 <hr />
 <p>Modifying the colors of for example buttons, text, lines icons is possible.
-A theme that makes use of this functionality is <a href="https://themezer.net/packs/Blue-Menu-1b4">Blue by Mazu/Maximum</a>. Any color is supported and the idea is the same in every menu.</p>
+A theme that makes use of this functionality is <a href="https://themezer.net/packs/Blue-Menu-1b4">Blue by Mazu/Maximum</a>. Any color is supported.</p>
+<!-- prettier-ignore -->
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Custom colors can be mixed with <a href="../custom-applet-icons/">custom applet icons</a>.</p>
+</div>
 <h2 id="example-code">Example Code<a class="headerlink" href="#example-code" title="Permanent link">&para;</a></h2>
+<p>Let's say you want the album icon to be red (<code>#FF0000</code>). The following example shows how to do that:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;TargetName&quot;</span><span class="p">:</span> <span class="s2">&quot;ResidentMenu.szs&quot;</span><span class="p">,</span>
     <span class="nt">&quot;Files&quot;</span><span class="p">:</span> <span class="p">[</span>
         <span class="p">{</span>
-            <span class="nt">&quot;FileName&quot;</span><span class="p">:</span> <span class="s2">&quot;blyt/RdtBtnSet.bflyt&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;FileName&quot;</span><span class="p">:</span> <span class="s2">&quot;blyt/RdtBtnPvr.bflyt&quot;</span><span class="p">,</span>
             <span class="nt">&quot;Patches&quot;</span><span class="p">:</span> <span class="p">[</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict&quot;</span><span class="p">,</span>
                     <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
                         <span class="p">{</span>
                             <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
-                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span> <span class="err">//</span> <span class="err">do</span><span class="kc">n</span><span class="err">&#39;</span><span class="kc">t</span> <span class="err">cha</span><span class="kc">n</span><span class="err">ge</span> <span class="kc">t</span><span class="err">his!</span>
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFF2C100&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFF2C100&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFF2C100&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFF2C100&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FF0000FF&quot;</span><span class="p">,</span> <span class="err">//</span> <span class="err">se</span><span class="kc">t</span> <span class="err">your</span> <span class="err">cus</span><span class="kc">t</span><span class="err">om</span> <span class="err">color</span> <span class="err">i</span><span class="kc">n</span> <span class="kc">t</span><span class="err">hese</span> <span class="kc">f</span><span class="err">our</span> <span class="kc">f</span><span class="err">ields</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FF0000FF&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FF0000FF&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FF0000FF&quot;</span>
                 <span class="p">}</span>
             <span class="p">],</span>
             <span class="nt">&quot;Materials&quot;</span><span class="p">:</span> <span class="p">[</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span> <span class="err">//</span> <span class="err">do</span><span class="kc">n</span><span class="err">&#39;</span><span class="kc">t</span> <span class="err">cha</span><span class="kc">n</span><span class="err">ge</span> <span class="kc">t</span><span class="err">his!</span>
                 <span class="p">}</span>
             <span class="p">]</span>
         <span class="p">}</span>
@@ -851,7 +845,7 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <ul>
-<li>Since the color format is actually <code>AABBGGRR</code> you'll have to swap the red and blue values to get the right color. For example, the hex color code <code>C02BE1</code> would become <code>FFE12BC0</code>.</li>
+<li>Since the color format is actually <code>AABBGGRR</code> (alpha, blue, green, red) you'll have to use an inverse version of the normal hex color. For example, the hex color code <code>FF0000</code> (rgb)/<code>FFFF0000</code> (argb) would become <code>FF0000FF</code> (abgr).</li>
 </ul>
 </div>
 <!-- prettier-ignore -->
@@ -927,13 +921,13 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
       
       
         
-        <a href="../hide-header-footer-lines/" class="md-footer__link md-footer__link--next" aria-label="Next: Hide Header &amp; Footer Lines" rel="next">
+        <a href="../custom-applet-icons/" class="md-footer__link md-footer__link--next" aria-label="Next: Custom Applet Icons" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Hide Header & Footer Lines
+              Custom Applet Icons
             </div>
           </div>
           <div class="md-footer__button md-icon">
