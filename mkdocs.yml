@@ -40,6 +40,7 @@ nav:
                 Hide Header & Footer Lines: guide/examples/hide-header-footer-lines/index.md
                 Changing Applet Cursor Size: guide/examples/changing-applet-cursor-size/index.md
                 Pulling & Pushing Panes: guide/examples/pull-push-front-back/index.md
+                Disabling Hud Movement: guide/examples/disabling-clock-movement-caused-by-battery/index.md
     - Menu Documentation:
           - Introduction: menu-docs/index.md
           - Menus:
