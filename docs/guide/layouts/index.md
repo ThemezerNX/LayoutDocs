@@ -2,7 +2,7 @@
 
 # Getting Started
 
-Recommend to make a mockup first, so you know at what position you want all elements to be! Starting without one often results in messy layouts!
+It is recommend to make a mockup first, so you know at what position you want all elements to be! Starting without one often results in messy layouts!
 
 ## Figuring Out the Coordinates
 
