@@ -33,12 +33,13 @@ nav:
           - Diffing: guide/diffing.md
           - Examples:
                 Getting Started: guide/examples/index.md
-                Changing Component Sizes: guide/examples/changing-component-sizes/index.md
-                Repositioning the Gamerow: guide/examples/reposition-gamerow/index.md
+                #     Changing Component Sizes: guide/examples/changing-component-sizes/index.md
+                #     Repositioning the Gamerow: guide/examples/reposition-gamerow/index.md
                 Stationary Game Icons: guide/examples/stationary-game-icons/index.md
                 Custom Element Colors: guide/examples/custom-element-colors/index.md
+                Custom Applet Icons: guide/examples/custom-applet-icons/index.md
                 Hide Header & Footer Lines: guide/examples/hide-header-footer-lines/index.md
-                Changing Applet Cursor Size: guide/examples/changing-applet-cursor-size/index.md
+                #     Changing Applet Cursor Size: guide/examples/changing-applet-cursor-size/index.md
                 Pulling & Pushing Panes: guide/examples/pull-push-front-back/index.md
                 Disabling Hud Movement: guide/examples/disabling-clock-movement-caused-by-battery/index.md
     - Menu Documentation:

@@ -12,13 +12,17 @@ An archive. In the Switch's menu files it contains the layout files, animations 
 
 A kind of title/app/game. `Qlaunch`, `playerSelect`, `photoViewer` are all applets. [_More Info_](guide/menu-files.md#menu-files)
 
+### Applet Button
+
+An 'applet button' is a bit different from 'applet'. The album, settings, controller, etc. buttons on the Home Menu are all applet buttons.
+
 ### nxtheme
 
 Unfortunately `SZS` files from the Switch's firmware files contain copyrighted data and can't be shared online. In order to still share custom themes, the `nxtheme` format was developed. An `nxtheme` file contains theme details (name, author), images and the layout.
 
 ### exelixbg
 
-The `exelixbg` is the name of the panel that is added to the menus when injecting an image into `__Combined.bntx` file in `SZS` files.
+The `exelixbg` is the name of the panel that is created when the NXThemes Installer or Switch Theme Injector apply a background image.
 
 ### Diffing, Diffed JSON, Layout JSON
 
