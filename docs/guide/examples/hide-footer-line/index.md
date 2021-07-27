@@ -1,4 +1,4 @@
-![Preview](preview.jpg)
+![Preview](preview.jpg)  
 _[Vanilla-ish Two Row Layout](https://themezer.net/layouts/homemenu/Vanilla-ish-Two-Row-Layout-10) by gobbldygook_
 
 ---
@@ -21,7 +21,3 @@ _[Vanilla-ish Two Row Layout](https://themezer.net/layouts/homemenu/Vanilla-ish-
 	]
 }
 ```
-
-_TODO_
-
--   https://discord.com/channels/490398602250682368/495894801040801792/549270669326680064

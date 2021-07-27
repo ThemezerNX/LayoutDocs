@@ -1,4 +1,4 @@
-![Preview](preview.jpg)
+![Preview](preview.jpg)  
 _[Blue Menu - Home](https://themezer.net/themes/homemenu/Blue-Menu-Home-bd2) by Maxu/Maximum_
 
 ---

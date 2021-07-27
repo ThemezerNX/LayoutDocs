@@ -1,6 +1,6 @@
 # Repositioning and Scaling the Gamerow
 
-![Preview](preview.jpg)
+![Preview](preview.jpg)  
 _[Flow Layout](https://themezer.net/layouts/homemenu/Flow-Layout-5) by Migush_
 
 ---

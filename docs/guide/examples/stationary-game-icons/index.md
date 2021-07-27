@@ -1,4 +1,4 @@
-![Preview](preview.jpg)
+![Preview](preview.jpg)  
 _[Doge Layout](https://themezer.net/themes/homemenu/BLK--6be) by Such Meme, Many Skill_
 
 ---

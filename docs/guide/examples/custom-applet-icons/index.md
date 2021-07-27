@@ -1,4 +1,4 @@
-![Preview](preview.jpg)
+![Preview](preview.jpg)  
 _[Simple Homescreen](https://www.reddit.com/r/NXThemes/comments/ba5o8i/rainbow_simple_homescreen_with_rounded_icons_and/) by akaisora255_
 
 ---
