@@ -843,5 +843,3 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 ```
 
 ---
-
-_Credits to Mazu/Maxim and Exelix_
