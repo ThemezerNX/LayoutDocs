@@ -534,7 +534,7 @@ Color of the drop shadow.
 
 Type: `2`  
 Data: `[X, X, X, X]`  
-Common value: `[0.0, 0.0, 0.0, 1.0]` (R, G, B, A)?
+Common value: `[0.0, 0.0, 0.0, 1.0]` (R, G, B, A)?  
 Example usage: `RdtBtnIconGame`
 
 ##### Example
@@ -636,7 +636,7 @@ How the `S_DropShadowDistance` is drawn. For example, blur or solid?
 
 Type: `1`  
 Data: `[X]`  
-Common value: `5` and `4`
+Common value: `5` and `4`  
 Example usage: `RdtBtnIconGame`
 
 ##### Example
@@ -658,7 +658,7 @@ Enables/disables shadow fading?
 
 Type: `1`  
 Data: `[X]`  
-Common value: `1`
+Common value: `1`  
 Example usage: `RdtBtnIconGame`
 
 ##### Example
