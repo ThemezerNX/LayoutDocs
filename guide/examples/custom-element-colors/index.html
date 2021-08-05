@@ -10,7 +10,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.1">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.2">
     
     
       
@@ -436,22 +436,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#specific-examples" class="md-nav__link">
-    Specific Examples
+  <a href="#example-code-for-all-home-menu-elements" class="md-nav__link">
+    Example Code for all Home Menu elements
   </a>
-  
-    <nav class="md-nav" aria-label="Specific Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#battery-percent-sign" class="md-nav__link">
-    Battery Percent sign
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -764,22 +751,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#specific-examples" class="md-nav__link">
-    Specific Examples
+  <a href="#example-code-for-all-home-menu-elements" class="md-nav__link">
+    Example Code for all Home Menu elements
   </a>
-  
-    <nav class="md-nav" aria-label="Specific Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#battery-percent-sign" class="md-nav__link">
-    Battery Percent sign
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -856,30 +830,783 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
 </ul>
 </div>
 <hr />
-<h2 id="specific-examples">Specific Examples<a class="headerlink" href="#specific-examples" title="Permanent link">&para;</a></h2>
-<h3 id="battery-percent-sign">Battery Percent sign<a class="headerlink" href="#battery-percent-sign" title="Permanent link">&para;</a></h3>
+<h2 id="example-code-for-all-home-menu-elements">Example Code for all Home Menu elements<a class="headerlink" href="#example-code-for-all-home-menu-elements" title="Permanent link">&para;</a></h2>
+<p>For this, you have to replace <code>AABBGGRR</code> with the color you want. Most editors allow you to replace multiple occurrences at once.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;FileName&quot;</span><span class="p">:</span> <span class="s2">&quot;blyt/HudBatteryNum.bflyt&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;Patches&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="nt">&quot;TargetName&quot;</span><span class="p">:</span> <span class="s2">&quot;ResidentMenu.szs&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Files&quot;</span><span class="p">:</span> <span class="p">[</span>
         <span class="p">{</span>
-            <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Per&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="nt">&quot;FileName&quot;</span><span class="p">:</span> <span class="s2">&quot;blyt/RdtBtnCtrl.bflyt&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Patches&quot;</span><span class="p">:</span> <span class="p">[</span>
                 <span class="p">{</span>
-                    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
-                    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Form&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Stick&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Y&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_X&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_A&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_B&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
                 <span class="p">}</span>
             <span class="p">],</span>
-            <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
-        <span class="p">}</span>
-    <span class="p">],</span>
-    <span class="nt">&quot;Materials&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="nt">&quot;Materials&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Form&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_B&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_A&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_X&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Y&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Stick&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
         <span class="p">{</span>
-            <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Per&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span>
+            <span class="nt">&quot;FileName&quot;</span><span class="p">:</span> <span class="s2">&quot;blyt/HudTime.bflyt&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Patches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_A&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_M&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_P&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Colon&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Dot&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Comma&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;FileName&quot;</span><span class="p">:</span> <span class="s2">&quot;blyt/RdtBtnFullLauncher.bflyt&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Patches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict_00&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict_01&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict_02&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict_03&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;FileName&quot;</span><span class="p">:</span> <span class="s2">&quot;blyt/RdtBtnSet.bflyt&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Patches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;Materials&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;FileName&quot;</span><span class="p">:</span> <span class="s2">&quot;blyt/RdtBtnPvr.bflyt&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Patches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_PictMask&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict_01&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Color&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict_00&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Effect&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;34&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;Materials&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict_00&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict_01&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;FileName&quot;</span><span class="p">:</span> <span class="s2">&quot;blyt/HudBatteryNum.bflyt&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Patches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Per&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;L_GTNum_00&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;L_GTNum_01&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;L_GTNum_02&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;Materials&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Per&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_GTNum_00&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FF8080FF&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_GTNum_00&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FF8080FF&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_GTNum_00&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FF8080FF&quot;</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;FileName&quot;</span><span class="p">:</span> <span class="s2">&quot;blyt/HudSignal.bflyt&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Patches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Plane&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FF8080FF&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FF8080FF&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FF8080FF&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FF8080FF&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Wifi&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Local&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_WireLine&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;FileName&quot;</span><span class="p">:</span> <span class="s2">&quot;blyt/RdtBtnNtf.bflyt&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Patches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_PictNtf_00&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_PictNtf_01&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Effect&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;34&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;Materials&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_PictNtf_00&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_PictNtf_01&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;FileName&quot;</span><span class="p">:</span> <span class="s2">&quot;blyt/RdtBtnShop.bflyt&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Patches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Effect&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;34&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;Materials&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;FileName&quot;</span><span class="p">:</span> <span class="s2">&quot;blyt/RdtBtnPow.bflyt&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Patches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict_00&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict_01&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;Materials&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict_00&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict_01&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;FileName&quot;</span><span class="p">:</span> <span class="s2">&quot;blyt/BatteryConsole.bflyt&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Patches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Ico00&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Per&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_BatBase&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;Visible&quot;</span><span class="p">:</span> <span class="kc">false</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Charge&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Error&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_GaugeNml&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_GaugeOther&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;FileName&quot;</span><span class="p">:</span> <span class="s2">&quot;blyt/GTNumL.bflyt&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Patches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_GTNum_00&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;Materials&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_GTNum_00&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;FileName&quot;</span><span class="p">:</span> <span class="s2">&quot;blyt/GTNumM.bflyt&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Patches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_GTNum_00&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;Materials&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_GTNum_00&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
         <span class="p">}</span>
     <span class="p">]</span>
 <span class="p">}</span>
@@ -956,10 +1683,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.53c85856.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.716f8af4.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.2b46852b.min.js"></script>
       
         <script src="../../../js/color_blocks.js"></script>
       
