@@ -12,7 +12,7 @@ The Switch's menus can be found in multiple firmware files. Separated into multi
 | playerSelect    | `0100000000001007` | Player Select                                           |
 | myPage          | `0100000000001013` | User Page                                               |
 
-Almost all menu-related applets also have a `common.szs` file that defines structures that should be used throughout all menus in the applet. They often contain the bottom bar (controller status, buttons).
+Almost all menu-related applets also have a `common.szs` file that defines structures that should be used throughout all menus in the applet. They often contain the bottom bar (controller status, buttons). Custom themes unfortunately only support modifying the `common.szs` file in the `qlaunch` applet, and not the ones in `playerSelect` or `myPage`.
 
 ## Filenames
 
