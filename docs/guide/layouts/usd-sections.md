@@ -566,16 +566,15 @@ Example usage: `RdtBtnIconGame`
 }
 ```
 
-##### Tested values
+##### Values
 
-The first table is probably correct, but the second table is here just in case.
-
-| Value         | Direction |
-| ------------- | --------- |
-| 0             | right     |
-| 1.57079632679 | down      |
-| 3.14159265359 | left      |
-| 4.71238898038 | up        |
+| Value          | Direction |
+| -------------- | --------- |
+| 0              | right     |
+| 1.57079632679  | down      |
+| 3.14159265359  | left      |
+| 4.71238898038  | up        |
+| _Custom Angle_ | custom    |
 
 ---
 
