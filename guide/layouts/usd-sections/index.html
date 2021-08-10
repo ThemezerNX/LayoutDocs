@@ -10,7 +10,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.2">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.3">
     
     
       
@@ -18,10 +18,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.1118c9be.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.f7f47774.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ba0d045b.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
         
       
     
@@ -656,6 +656,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../examples/custom-cursor/" class="md-nav__link">
+        Custom Cursor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../examples/hide-footer-line/" class="md-nav__link">
         Hide Footer Line
       </a>
@@ -1215,7 +1227,8 @@ Type: <code>Int</code></p>
 <hr />
 <h3 id="color-related">Color-related<a class="headerlink" href="#color-related" title="Permanent link">&para;</a></h3>
 <h4 id="c_w"><strong><code>C_W</code></strong><a class="headerlink" href="#c_w" title="Permanent link">&para;</a></h4>
-<p>A property that is used to give elements certain colors. These colors are dynamic and can change based on the system theme.
+<p>A dynamic color controller that overwrites the BackgroundColor (Switch Layout Editor)/White Color (Switch Toolbox) of a material.<br />
+A property that is used to give elements certain colors. These colors are dynamic and can change based on the system theme.
 Used almost everywhere (all menus have to support dark and light theme).</p>
 <p>Type: <code>1</code><br />
 Data: <code>[X, X, X, X]</code></p>
@@ -1241,9 +1254,9 @@ Data: <code>[X, X, X, X]</code></p>
 <tbody>
 <tr>
 <td>0</td>
-<td>white (255,255,255)</td>
-<td>(255,255,255)</td>
-<td></td>
+<td>-</td>
+<td>-</td>
+<td>default (off)</td>
 </tr>
 <tr>
 <td>1</td>
@@ -1952,16 +1965,15 @@ Data: <code>[X, X, X, X]</code></p>
 </div>
 <hr />
 <h4 id="c_b"><strong><code>C_B</code></strong><a class="headerlink" href="#c_b" title="Permanent link">&para;</a></h4>
-<p><em>Functionality unsure</em></p>
-<p>Used to give elements certain colors?
-Doesn't really seem to do much. Seems to be used in e.g. cursor: is set to 37 somewhere.</p>
+<p>A dynamic color controller that overwrites the ForegroundColor (Switch Layout Editor)/Black Color (Switch Toolbox) of a material.<br />
+Doesn't always have an effect. Seems to be used in for example the cursor.</p>
 <p>Type: <code>1</code><br />
 Data: <code>[X, X, X, X]</code></p>
 <h5 id="example_1">Example<a class="headerlink" href="#example_1" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_B&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">65</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
@@ -1981,127 +1993,30 @@ Data: <code>[X]</code></p>
 </code></pre></div>
 <h5 id="tested-values_1">Tested values<a class="headerlink" href="#tested-values_1" title="Permanent link">&para;</a></h5>
 <div class="color-table">
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Light theme</th>
-<th>Comments</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>white</td>
-<td>default - probably 'off'</td>
-</tr>
-<tr>
-<td>1</td>
-<td>white</td>
-<td></td>
-</tr>
-<tr>
-<td>2</td>
-<td>white</td>
-<td></td>
-</tr>
-<tr>
-<td>3</td>
-<td>white</td>
-<td></td>
-</tr>
-<tr>
-<td>4</td>
-<td>black</td>
-<td></td>
-</tr>
-<tr>
-<td>5</td>
-<td>black</td>
-<td></td>
-</tr>
-<tr>
-<td>6</td>
-<td>black</td>
-<td></td>
-</tr>
-<tr>
-<td>7</td>
-<td>black</td>
-<td></td>
-</tr>
-<tr>
-<td>8</td>
-<td>dark blue (19,29,90)</td>
-<td></td>
-</tr>
-<tr>
-<td>9</td>
-<td>black</td>
-<td></td>
-</tr>
-<tr>
-<td>10</td>
-<td>grey</td>
-<td></td>
-</tr>
-<tr>
-<td>11</td>
-<td>black</td>
-<td></td>
-</tr>
-<tr>
-<td>12</td>
-<td>blue-purpleish (50,80,240)</td>
-<td></td>
-</tr>
-<tr>
-<td>13</td>
-<td>blue-purpleish (50,80,240)</td>
-<td></td>
-</tr>
-<tr>
-<td>14</td>
-<td>white</td>
-<td></td>
-</tr>
-<tr>
-<td>15</td>
-<td>ligher grey</td>
-<td>Seems to overlap the entrance homebutton icon</td>
-</tr>
-<tr>
-<td>16</td>
-<td>white</td>
-<td></td>
-</tr>
-<tr>
-<td>17</td>
-<td>white</td>
-<td></td>
-</tr>
-<tr>
-<td>18</td>
-<td>white</td>
-<td></td>
-</tr>
-<tr>
-<td>19</td>
-<td>black</td>
-<td></td>
-</tr>
-<tr>
-<td>20</td>
-<td>white</td>
-<td></td>
-</tr>
-<tr>
-<td>42</td>
-<td>grey</td>
-<td>dark theme: white</td>
-</tr>
-</tbody>
-</table>
+<p>| Value | Light theme                | Comments                                      |
+| ----- | -------------------------- | --------------------------------------------- | ------------- |
+| 0     | -                          | -                                             | default (off) |
+| 1     | white                      |                                               |
+| 2     | white                      |                                               |
+| 3     | white                      |                                               |
+| 4     | black                      |                                               |
+| 5     | black                      |                                               |
+| 6     | black                      |                                               |
+| 7     | black                      |                                               |
+| 8     | dark blue (19,29,90)       |                                               |
+| 9     | black                      |                                               |
+| 10    | grey                       |                                               |
+| 11    | black                      |                                               |
+| 12    | blue-purpleish (50,80,240) |                                               |
+| 13    | blue-purpleish (50,80,240) |                                               |
+| 14    | white                      |                                               |
+| 15    | ligher grey                | Seems to overlap the entrance homebutton icon |
+| 16    | white                      |                                               |
+| 17    | white                      |                                               |
+| 18    | white                      |                                               |
+| 19    | black                      |                                               |
+| 20    | white                      |                                               |
+| 42    | grey                       | dark theme: white                             |</p>
 </div>
 <hr />
 <h4 id="c_ti"><strong><code>C_TI</code></strong><a class="headerlink" href="#c_ti" title="Permanent link">&para;</a></h4>
@@ -2296,63 +2211,34 @@ Example usage: <code>RdtBtnIconGame</code></p>
     <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
-<h5 id="tested-values_3">Tested values<a class="headerlink" href="#tested-values_3" title="Permanent link">&para;</a></h5>
-<p>The first table is probably correct, but the second table is here just in case.</p>
+<h5 id="values">Values<a class="headerlink" href="#values" title="Permanent link">&para;</a></h5>
 <table>
 <thead>
 <tr>
 <th>Value</th>
 <th>Direction</th>
-<th>Comment</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>0</td>
 <td>right</td>
-<td></td>
 </tr>
 <tr>
 <td>1.57079632679</td>
 <td>down</td>
-<td>GameIcon shadows are down, right? If yes, this is correct.</td>
 </tr>
 <tr>
 <td>3.14159265359</td>
 <td>left</td>
-<td></td>
 </tr>
 <tr>
 <td>4.71238898038</td>
 <td>up</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>OR</p>
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Direction</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>up</td>
 </tr>
 <tr>
-<td>1.57079632679</td>
-<td>right</td>
-</tr>
-<tr>
-<td>3.14159265359</td>
-<td>down</td>
-</tr>
-<tr>
-<td>4.71238898038</td>
-<td>right</td>
+<td><em>Custom Angle</em></td>
+<td>custom</td>
 </tr>
 </tbody>
 </table>
@@ -2486,7 +2372,7 @@ Example usage: <code>RdtBtnIconGame</code></p>
     <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.2b46852b.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.29db7785.min.js"></script>
       
         <script src="../../../js/color_blocks.js"></script>
       

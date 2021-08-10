@@ -10,7 +10,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.2">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.3">
     
     
       
@@ -18,10 +18,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.1118c9be.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.f7f47774.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ba0d045b.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
         
       
     
@@ -436,9 +436,22 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#custom-cursor-color" class="md-nav__link">
+    Custom Cursor Color
+  </a>
+  
+    <nav class="md-nav" aria-label="Custom Cursor Color">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#example-code-for-all-home-menu-elements" class="md-nav__link">
     Example Code for all Home Menu elements
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -457,6 +470,18 @@
     <li class="md-nav__item">
       <a href="../custom-applet-icons/" class="md-nav__link">
         Custom Applet Icons
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../custom-cursor/" class="md-nav__link">
+        Custom Cursor
       </a>
     </li>
   
@@ -751,9 +776,22 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#custom-cursor-color" class="md-nav__link">
+    Custom Cursor Color
+  </a>
+  
+    <nav class="md-nav" aria-label="Custom Cursor Color">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#example-code-for-all-home-menu-elements" class="md-nav__link">
     Example Code for all Home Menu elements
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -769,8 +807,6 @@
             <article class="md-content__inner md-typeset">
               
                 
-                
-                  <h1>Custom Element Colors</h1>
                 
                 <p><img alt="Preview" src="preview.jpg" /><br />
 <em><a href="https://themezer.net/themes/homemenu/Blue-Menu-Home-bd2">Blue Menu - Home</a> by Maxu/Maximum</em></p>
@@ -819,19 +855,19 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <ul>
-<li>Since the color format is actually <code>AABBGGRR</code> (alpha, blue, green, red) you'll have to use an inverse version of the normal hex color. For example, the hex color code <code>FF0000</code> (rgb)/<code>FFFF0000</code> (argb) would become <code>FF0000FF</code> (abgr).</li>
-</ul>
-</div>
-<!-- prettier-ignore -->
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<ul>
-<li>It is currently unknown how exactly to change the cursor's default blue pulse color, but <code>P_Grow</code> and <code>P_Main</code> in <code>Cursor3.bflyt</code> contain color codes. Changing these will change the secondary pulse color. The primary pulse color is probabily a combination of these panes and their <a href="../../../definitions/#usd-section"><code>usd</code> sections</a>.</li>
+<li>Since the color format is actually <code>FFbbggrr</code> (alpha, blue, green, red) you'll have to use a reversed version of the normal hex color. For example, the hex color code <code>FF0000</code> (rgb)/<code>FF0000FF</code> (rgb) would become <code>FF0000FF</code> (abgr).</li>
 </ul>
 </div>
 <hr />
+<h1 id="custom-cursor-color">Custom Cursor Color<a class="headerlink" href="#custom-cursor-color" title="Permanent link">&para;</a></h1>
+<p><a href="../custom-cursor/">See this page</a></p>
 <h2 id="example-code-for-all-home-menu-elements">Example Code for all Home Menu elements<a class="headerlink" href="#example-code-for-all-home-menu-elements" title="Permanent link">&para;</a></h2>
-<p>For this, you have to replace <code>AABBGGRR</code> with the color you want. Most editors allow you to replace multiple occurrences at once.</p>
+<p>For this, you have to replace <code>FFbbggrr</code> with the color you want. Most editors allow you to replace multiple occurrences at once.</p>
+<!-- prettier-ignore -->
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>DO NOT</strong> change the alpha channel in this example (keep the <code>FF</code>). Only modify lowercase <code>bbggrr</code>.</p>
+</div>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;TargetName&quot;</span><span class="p">:</span> <span class="s2">&quot;ResidentMenu.szs&quot;</span><span class="p">,</span>
     <span class="nt">&quot;Files&quot;</span><span class="p">:</span> <span class="p">[</span>
@@ -847,10 +883,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Stick&quot;</span><span class="p">,</span>
@@ -861,10 +897,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Y&quot;</span><span class="p">,</span>
@@ -875,10 +911,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_X&quot;</span><span class="p">,</span>
@@ -889,10 +925,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_A&quot;</span><span class="p">,</span>
@@ -903,10 +939,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_B&quot;</span><span class="p">,</span>
@@ -917,10 +953,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">}</span>
             <span class="p">],</span>
             <span class="nt">&quot;Materials&quot;</span><span class="p">:</span> <span class="p">[</span>
@@ -962,10 +998,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_M&quot;</span><span class="p">,</span>
@@ -976,10 +1012,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_P&quot;</span><span class="p">,</span>
@@ -990,10 +1026,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Colon&quot;</span><span class="p">,</span>
@@ -1004,10 +1040,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Dot&quot;</span><span class="p">,</span>
@@ -1018,10 +1054,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Comma&quot;</span><span class="p">,</span>
@@ -1032,10 +1068,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">}</span>
             <span class="p">]</span>
         <span class="p">},</span>
@@ -1051,10 +1087,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict_01&quot;</span><span class="p">,</span>
@@ -1065,10 +1101,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict_02&quot;</span><span class="p">,</span>
@@ -1079,10 +1115,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict_03&quot;</span><span class="p">,</span>
@@ -1093,10 +1129,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">}</span>
             <span class="p">]</span>
         <span class="p">},</span>
@@ -1112,10 +1148,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">}</span>
             <span class="p">],</span>
             <span class="nt">&quot;Materials&quot;</span><span class="p">:</span> <span class="p">[</span>
@@ -1137,10 +1173,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict_01&quot;</span><span class="p">,</span>
@@ -1151,10 +1187,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Color&quot;</span><span class="p">,</span>
@@ -1165,10 +1201,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict_00&quot;</span><span class="p">,</span>
@@ -1179,10 +1215,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Effect&quot;</span><span class="p">,</span>
@@ -1218,10 +1254,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;L_GTNum_00&quot;</span><span class="p">,</span>
@@ -1299,10 +1335,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Local&quot;</span><span class="p">,</span>
@@ -1313,10 +1349,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_WireLine&quot;</span><span class="p">,</span>
@@ -1327,10 +1363,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">}</span>
             <span class="p">]</span>
         <span class="p">},</span>
@@ -1346,10 +1382,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_PictNtf_01&quot;</span><span class="p">,</span>
@@ -1360,10 +1396,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Effect&quot;</span><span class="p">,</span>
@@ -1399,10 +1435,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Effect&quot;</span><span class="p">,</span>
@@ -1434,10 +1470,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Pict_01&quot;</span><span class="p">,</span>
@@ -1448,10 +1484,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">}</span>
             <span class="p">],</span>
             <span class="nt">&quot;Materials&quot;</span><span class="p">:</span> <span class="p">[</span>
@@ -1477,10 +1513,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Per&quot;</span><span class="p">,</span>
@@ -1491,10 +1527,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_BatBase&quot;</span><span class="p">,</span>
@@ -1509,10 +1545,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Error&quot;</span><span class="p">,</span>
@@ -1523,10 +1559,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_GaugeNml&quot;</span><span class="p">,</span>
@@ -1537,10 +1573,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
                     <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_GaugeOther&quot;</span><span class="p">,</span>
@@ -1551,10 +1587,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">}</span>
             <span class="p">]</span>
         <span class="p">},</span>
@@ -1570,10 +1606,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">}</span>
             <span class="p">],</span>
             <span class="nt">&quot;Materials&quot;</span><span class="p">:</span> <span class="p">[</span>
@@ -1595,10 +1631,10 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
                             <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
                         <span class="p">}</span>
                     <span class="p">],</span>
-                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;AABBGGRR&quot;</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
                 <span class="p">}</span>
             <span class="p">],</span>
             <span class="nt">&quot;Materials&quot;</span><span class="p">:</span> <span class="p">[</span>
@@ -1685,7 +1721,7 @@ A theme that makes use of this functionality is <a href="https://themezer.net/pa
     <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.2b46852b.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.29db7785.min.js"></script>
       
         <script src="../../../js/color_blocks.js"></script>
       

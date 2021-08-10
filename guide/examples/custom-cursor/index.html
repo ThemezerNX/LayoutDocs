@@ -1,0 +1,1281 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.3">
+    
+    
+      
+        <title>Custom Cursor - LayoutDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.f7f47774.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-material-color" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="LayoutDocs" class="md-header__button md-logo" aria-label="LayoutDocs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LayoutDocs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Custom Cursor
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="LayoutDocs" class="md-nav__button md-logo" aria-label="LayoutDocs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    LayoutDocs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        Creating Custom Layouts
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Creating Custom Layouts" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Creating Custom Layouts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../menu-files/" class="md-nav__link">
+        Menu Files
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../filetypes/" class="md-nav__link">
+        Filetypes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        Layouts
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Layouts" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Layouts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/usd-sections/" class="md-nav__link">
+        USD Sections
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
+      
+      <label class="md-nav__link" for="__nav_2_5">
+        Animations
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Animations" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          Animations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../animations/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diffing/" class="md-nav__link">
+        Diffing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" type="checkbox" id="__nav_2_7" checked>
+      
+      <label class="md-nav__link" for="__nav_2_7">
+        Examples
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Examples" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_7">
+          <span class="md-nav__icon md-icon"></span>
+          Examples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stationary-game-icons/" class="md-nav__link">
+        Stationary Game Icons
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../custom-element-colors/" class="md-nav__link">
+        Custom Element Colors
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../custom-applet-icons/" class="md-nav__link">
+        Custom Applet Icons
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Custom Cursor
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Custom Cursor
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-material-color" class="md-nav__link">
+    1. Material Color
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-usd-color" class="md-nav__link">
+    2. USD Color
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-a-custom-color" class="md-nav__link">
+    Setting a custom color
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stock-animation-custom-colors" class="md-nav__link">
+    Stock Animation, Custom Colors
+  </a>
+  
+    <nav class="md-nav" aria-label="Stock Animation, Custom Colors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#result" class="md-nav__link">
+    Result
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-animation-two-colors" class="md-nav__link">
+    No Animation, Two Colors
+  </a>
+  
+    <nav class="md-nav" aria-label="No Animation, Two Colors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#result_1" class="md-nav__link">
+    Result
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-animation-custom-colors" class="md-nav__link">
+    No Animation, Custom Colors
+  </a>
+  
+    <nav class="md-nav" aria-label="No Animation, Custom Colors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#result_2" class="md-nav__link">
+    Result
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hide-footer-line/" class="md-nav__link">
+        Hide Footer Line
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hide-header-lines/" class="md-nav__link">
+        Hide Header Lines
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pull-push-front-back/" class="md-nav__link">
+        Pulling & Pushing Panes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../disabling-clock-movement-caused-by-battery/" class="md-nav__link">
+        Disabling Hud Movement
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Menu Documentation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Menu Documentation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Menu Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../menu-docs/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        Menus
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Menus" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Menus
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../menu-docs/menus/common/" class="md-nav__link">
+        common
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../menu-docs/menus/ResidentMenu/" class="md-nav__link">
+        Home Menu
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../menu-docs/menus/Flaunch/" class="md-nav__link">
+        All Apps
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../definitions/" class="md-nav__link">
+        Definitions
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Extras
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Extras" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Extras
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../extras/guides/" class="md-nav__link">
+        Guides
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../extras/tools/" class="md-nav__link">
+        Tools
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../extras/discord-servers/" class="md-nav__link">
+        Discord Servers
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../extras/other/" class="md-nav__link">
+        Other
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-material-color" class="md-nav__link">
+    1. Material Color
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-usd-color" class="md-nav__link">
+    2. USD Color
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-a-custom-color" class="md-nav__link">
+    Setting a custom color
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stock-animation-custom-colors" class="md-nav__link">
+    Stock Animation, Custom Colors
+  </a>
+  
+    <nav class="md-nav" aria-label="Stock Animation, Custom Colors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#result" class="md-nav__link">
+    Result
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-animation-two-colors" class="md-nav__link">
+    No Animation, Two Colors
+  </a>
+  
+    <nav class="md-nav" aria-label="No Animation, Two Colors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#result_1" class="md-nav__link">
+    Result
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-animation-custom-colors" class="md-nav__link">
+    No Animation, Custom Colors
+  </a>
+  
+    <nav class="md-nav" aria-label="No Animation, Custom Colors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#result_2" class="md-nav__link">
+    Result
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Custom Cursor</h1>
+                
+                <p>You've made a theme and all that is left is to make the cursor match the style.
+The cursor exists of two panes: <code>P_Main</code> and <code>P_Grow</code>. These can be found in <code>Cursor3.bflyt</code> (every <code>szs</code> has one). <code>P_Grow</code> is positioned on top of <code>P_Main</code> and both are always enabled.</p>
+<p><img alt="P_Main and P_Grow" src="two_panes.gif" />
+<em>The two layers P_Main (left) and P_Grow (right) separated</em></p>
+<!-- prettier-ignore -->
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Note that</p>
+<ul>
+<li>BackgroundColor (Switch Layout Editor) == White Color (Switch Toolbox)</li>
+<li>ForegroundColor (Switch Layout Editor) == Black Color (Switch Toolbox)</li>
+</ul>
+<p>These two fields can be found under the Materials section in both programs.</p>
+</div>
+<p>The cursor color is actually set in two ways:</p>
+<h2 id="1-material-color">1. Material Color<a class="headerlink" href="#1-material-color" title="Permanent link">&para;</a></h2>
+<p>The material colors are what is visible in the gif. The following are the default values:</p>
+<p><code>P_Main</code></p>
+<ul>
+<li>BackgroundColor/White Color: <span class="color-text" markdown="1"><code>rgba(0,193,242)</code></span></li>
+<li>ForegroundColor/Black Color: <span class="color-text" markdown="1"><code>rgba(0,221,165)</code></span></li>
+</ul>
+<p><code>P_Grow</code></p>
+<ul>
+<li>BackgroundColor/White Color: <span class="color-text" markdown="1"><code>rgba(22,158,244)</code></span></li>
+<li>ForegroundColor/Black Color: <span class="color-text" markdown="1"><code>rgba(0,204,44)</code></span></li>
+</ul>
+<h2 id="2-usd-color">2. USD Color<a class="headerlink" href="#2-usd-color" title="Permanent link">&para;</a></h2>
+<p>Both panes also have a usd section with <code>C_W</code> and <code>C_B</code> set. The following are the default values (12.1.0):</p>
+<ul>
+<li><code>P_Main</code><ul>
+<li><code>C_B</code>: <code>37</code></li>
+<li><code>C_W</code>: <code>65</code></li>
+</ul>
+</li>
+<li><code>P_Grow</code><ul>
+<li><code>C_B</code>: <code>38</code></li>
+<li><code>C_W</code>: <code>29</code></li>
+</ul>
+</li>
+</ul>
+<p>The USD Color actually overwrites the Material color. This way the material color can dynamically change based on the system theme (White/Black).</p>
+<h2 id="setting-a-custom-color">Setting a custom color<a class="headerlink" href="#setting-a-custom-color" title="Permanent link">&para;</a></h2>
+<p>I recommend you use the Switch Toolbox for this (In LayoutKit: <code>Settings &gt; Preferred editor &gt; Switch-Toolbox</code>). It can properly preview what your animation will look like.</p>
+<ol>
+<li>The first thing to do for a custom cursor is disable the USD effects. Change the <code>C_B</code> and <code>C_W</code> for <code>P_Main</code> and <code>P_Grow</code> to <code>[0, 0, 0, 0]</code>
+   Next</li>
+<li>
+<p>Set you custom colors in the <code>P_Grow</code> materials. Set <code>P_Main</code> to a slightly lighter variant of your colors. For example,</p>
+<ul>
+<li><code>P_Main</code><ul>
+<li>BackgroundColor/White Color: <span class="color-text" markdown="1"><code>rgba(40,224,161)</code></span></li>
+<li>ForegroundColor/Black Color: <span class="color-text" markdown="1"><code>rgba(229,43,183)</code></span></li>
+</ul>
+</li>
+<li><code>P_Grow</code><ul>
+<li>BackgroundColor/White Color: <span class="color-text" markdown="1"><code>rgba(10,179,121)</code></span></li>
+<li>ForegroundColor/Black Color: <span class="color-text" markdown="1"><code>rgba(180,10,134)</code></span></li>
+</ul>
+</li>
+</ul>
+<p>You always want to the ForegroundColor/Black Color to have opacity <code>0</code> (default). If it doesn't, the middle (so it covers the whole button instead of just the edge) of the cursor will be filled with the color as well.</p>
+</li>
+</ol>
+<hr />
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<!-- prettier-ignore -->
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<ul>
+<li>Since the color format is actually <code>aabbggrr</code> (alpha, blue, green, red) you'll have to use a reversed version of the normal hex color. For example, the hex color code <code>FF0000</code> (rgb)/<code>FF0000FF</code> (rgba) would become <code>FF0000FF</code> (abgr).</li>
+</ul>
+</div>
+<h3 id="stock-animation-custom-colors">Stock Animation, Custom Colors<a class="headerlink" href="#stock-animation-custom-colors" title="Permanent link">&para;</a></h3>
+<p>This example keeps the stock animation and only changes the colors.<br />
+You need four colors: two base colors and two slightly lighter variants (see <a href="#setting-a-custom-color#:~:text=0%2C%200%5D%20Next-,Set%20you%20custom,-colors%20in%20the">Setting a custom color, step 2</a>)</p>
+<!-- prettier-ignore -->
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>DO NOT</strong> change the alpha channel in this example (keep the <code>FF</code> and <code>00</code>). Only modify lowercase <code>bbggrr</code>.</p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;TargetName&quot;</span><span class="p">:</span> <span class="s2">&quot;ResidentMenu.szs&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Files&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;FileName&quot;</span><span class="p">:</span> <span class="s2">&quot;blyt/Cursor3.bflyt&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Patches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Main&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_B&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Grow&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_B&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;Materials&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Grow&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span> <span class="err">//</span> <span class="err">se</span><span class="kc">t</span> <span class="err">your</span> <span class="kc">f</span><span class="err">irs</span><span class="kc">t</span> <span class="err">color</span> <span class="err">here</span>
+                    <span class="nt">&quot;ForegroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;00bbggrr&quot;</span> <span class="err">//</span> <span class="err">se</span><span class="kc">t</span> <span class="err">your</span> <span class="err">seco</span><span class="kc">n</span><span class="err">d</span> <span class="err">color</span> <span class="err">here</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Main&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span> <span class="err">//</span> <span class="err">se</span><span class="kc">t</span> <span class="kc">t</span><span class="err">he</span> <span class="err">sligh</span><span class="kc">tl</span><span class="err">y</span> <span class="err">ligh</span><span class="kc">ter</span> <span class="err">varia</span><span class="kc">nt</span> <span class="err">o</span><span class="kc">f</span> <span class="err">your</span> <span class="kc">f</span><span class="err">irs</span><span class="kc">t</span> <span class="err">color</span> <span class="err">here</span>
+                    <span class="nt">&quot;ForegroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;00bbggrr&quot;</span> <span class="err">//</span> <span class="err">se</span><span class="kc">t</span> <span class="kc">t</span><span class="err">he</span> <span class="err">sligh</span><span class="kc">tl</span><span class="err">y</span> <span class="err">ligh</span><span class="kc">ter</span> <span class="err">varia</span><span class="kc">nt</span> <span class="err">o</span><span class="kc">f</span> <span class="err">your</span> <span class="err">seco</span><span class="kc">n</span><span class="err">d</span> <span class="err">color</span> <span class="err">here</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="result">Result<a class="headerlink" href="#result" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="stock_animation_custom_colors.gif" /></p>
+<h3 id="no-animation-two-colors">No Animation, Two Colors<a class="headerlink" href="#no-animation-two-colors" title="Permanent link">&para;</a></h3>
+<p>This example disables the animation, but still shows two colors.<br />
+You need Two colors color.</p>
+<!-- prettier-ignore -->
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>DO NOT</strong> change the alpha channel in this example (keep the <code>FF</code> and <code>00</code>). Only modify lowercase <code>bbggrr</code>.</p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;TargetName&quot;</span><span class="p">:</span> <span class="s2">&quot;ResidentMenu.szs&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Files&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;FileName&quot;</span><span class="p">:</span> <span class="s2">&quot;blyt/Cursor3.bflyt&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Patches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Main&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_B&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Grow&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;Visible&quot;</span><span class="p">:</span> <span class="kc">false</span>
+                <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;Materials&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Main&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span> <span class="err">//</span> <span class="err">se</span><span class="kc">t</span> <span class="err">your</span> <span class="kc">f</span><span class="err">irs</span><span class="kc">t</span> <span class="err">color</span> <span class="err">here</span>
+                    <span class="nt">&quot;ForegroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;00bbggrr&quot;</span> <span class="err">//</span> <span class="err">se</span><span class="kc">t</span> <span class="err">your</span> <span class="err">seco</span><span class="kc">n</span><span class="err">d</span> <span class="err">color</span> <span class="err">here</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;Anims&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;FileName&quot;</span><span class="p">:</span> <span class="s2">&quot;anim/Cursor3_Wait.bflan&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;AnimJson&quot;</span><span class="p">:</span> <span class="s2">&quot;{\&quot;LittleEndian\&quot;:true,\&quot;Version\&quot;:150994944,\&quot;pat1\&quot;:{\&quot;AnimationOrder\&quot;:0,\&quot;Name\&quot;:\&quot;Wait\&quot;,\&quot;ChildBinding\&quot;:90,\&quot;Groups\&quot;:[\&quot;G_Wait\&quot;],\&quot;Unk_StartOfFile\&quot;:0,\&quot;Unk_EndOfFile\&quot;:0,\&quot;Unk_EndOfHeader\&quot;:\&quot;ACoDAAAAAA==\&quot;},\&quot;pai1\&quot;:{\&quot;FrameSize\&quot;:720,\&quot;Flags\&quot;:1,\&quot;Textures\&quot;:[],\&quot;Entries\&quot;:[]}}&quot;</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="result_1">Result<a class="headerlink" href="#result_1" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="no_animation_two_colors.jpg" /></p>
+<h3 id="no-animation-custom-colors">No Animation, Custom Colors<a class="headerlink" href="#no-animation-custom-colors" title="Permanent link">&para;</a></h3>
+<p>This example disables the animation and changes the cursor to be one or more colors. You can get creative since you can modify the four corners individually.<br />
+You need one or more colors.</p>
+<!-- prettier-ignore -->
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Note that the <code>ColorXX</code> fields mean the following:</p>
+<ul>
+<li>TL = Top Left</li>
+<li>TR = Top Right</li>
+<li>BL = Bottom Left</li>
+<li>BR = Bottom Right</li>
+</ul>
+</div>
+<!-- prettier-ignore -->
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>DO NOT</strong> change the alpha channel in this example (keep the <code>FF</code>). Only modify lowercase <code>bbggrr</code>.</p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;TargetName&quot;</span><span class="p">:</span> <span class="s2">&quot;ResidentMenu.szs&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Files&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;FileName&quot;</span><span class="p">:</span> <span class="s2">&quot;blyt/Cursor3.bflyt&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Patches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Main&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;UsdPatches&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_B&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                        <span class="p">}</span>
+                    <span class="p">],</span>
+                    <span class="nt">&quot;ColorTL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span> <span class="err">//</span> <span class="err">se</span><span class="kc">t</span> <span class="err">your</span> <span class="err">cus</span><span class="kc">t</span><span class="err">om</span> <span class="err">color(s)</span> <span class="err">i</span><span class="kc">n</span> <span class="kc">t</span><span class="err">hese</span> <span class="kc">f</span><span class="err">our</span> <span class="kc">f</span><span class="err">ields</span>
+                    <span class="nt">&quot;ColorTR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBL&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ColorBR&quot;</span><span class="p">:</span> <span class="s2">&quot;FFbbggrr&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;PaneName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Grow&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;Visible&quot;</span><span class="p">:</span> <span class="kc">false</span>
+                <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;Materials&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;MaterialName&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Main&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;BackgroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;FFFFFFFF&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;ForegroundColor&quot;</span><span class="p">:</span> <span class="s2">&quot;00FFFFFF&quot;</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="result_2">Result<a class="headerlink" href="#result_2" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="no_animation_one_color.jpg" /><br />
+<em>Color value: <code>FF0000FF</code> (red)</em></p>
+<p><em><img alt="" src="no_animation_multiple_colors.jpg" /></em><br />
+Color values respectively: <code>FF00FF00</code>, <code>FFFF0000</code>, <code>FFFF0000</code>, <code>FF00FF00</code></p>
+<hr />
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../custom-applet-icons/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Custom Applet Icons" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Custom Applet Icons
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../hide-footer-line/" class="md-footer__link md-footer__link--next" aria-label="Next: Hide Footer Line" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Hide Footer Line
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.29db7785.min.js"></script>
+      
+        <script src="../../../js/color_blocks.js"></script>
+      
+    
+  </body>
+</html>
