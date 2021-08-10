@@ -467,18 +467,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#setting-a-custom-color" class="md-nav__link">
-    Setting a custom color
+  <a href="#examples-simple" class="md-nav__link">
+    Examples (Simple)
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
+    <nav class="md-nav" aria-label="Examples (Simple)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -543,6 +536,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instructions-advanced" class="md-nav__link">
+    Instructions (Advanced)
+  </a>
   
 </li>
       
@@ -850,18 +850,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#setting-a-custom-color" class="md-nav__link">
-    Setting a custom color
+  <a href="#examples-simple" class="md-nav__link">
+    Examples (Simple)
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
+    <nav class="md-nav" aria-label="Examples (Simple)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -929,6 +922,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#instructions-advanced" class="md-nav__link">
+    Instructions (Advanced)
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -949,8 +949,8 @@ The cursor exists of two panes: <code>P_Main</code> and <code>P_Grow</code>. The
 <p><img alt="P_Main and P_Grow" src="two_panes.gif" />
 <em>The two layers P_Main (left) and P_Grow (right) separated</em></p>
 <!-- prettier-ignore -->
-<div class="admonition important">
-<p class="admonition-title">Important</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
 <p>Note that</p>
 <ul>
 <li>BackgroundColor (Switch Layout Editor) == White Color (Switch Toolbox)</li>
@@ -972,7 +972,7 @@ The cursor exists of two panes: <code>P_Main</code> and <code>P_Grow</code>. The
 <li>ForegroundColor/Black Color: <span class="color-text" markdown="1"><code>rgba(0,204,44)</code></span></li>
 </ul>
 <h2 id="2-usd-color">2. USD Color<a class="headerlink" href="#2-usd-color" title="Permanent link">&para;</a></h2>
-<p>Both panes also have a usd section with <code>C_W</code> and <code>C_B</code> set. The following are the default values (12.1.0):</p>
+<p>Both panes also have a USD section with <code>C_W</code> and <code>C_B</code> set. The following are the default values:</p>
 <ul>
 <li><code>P_Main</code><ul>
 <li><code>C_B</code>: <code>37</code></li>
@@ -986,30 +986,8 @@ The cursor exists of two panes: <code>P_Main</code> and <code>P_Grow</code>. The
 </li>
 </ul>
 <p>The USD Color actually overwrites the Material color. This way the material color can dynamically change based on the system theme (White/Black).</p>
-<h2 id="setting-a-custom-color">Setting a custom color<a class="headerlink" href="#setting-a-custom-color" title="Permanent link">&para;</a></h2>
-<p>I recommend you use the Switch Toolbox for this (In LayoutKit: <code>Settings &gt; Preferred editor &gt; Switch-Toolbox</code>). It can properly preview what your animation will look like.</p>
-<ol>
-<li>The first thing to do for a custom cursor is disable the USD effects. Change the <code>C_B</code> and <code>C_W</code> for <code>P_Main</code> and <code>P_Grow</code> to <code>[0, 0, 0, 0]</code>
-   Next</li>
-<li>
-<p>Set you custom colors in the <code>P_Grow</code> materials. Set <code>P_Main</code> to a slightly lighter variant of your colors. For example,</p>
-<ul>
-<li><code>P_Main</code><ul>
-<li>BackgroundColor/White Color: <span class="color-text" markdown="1"><code>rgba(40,224,161)</code></span></li>
-<li>ForegroundColor/Black Color: <span class="color-text" markdown="1"><code>rgba(229,43,183)</code></span></li>
-</ul>
-</li>
-<li><code>P_Grow</code><ul>
-<li>BackgroundColor/White Color: <span class="color-text" markdown="1"><code>rgba(10,179,121)</code></span></li>
-<li>ForegroundColor/Black Color: <span class="color-text" markdown="1"><code>rgba(180,10,134)</code></span></li>
-</ul>
-</li>
-</ul>
-<p>You always want to the ForegroundColor/Black Color to have opacity <code>0</code> (default). If it doesn't, the middle (so it covers the whole button instead of just the edge) of the cursor will be filled with the color as well.</p>
-</li>
-</ol>
 <hr />
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<h2 id="examples-simple">Examples (Simple)<a class="headerlink" href="#examples-simple" title="Permanent link">&para;</a></h2>
 <!-- prettier-ignore -->
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -1198,6 +1176,28 @@ You need one or more colors.</p>
 <em>Color value: <code>FF0000FF</code> (red)</em></p>
 <p><em><img alt="" src="no_animation_multiple_colors.jpg" /></em><br />
 Color values respectively: <code>FF00FF00</code>, <code>FFFF0000</code>, <code>FFFF0000</code>, <code>FF00FF00</code></p>
+<h2 id="instructions-advanced">Instructions (Advanced)<a class="headerlink" href="#instructions-advanced" title="Permanent link">&para;</a></h2>
+<p>I recommend you use the Switch Toolbox if you want to mess with it yourself (In LayoutKit: <code>Settings &gt; Preferred editor &gt; Switch-Toolbox</code>). It can preview what your animation will look like. If you don't, there are a few examples further down this page.</p>
+<ol>
+<li>The first thing to do for a custom cursor is disable the USD effects. Change the <code>C_B</code> and <code>C_W</code> for <code>P_Main</code> and <code>P_Grow</code> to <code>[0, 0, 0, 0]</code>
+   Next</li>
+<li>
+<p>Set you custom colors in the <code>P_Grow</code> materials. Set <code>P_Main</code> to a slightly lighter variant of your colors. For example,</p>
+<ul>
+<li><code>P_Main</code><ul>
+<li>BackgroundColor/White Color: <span class="color-text" markdown="1"><code>rgba(40,224,161)</code></span></li>
+<li>ForegroundColor/Black Color: <span class="color-text" markdown="1"><code>rgba(229,43,183)</code></span></li>
+</ul>
+</li>
+<li><code>P_Grow</code><ul>
+<li>BackgroundColor/White Color: <span class="color-text" markdown="1"><code>rgba(10,179,121)</code></span></li>
+<li>ForegroundColor/Black Color: <span class="color-text" markdown="1"><code>rgba(180,10,134)</code></span></li>
+</ul>
+</li>
+</ul>
+<p>You always want to the ForegroundColor/Black Color to have opacity <code>0</code> (default). If it doesn't, the middle (so it covers the whole button instead of just the edge) of the cursor will be filled with the color as well.</p>
+</li>
+</ol>
 <hr />
                 
               
