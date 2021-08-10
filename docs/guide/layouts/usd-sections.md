@@ -81,7 +81,7 @@ These are the USD sections found throughout the home menu. They cannot be applie
 
 #### **`C_W`**
 
-A color controller for the BackgroundColor (Switch Layout Editor)/White Color (Switch Toolbox) of a material.  
+A dynamic color controller that overwrites the BackgroundColor (Switch Layout Editor)/White Color (Switch Toolbox) of a material.  
 A property that is used to give elements certain colors. These colors are dynamic and can change based on the system theme.
 Used almost everywhere (all menus have to support dark and light theme).
 
@@ -106,7 +106,7 @@ Often only the first `X` is non-`0`. Sometimes multiple `X`s are non-`0`, but ch
 
 | Value | Light theme                   | Dark theme    | Usage                                |
 | ----- | ----------------------------- | ------------- | ------------------------------------ |
-| 0     | white (255,255,255)           | (255,255,255) |                                      |
+| 0     | -                             | -             | default (off)                        |
 | 1     | white (255,255,255)           | (29,32,37)    |                                      |
 | 2     | black (0,0,0)                 | (0,0,0)       |                                      |
 | 3     | green (114,201,0)             | (149,231,0)   |                                      |
@@ -231,7 +231,7 @@ Often only the first `X` is non-`0`. Sometimes multiple `X`s are non-`0`, but ch
 
 #### **`C_B`**
 
-A color controller for the ForegroundColor (Switch Layout Editor)/Black Color (Switch Toolbox) of a material.  
+A dynamic color controller that overwrites the ForegroundColor (Switch Layout Editor)/Black Color (Switch Toolbox) of a material.  
 Doesn't always have an effect. Seems to be used in for example the cursor.
 
 Type: `1`  
@@ -275,8 +275,8 @@ Data: `[X]`
 <div class="color-table" markdown="1">
 
 | Value | Light theme                | Comments                                      |
-| ----- | -------------------------- | --------------------------------------------- |
-| 0     | white                      | default - probably 'off'                      |
+| ----- | -------------------------- | --------------------------------------------- | ------------- |
+| 0     | -                          | -                                             | default (off) |
 | 1     | white                      |                                               |
 | 2     | white                      |                                               |
 | 3     | white                      |                                               |

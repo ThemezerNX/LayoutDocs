@@ -49,17 +49,21 @@ Let's say you want the album icon to be red (`#FF0000`). The following example s
 
 <!-- prettier-ignore -->
 !!! Important
-	-   Since the color format is actually `AABBGGRR` (alpha, blue, green, red) you'll have to use an inverse version of the normal hex color. For example, the hex color code `FF0000` (rgb)/`FFFF0000` (argb) would become `FF0000FF` (abgr).
-
-<!-- prettier-ignore -->
-!!! Info
-	-   It is currently unknown how exactly to change the cursor's default blue pulse color, but `P_Grow` and `P_Main` in `Cursor3.bflyt` contain color codes. Changing these will change the secondary pulse color. The primary pulse color is probabily a combination of these panes and their [`usd` sections](../../../definitions.md#usd-section).
+	-   Since the color format is actually `FFbbggrr` (alpha, blue, green, red) you'll have to use a reversed version of the normal hex color. For example, the hex color code `FF0000` (rgb)/`FF0000FF` (rgb) would become `FF0000FF` (abgr).
 
 ---
 
+# Custom Cursor Color
+
+[See this page](../custom-cursor/index.md)
+
 ## Example Code for all Home Menu elements
 
-For this, you have to replace `AABBGGRR` with the color you want. Most editors allow you to replace multiple occurrences at once.
+For this, you have to replace `FFbbggrr` with the color you want. Most editors allow you to replace multiple occurrences at once.
+
+<!-- prettier-ignore -->
+!!! Warning
+	**DO NOT** change the alpha channel in this example (keep the `FF`). Only modify lowercase `bbggrr`.
 
 ```json
 {
@@ -77,10 +81,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_Stick",
@@ -91,10 +95,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_Y",
@@ -105,10 +109,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_X",
@@ -119,10 +123,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_A",
@@ -133,10 +137,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_B",
@@ -147,10 +151,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				}
 			],
 			"Materials": [
@@ -192,10 +196,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_M",
@@ -206,10 +210,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_P",
@@ -220,10 +224,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_Colon",
@@ -234,10 +238,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_Dot",
@@ -248,10 +252,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_Comma",
@@ -262,10 +266,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				}
 			]
 		},
@@ -281,10 +285,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_Pict_01",
@@ -295,10 +299,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_Pict_02",
@@ -309,10 +313,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_Pict_03",
@@ -323,10 +327,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				}
 			]
 		},
@@ -342,10 +346,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				}
 			],
 			"Materials": [
@@ -367,10 +371,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_Pict_01",
@@ -381,10 +385,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_Color",
@@ -395,10 +399,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_Pict_00",
@@ -409,10 +413,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_Effect",
@@ -448,10 +452,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "L_GTNum_00",
@@ -529,10 +533,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_Local",
@@ -543,10 +547,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_WireLine",
@@ -557,10 +561,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				}
 			]
 		},
@@ -576,10 +580,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_PictNtf_01",
@@ -590,10 +594,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_Effect",
@@ -629,10 +633,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_Effect",
@@ -664,10 +668,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_Pict_01",
@@ -678,10 +682,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				}
 			],
 			"Materials": [
@@ -707,10 +711,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_Per",
@@ -721,10 +725,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_BatBase",
@@ -739,10 +743,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_Error",
@@ -753,10 +757,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_GaugeNml",
@@ -767,10 +771,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				},
 				{
 					"PaneName": "P_GaugeOther",
@@ -781,10 +785,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				}
 			]
 		},
@@ -800,10 +804,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				}
 			],
 			"Materials": [
@@ -825,10 +829,10 @@ For this, you have to replace `AABBGGRR` with the color you want. Most editors a
 							"type": 1
 						}
 					],
-					"ColorTL": "AABBGGRR",
-					"ColorTR": "AABBGGRR",
-					"ColorBL": "AABBGGRR",
-					"ColorBR": "AABBGGRR"
+					"ColorTL": "FFbbggrr",
+					"ColorTR": "FFbbggrr",
+					"ColorBL": "FFbbggrr",
+					"ColorBR": "FFbbggrr"
 				}
 			],
 			"Materials": [
