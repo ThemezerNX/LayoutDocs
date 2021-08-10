@@ -571,21 +571,12 @@ Example usage: `RdtBtnIconGame`
 
 The first table is probably correct, but the second table is here just in case.
 
-| Value         | Direction | Comment                                                    |
-| ------------- | --------- | ---------------------------------------------------------- |
-| 0             | right     |                                                            |
-| 1.57079632679 | down      | GameIcon shadows are down, right? If yes, this is correct. |
-| 3.14159265359 | left      |                                                            |
-| 4.71238898038 | up        |                                                            |
-
-OR
-
 | Value         | Direction |
 | ------------- | --------- |
-| 0             | up        |
-| 1.57079632679 | right     |
-| 3.14159265359 | down      |
-| 4.71238898038 | right     |
+| 0             | right     |
+| 1.57079632679 | down      |
+| 3.14159265359 | left      |
+| 4.71238898038 | up        |
 
 ---
 
