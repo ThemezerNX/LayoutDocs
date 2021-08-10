@@ -81,6 +81,7 @@ These are the USD sections found throughout the home menu. They cannot be applie
 
 #### **`C_W`**
 
+A color controller for the BackgroundColor (Switch Layout Editor)/White Color (Switch Toolbox) of a material.  
 A property that is used to give elements certain colors. These colors are dynamic and can change based on the system theme.
 Used almost everywhere (all menus have to support dark and light theme).
 
@@ -230,10 +231,8 @@ Often only the first `X` is non-`0`. Sometimes multiple `X`s are non-`0`, but ch
 
 #### **`C_B`**
 
-_Functionality unsure_
-
-Used to give elements certain colors?
-Doesn't really seem to do much. Seems to be used in e.g. cursor: is set to 37 somewhere.
+A color controller for the ForegroundColor (Switch Layout Editor)/Black Color (Switch Toolbox) of a material.  
+Doesn't always have an effect. Seems to be used in for example the cursor.
 
 Type: `1`  
 Data: `[X, X, X, X]`
@@ -244,7 +243,7 @@ Data: `[X, X, X, X]`
 {
 	"PropName": "C_B",
 	"type": 1,
-	"PropValues": [0, 0, 0, 0]
+	"PropValues": [65, 0, 0, 0]
 }
 ```
 
