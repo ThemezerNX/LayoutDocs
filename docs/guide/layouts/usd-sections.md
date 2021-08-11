@@ -63,7 +63,7 @@ Type: `Int`
 -   `1`: Int
 -   `2`: Float
 
-Data: Array of values of specified type
+Format: Array of values of specified type
 
 ## Supported properties
 
@@ -71,36 +71,9 @@ _Supported by the Switch Theme Injector_
 
 -   All, even undocumented ones.
 
-## List of known USD sections
+## Global Color Values
 
-These are the USD sections found throughout the home menu. They cannot be applied to every pane.
-
----
-
-### Color-related
-
-#### **`C_W`**
-
-A dynamic color controller that overwrites the BackgroundColor (Switch Layout Editor)/White Color (Switch Toolbox) of a material.  
-A property that is used to give elements certain colors. These colors are dynamic and can change based on the system theme.
-Used almost everywhere (all menus have to support dark and light theme).
-
-Type: `1`  
-Data: `[X, X, X, X]`
-
-Often only the first `X` is non-`0`. Sometimes multiple `X`s are non-`0`, but changing the second, third and fourth to `0` seems to have no effect on appearance.
-
-##### Example
-
-```json
-{
-	"PropName": "C_W",
-	"type": 1,
-	"PropValues": [5, 0, 0, 0]
-}
-```
-
-##### Tested values
+The system has special values that can be used throughout the system. These colors can change based on the system theme (light/dark), which is why they're often used.
 
 <div class="color-table" markdown="1">
 
@@ -227,6 +200,39 @@ Often only the first `X` is non-`0`. Sometimes multiple `X`s are non-`0`, but ch
 
 </div>
 
+## List of known USD sections
+
+These are the USD sections found throughout the home menu. They cannot be applied to every pane.
+
+---
+
+### Color-related
+
+#### **`C_W`**
+
+A dynamic color controller that overwrites the BackgroundColor (Switch Layout Editor)/White Color (Switch Toolbox) of a material.  
+A property that is used to give elements certain colors. These colors are dynamic and can change based on the system theme.
+Used almost everywhere (all menus have to support dark and light theme).
+
+Type: `1`  
+Format: `[X, X, X, X]`
+
+Often only the first `X` is non-`0`. Sometimes multiple `X`s are non-`0`, but changing the second, third and fourth to `0` seems to have no effect on appearance.
+
+##### Example
+
+```json
+{
+	"PropName": "C_W",
+	"type": 1,
+	"PropValues": [5, 0, 0, 0]
+}
+```
+
+##### Values
+
+Uses the [global color values](#global-color-values).
+
 ---
 
 #### **`C_B`**
@@ -235,7 +241,7 @@ A dynamic color controller that overwrites the ForegroundColor (Switch Layout Ed
 Doesn't always have an effect. Seems to be used in for example the cursor.
 
 Type: `1`  
-Data: `[X, X, X, X]`
+Format: `[X, X, X, X]`
 
 ##### Example
 
@@ -254,11 +260,11 @@ Data: `[X, X, X, X]`
 _Functionality unknown_
 
 Color doesn't change when C_W is set to another color -> C_Id probably 'overlaps' C_W.
-System theme color has almost no effect (except for DATA: 0 ('off') and 42 so far).
+System theme color has almost no effect (except for `0` ('off')).
 All stuff here was tested on the lockscreen, and does vary per menu.
 
 Type: `1`  
-Data: `[X]`
+Format: `[X]`
 
 ##### Example
 
@@ -270,7 +276,7 @@ Data: `[X]`
 }
 ```
 
-##### Tested values
+##### Values
 
 <div class="color-table" markdown="1">
 
@@ -308,7 +314,7 @@ Data: `[X]`
 _Functionality unknown_
 
 Type: `1`  
-Data: `[X]`
+Format: `[X]`
 
 ##### Example
 
@@ -320,14 +326,13 @@ Data: `[X]`
 }
 ```
 
-##### Tested values
+##### Tested Values
 
-| Value       | Comments |
-| ----------- | -------- |
-| 0           | nothing  |
-| 1           | nothing  |
-| 10          | nothing  |
-| 99999999999 | freezes  |
+| Value | Comment |
+| ----- | ------- |
+| 0     | nothing |
+| 1     | nothing |
+| 10    | nothing |
 
 ---
 
@@ -335,11 +340,12 @@ Data: `[X]`
 
 #### **`S_RoundRadius`**
 
-Changes the border radius of picture(!) panels.
+Changes the border radius of picture panels.
 Percentage/pixels?
 
 Type: `2`  
-Data: `[X]`
+Format: `[X]`
+Pane types: Picture only
 
 ##### Example
 
@@ -357,10 +363,8 @@ Data: `[X]`
 
 _Functionality unknown_
 
-There are different drawmodes
-
 Type: `1`  
-Data: `[X]`  
+Format: `[X]`  
 Common value: `1`  
 Example usage: `Cursor3`
 
@@ -374,15 +378,22 @@ Example usage: `Cursor3`
 }
 ```
 
+##### Values
+
+| Value | Result     |
+| ----- | ---------- |
+| 0     | Don't draw |
+| 1     | Draw       |
+| other | Unknown    |
+
 ---
 
 #### **`S_BorderVolume`**
 
-Color intensity of the border.
+Opacity of the border.
 
 Type: `2`  
-Data: `[X]`  
-Example usage: `Cursor3`
+Format: `[X]`
 
 ##### Example
 
@@ -394,14 +405,22 @@ Example usage: `Cursor3`
 }
 ```
 
+##### Values
+
+| Value | Result        |
+| ----- | ------------- |
+| 0     | No opacity    |
+| 0-1   | Other opacity |
+| 1     | Full opacity  |
+
 ---
 
 #### **`S_BorderSize`**
 
-Width of the border in pixels.
+Size of the border.
 
 Type: `2`  
-Data: `[X]`  
+Format: `[X]`  
 Example usage: `Cursor3`
 
 ##### Example
@@ -414,17 +433,18 @@ Example usage: `Cursor3`
 }
 ```
 
+##### Values
+
+Width in pixels.
+
 ---
 
 #### **`S_BorderColorSelect0`**
 
-_Functionality unknown_
-
-Another kind of color. Used in the Cursor and has the same value for `C_W` somewhere in the cursor.
+Sets the color of the border. Overwrites [`S_BorderColor0`](#s_bordercolor0).
 
 Type: `1`  
-Data: `[X]`  
-Example usage: `Cursor3`
+Format: `[X]`
 
 ##### Example
 
@@ -436,18 +456,18 @@ Example usage: `Cursor3`
 }
 ```
 
+##### Values
+
+Uses the [global color values](#global-color-values).
+
 ---
 
 #### **`S_BorderColor0`**
 
-_Functionality unknown_
-
-Yet another kind of color.
+Sets the color of the border.
 
 Type: `2`  
-Data: `[X, X, X, X]`  
-Common value: `[1.0, 1.0, 1.0, 1.0]`  
-Example usage: `Cursor3`
+Format: `[R, G, B, A]`
 
 ##### Example
 
@@ -459,6 +479,16 @@ Example usage: `Cursor3`
 }
 ```
 
+##### Values
+
+Normalized RGB decimals, from 0-1
+
+| Value | Result (normal rgb) |
+| ----- | ------------------- |
+| 0     | 0                   |
+| 0-1   | 0-255               |
+| 1     | 255                 |
+
 ---
 
 ### Drop Shadow
@@ -467,10 +497,8 @@ Example usage: `Cursor3`
 
 _Functionality unknown_
 
-There are different drawmodes.
-
 Type: `1`  
-Data: `[X]`  
+Format: `[X]`  
 Common value: `1`  
 Example usage: `RdtBtnIconGame`
 
@@ -484,6 +512,14 @@ Example usage: `RdtBtnIconGame`
 }
 ```
 
+##### Values
+
+| Value | Result     |
+| ----- | ---------- |
+| 0     | Don't draw |
+| 1     | Draw       |
+| other | Unknown    |
+
 ---
 
 #### **`S_DropShadowVolume`**
@@ -491,7 +527,7 @@ Example usage: `RdtBtnIconGame`
 Color density of the shadow.
 
 Type: `2`  
-Data: `[X]`  
+Format: `[X]`  
 Example usage: `RdtBtnIconGame`
 
 ##### Example
@@ -508,11 +544,10 @@ Example usage: `RdtBtnIconGame`
 
 #### **`S_DropShadowColorSelect`**
 
-_Functionality unsure_
-Color of the border, same values as C_W?
+Sets the color of the drop shadow. Overwrites [`S_DropShadowColor`](#s_dropshadowcolor).
 
 Type: `1`  
-Data: `[X]`  
+Format: `[X]`  
 Example usage: `RdtBtnIconGame`
 
 ##### Example
@@ -525,16 +560,18 @@ Example usage: `RdtBtnIconGame`
 }
 ```
 
+##### Values
+
+Uses the [global color values](#global-color-values).
+
 ---
 
 #### **`S_DropShadowColor`**
 
-Color of the drop shadow.
+Sets the color of the drop shadow.
 
 Type: `2`  
-Data: `[X, X, X, X]`  
-Common value: `[0.0, 0.0, 0.0, 1.0]` (R, G, B, A)?  
-Example usage: `RdtBtnIconGame`
+Format: `[R, G, B, A]`
 
 ##### Example
 
@@ -542,19 +579,28 @@ Example usage: `RdtBtnIconGame`
 {
 	"PropName": "S_DropShadowColor",
 	"type": 2,
-	"PropValues": [0.0, 0.0, 0.0, 1.0]
+	"PropValues": [1.0, 1.0, 1.0, 1.0]
 }
 ```
+
+##### Values
+
+Normalized RGB decimals, from 0-1
+
+| Value | Result (normal rgb) |
+| ----- | ------------------- |
+| 0     | 0                   |
+| 0-1   | 0-255               |
+| 1     | 255                 |
 
 ---
 
 #### **`S_DropShadowAngle`**
 
-Shadow direction in radians.
+Shadow direction.
 
 Type: `2`  
-Data: `[X]`  
-Example usage: `RdtBtnIconGame`
+Format: `[X]`
 
 ##### Example
 
@@ -568,6 +614,8 @@ Example usage: `RdtBtnIconGame`
 
 ##### Values
 
+Direction in radians.
+
 | Value          | Direction |
 | -------------- | --------- |
 | 0              | right     |
@@ -580,11 +628,10 @@ Example usage: `RdtBtnIconGame`
 
 #### **`S_DropShadowDistance`**
 
-Shadow fade/blur distance in pixels.
+Shadow fade/blur distance.
 
 Type: `2`  
-Data: `[X]`  
-Example usage: `RdtBtnIconGame`
+Format: `[X]`
 
 ##### Example
 
@@ -598,12 +645,16 @@ Example usage: `RdtBtnIconGame`
 
 ---
 
+##### Values
+
+Distance in pixels.
+
 #### **`S_DropShadowSize`**
 
-Shadow width in pixels.
+Shadow size.
 
 Type: `2`  
-Data: `[X]`  
+Format: `[X]`  
 Example usage: `RdtBtnIconGame`
 
 ##### Example
@@ -616,6 +667,10 @@ Example usage: `RdtBtnIconGame`
 }
 ```
 
+##### Values
+
+Width in pixels.
+
 ---
 
 #### **`S_DropShadowFunction`**
@@ -624,7 +679,7 @@ _Functionality unsure_
 How the `S_DropShadowDistance` is drawn. For example, blur or solid?
 
 Type: `1`  
-Data: `[X]`  
+Format: `[X]`  
 Common value: `5` and `4`  
 Example usage: `RdtBtnIconGame`
 
@@ -646,7 +701,7 @@ _Functionality unsure_
 Enables/disables shadow fading?
 
 Type: `1`  
-Data: `[X]`  
+Format: `[X]`  
 Common value: `1`  
 Example usage: `RdtBtnIconGame`
 
