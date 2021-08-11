@@ -21,7 +21,7 @@ _The two layers P_Main (left) and P_Grow (right) separated_
 !!! Important
 	-   Since the color format is actually `aabbggrr` (alpha, blue, green, red) you'll have to use a reversed version of the normal hex color. For example, the hex color code `0000FF` (rgb)/`0000FFFF` (rgba) would become `FFFF0000` (abgr).
 
-### Stock Animation, Custom Colors
+### Animated
 
 This example keeps the stock animation and only changes the colors.  
 You need four colors: two base colors and two slightly lighter variants (see [Advanced Step 1](#1-material-color))
@@ -129,10 +129,10 @@ You need four colors: two base colors and two slightly lighter variants (see [Ad
 
 ![](stock_animation_custom_colors.gif)
 
-### No Animation, Two Colors
+### Static
 
-This example disables the animation, but still shows two colors.  
-You need Two colors color.
+This example disables the animation, but still shows the two colors.  
+You need two colors.
 
 <!-- prettier-ignore -->
 !!! Warning
@@ -207,9 +207,9 @@ You need Two colors color.
 
 ![](no_animation_two_colors.jpg)
 
-### No Animation, Custom Colors
+### Plain
 
-This example disables the animation and changes the cursor to be one or more colors. You can get creative since you can modify the four corners individually.  
+This example disables the animation, removes the pattern, and changes the cursor to be one or more colors. You can get creative since you can modify the four corners individually.  
 You need one or more colors.
 
 <!-- prettier-ignore -->
