@@ -13,35 +13,6 @@ _The two layers P_Main (left) and P_Grow (right) separated_
 
     These two fields can be found under the Materials section in both programs.
 
-The cursor color is actually set in two ways:
-
-## 1. Material Color
-
-The material colors are what is visible in the gif. The following are the default values:
-
-`P_Main`
-
--   BackgroundColor/White Color: <span class="color-text" markdown="1">`rgba(0,193,242)`</span>
--   ForegroundColor/Black Color: <span class="color-text" markdown="1">`rgba(0,221,165)`</span>
-
-`P_Grow`
-
--   BackgroundColor/White Color: <span class="color-text" markdown="1">`rgba(22,158,244)`</span>
--   ForegroundColor/Black Color: <span class="color-text" markdown="1">`rgba(0,204,44)`</span>
-
-## 2. USD Color
-
-Both panes also have a USD section with `C_W` and `C_B` set. The following are the default values:
-
--   `P_Main`
-    -   `C_B`: `37`
-    -   `C_W`: `65`
--   `P_Grow`
-    -   `C_B`: `38`
-    -   `C_W`: `29`
-
-The USD Color actually overwrites the Material color. This way the material color can dynamically change based on the system theme (White/Black).
-
 ---
 
 ## Examples (Simple)
@@ -53,7 +24,7 @@ The USD Color actually overwrites the Material color. This way the material colo
 ### Stock Animation, Custom Colors
 
 This example keeps the stock animation and only changes the colors.  
-You need four colors: two base colors and two slightly lighter variants (see [Setting a custom color, step 2](#setting-a-custom-color#:~:text=0%2C%200%5D%20Next-,Set%20you%20custom,-colors%20in%20the))
+You need four colors: two base colors and two slightly lighter variants (see [Advanced Step 1](#1-material-color))
 
 <!-- prettier-ignore -->
 !!! Warning
@@ -78,6 +49,26 @@ You need four colors: two base colors and two slightly lighter variants (see [Se
 							"PropName": "C_W",
 							"PropValues": ["0", "0", "0", "0"],
 							"type": 1
+						},
+						{
+							"PropName": "S_BorderColorSelect0",
+							"PropValues": ["0"],
+							"type": 1
+						},
+						{
+							"PropName": "S_BorderColor0",
+							"PropValues": ["0", "0", "0", "0"],
+							"type": 1
+						},
+						{
+							"PropName": "S_DropShadowColorSelect",
+							"PropValues": ["0"],
+							"type": 1
+						},
+						{
+							"PropName": "S_DropShadowColor",
+							"PropValues": ["0", "0", "0", "0"],
+							"type": 1
 						}
 					]
 				},
@@ -91,6 +82,26 @@ You need four colors: two base colors and two slightly lighter variants (see [Se
 						},
 						{
 							"PropName": "C_W",
+							"PropValues": ["0", "0", "0", "0"],
+							"type": 1
+						},
+						{
+							"PropName": "S_BorderColorSelect0",
+							"PropValues": ["0"],
+							"type": 1
+						},
+						{
+							"PropName": "S_BorderColor0",
+							"PropValues": ["0", "0", "0", "0"],
+							"type": 1
+						},
+						{
+							"PropName": "S_DropShadowColorSelect",
+							"PropValues": ["0"],
+							"type": 1
+						},
+						{
+							"PropName": "S_DropShadowColor",
 							"PropValues": ["0", "0", "0", "0"],
 							"type": 1
 						}
@@ -144,6 +155,26 @@ You need Two colors color.
 						},
 						{
 							"PropName": "C_W",
+							"PropValues": ["0", "0", "0", "0"],
+							"type": 1
+						},
+						{
+							"PropName": "S_BorderColorSelect0",
+							"PropValues": ["0"],
+							"type": 1
+						},
+						{
+							"PropName": "S_BorderColor0",
+							"PropValues": ["0", "0", "0", "0"],
+							"type": 1
+						},
+						{
+							"PropName": "S_DropShadowColorSelect",
+							"PropValues": ["0"],
+							"type": 1
+						},
+						{
+							"PropName": "S_DropShadowColor",
 							"PropValues": ["0", "0", "0", "0"],
 							"type": 1
 						}
@@ -213,6 +244,26 @@ You need one or more colors.
 							"PropName": "C_W",
 							"PropValues": ["0", "0", "0", "0"],
 							"type": 1
+						},
+						{
+							"PropName": "S_BorderColorSelect0",
+							"PropValues": ["0"],
+							"type": 1
+						},
+						{
+							"PropName": "S_BorderColor0",
+							"PropValues": ["0", "0", "0", "0"],
+							"type": 1
+						},
+						{
+							"PropName": "S_DropShadowColorSelect",
+							"PropValues": ["0"],
+							"type": 1
+						},
+						{
+							"PropName": "S_DropShadowColor",
+							"PropValues": ["0", "0", "0", "0"],
+							"type": 1
 						}
 					],
 					"ColorTL": "FFbbggrr", // set your custom color(s) in these four fields
@@ -247,19 +298,75 @@ Color values respectively: `FF00FF00`, `FFFF0000`, `FFFF0000`, `FF00FF00`
 
 ## Instructions (Advanced)
 
-I recommend you use the Switch Toolbox if you want to mess with it yourself (In LayoutKit: `Settings > Preferred editor > Switch-Toolbox`). It can preview what your animation will look like. If you don't, there are a few examples further down this page.
+The cursor color actually consists of four things:
 
-1. The first thing to do for a custom cursor is disable the USD effects. Change the `C_B` and `C_W` for `P_Main` and `P_Grow` to `[0, 0, 0, 0]`
-   Next
-2. Set you custom colors in the `P_Grow` materials. Set `P_Main` to a slightly lighter variant of your colors. For example,
+### 1. Material Color
 
-    - `P_Main`
-        - BackgroundColor/White Color: <span class="color-text" markdown="1">`rgba(40,224,161)`</span>
-        - ForegroundColor/Black Color: <span class="color-text" markdown="1">`rgba(229,43,183)`</span>
-    - `P_Grow`
-        - BackgroundColor/White Color: <span class="color-text" markdown="1">`rgba(10,179,121)`</span>
-        - ForegroundColor/Black Color: <span class="color-text" markdown="1">`rgba(180,10,134)`</span>
+The material colors are what is visible in the gif. The following are the default values:
 
-    You always want to the ForegroundColor/Black Color to have opacity `0` (default). If it doesn't, the middle (so it covers the whole button instead of just the edge) of the cursor will be filled with the color as well.
+`P_Main`
+
+-   BackgroundColor/White Color: <span class="color-text" markdown="1">`rgb(0,193,242)`</span>
+-   ForegroundColor/Black Color: <span class="color-text" markdown="1">`rgb(0,221,165)`</span>
+
+`P_Grow`
+
+-   BackgroundColor/White Color: <span class="color-text" markdown="1">`rgb(22,158,244)`</span>
+-   ForegroundColor/Black Color: <span class="color-text" markdown="1">`rgb(0,204,44)`</span>
+
+Set you custom colors in the `P_Grow` materials. Set `P_Main` to a slightly lighter variant of your colors.
+
+You always want to the ForegroundColor/Black Color to have opacity `0` (default). If it doesn't, the middle (so it covers the whole button instead of just the edge) of the cursor will be filled with the color as well. If you work in layouts directly, this color has to be in the hex AABBGGRR format.
+
+### 2. USD Color
+
+Both panes also have a USD section with [`C_W`](../../layouts/usd-sections.md#c_w) and [`C_B`](../../layouts/usd-sections.md#c_b) set. The following are the default values:
+
+-   `P_Main`
+    -   [`C_B`](../../layouts/usd-sections.md#c_b): `[37, 0, 0, 0]`
+    -   [`C_W`](../../layouts/usd-sections.md#c_w): `[65, 0, 0, 0]`
+-   `P_Grow`
+    -   [`C_B`](../../layouts/usd-sections.md#c_b): `[38, 0, 0, 0]`
+    -   [`C_W`](../../layouts/usd-sections.md#c_w): `[29, 0, 0, 0]`
+
+The USD Color actually overwrites the Material color. This way, the material color can dynamically change based on the system theme (Light/Dark).
+
+Set the USD sections as follows to disable this:
+
+-   `P_Main`/`P_Grow`
+    -   [`C_B`](../../layouts/usd-sections.md#c_b): `[0, 0, 0, 0]`
+    -   [`C_W`](../../layouts/usd-sections.md#c_w): `[0, 0, 0, 0]`
+
+### 3. Border Color
+
+The border has an animation that makes it flash in an even lighter color. This will be a very light blue if you don't disable it.
+Set the USD sections as follows to disable this:
+
+-   `P_Main`/`P_Grow`
+    -   [`S_BorderColorSelect0`](../../layouts/usd-sections.md#s_bordercolorselect0): `0`
+    -   [`S_BorderColor0`](../../layouts/usd-sections.md#s_bordercolor0): `[0, 0, 0, 0]`
+
+You can optionally set [`S_BorderColor0`](../../layouts/usd-sections.md#s_bordercolor0) to something custom, in order to make the cursor look a bit more vibrant/alive.
+
+### 4. Shadow Color
+
+The cursor also has a shadow to add a bit of depth. By default it adds a slight blue tone, but nothing noticable.
+Set the USD sections as follows to disable this shadow. It often does more harm than good:
+
+-   `P_Main`/`P_Grow`
+    -   [`S_DropShadowColorSelect`](../../layouts/usd-sections.md#s_dropshadowcolorselect): `0`
+    -   [`S_DropShadowColor`](../../layouts/usd-sections.md#s_dropshadowcolor): `[0, 0, 0, 0]`
+
+You can optionally set [`S_DropShadowColor`](../../layouts/usd-sections.md#s_dropshadowcolor) to something custom, in order to make the shadow also match your color.
+
+### 5. Animation
+
+I recommend you use the Switch Toolbox if you want to mess with it yourself (In LayoutKit: `Settings > Preferred editor > Switch-Toolbox`). It can preview what your animation will look like (not border, shadow etc. Just material color animation). If you don't, there are examples further up this page.
+
+With custom animations you can animate the four corners of a material separately and possibly make it look very cool.
+
+<!-- prettier-ignore -->
+!!! Warning
+	If you experience unexpected behaviour, note that Switch Toolbox sort of breaks a layout file. It seems to break border animations for example.
 
 ---
