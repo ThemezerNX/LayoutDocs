@@ -333,6 +333,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#global-color-values" class="md-nav__link">
+    Global Color Values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#list-of-known-usd-sections" class="md-nav__link">
     List of known USD sections
   </a>
@@ -961,6 +968,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#global-color-values" class="md-nav__link">
+    Global Color Values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#list-of-known-usd-sections" class="md-nav__link">
     List of known USD sections
   </a>
@@ -1216,31 +1230,14 @@ Type: <code>Int</code></p>
 <li><code>1</code>: Int</li>
 <li><code>2</code>: Float</li>
 </ul>
-<p>Data: Array of values of specified type</p>
+<p>Format: Array of values of specified type</p>
 <h2 id="supported-properties">Supported properties<a class="headerlink" href="#supported-properties" title="Permanent link">&para;</a></h2>
 <p><em>Supported by the Switch Theme Injector</em></p>
 <ul>
 <li>All, even undocumented ones.</li>
 </ul>
-<h2 id="list-of-known-usd-sections">List of known USD sections<a class="headerlink" href="#list-of-known-usd-sections" title="Permanent link">&para;</a></h2>
-<p>These are the USD sections found throughout the home menu. They cannot be applied to every pane.</p>
-<hr />
-<h3 id="color-related">Color-related<a class="headerlink" href="#color-related" title="Permanent link">&para;</a></h3>
-<h4 id="c_w"><strong><code>C_W</code></strong><a class="headerlink" href="#c_w" title="Permanent link">&para;</a></h4>
-<p>A dynamic color controller that overwrites the BackgroundColor (Switch Layout Editor)/White Color (Switch Toolbox) of a material.<br />
-A property that is used to give elements certain colors. These colors are dynamic and can change based on the system theme.
-Used almost everywhere (all menus have to support dark and light theme).</p>
-<p>Type: <code>1</code><br />
-Data: <code>[X, X, X, X]</code></p>
-<p>Often only the first <code>X</code> is non-<code>0</code>. Sometimes multiple <code>X</code>s are non-<code>0</code>, but changing the second, third and fourth to <code>0</code> seems to have no effect on appearance.</p>
-<h5 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
-<span class="p">}</span>
-</code></pre></div>
-<h5 id="tested-values">Tested values<a class="headerlink" href="#tested-values" title="Permanent link">&para;</a></h5>
+<h2 id="global-color-values">Global Color Values<a class="headerlink" href="#global-color-values" title="Permanent link">&para;</a></h2>
+<p>The system has special values that can be used throughout the system. These colors can change based on the system theme (light/dark), which is why they're often used.</p>
 <div class="color-table">
 <table>
 <thead>
@@ -1963,12 +1960,32 @@ Data: <code>[X, X, X, X]</code></p>
 </tbody>
 </table>
 </div>
+<h2 id="list-of-known-usd-sections">List of known USD sections<a class="headerlink" href="#list-of-known-usd-sections" title="Permanent link">&para;</a></h2>
+<p>These are the USD sections found throughout the home menu. They cannot be applied to every pane.</p>
+<hr />
+<h3 id="color-related">Color-related<a class="headerlink" href="#color-related" title="Permanent link">&para;</a></h3>
+<h4 id="c_w"><strong><code>C_W</code></strong><a class="headerlink" href="#c_w" title="Permanent link">&para;</a></h4>
+<p>A dynamic color controller that overwrites the BackgroundColor (Switch Layout Editor)/White Color (Switch Toolbox) of a material.<br />
+A property that is used to give elements certain colors. These colors are dynamic and can change based on the system theme.
+Used almost everywhere (all menus have to support dark and light theme).</p>
+<p>Type: <code>1</code><br />
+Format: <code>[X, X, X, X]</code></p>
+<p>Often only the first <code>X</code> is non-<code>0</code>. Sometimes multiple <code>X</code>s are non-<code>0</code>, but changing the second, third and fourth to <code>0</code> seems to have no effect on appearance.</p>
+<h5 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<h5 id="values">Values<a class="headerlink" href="#values" title="Permanent link">&para;</a></h5>
+<p>Uses the <a href="#global-color-values">global color values</a>.</p>
 <hr />
 <h4 id="c_b"><strong><code>C_B</code></strong><a class="headerlink" href="#c_b" title="Permanent link">&para;</a></h4>
 <p>A dynamic color controller that overwrites the ForegroundColor (Switch Layout Editor)/Black Color (Switch Toolbox) of a material.<br />
 Doesn't always have an effect. Seems to be used in for example the cursor.</p>
 <p>Type: <code>1</code><br />
-Data: <code>[X, X, X, X]</code></p>
+Format: <code>[X, X, X, X]</code></p>
 <h5 id="example_1">Example<a class="headerlink" href="#example_1" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_B&quot;</span><span class="p">,</span>
@@ -1980,10 +1997,10 @@ Data: <code>[X, X, X, X]</code></p>
 <h4 id="c_id"><strong><code>C_Id</code></strong><a class="headerlink" href="#c_id" title="Permanent link">&para;</a></h4>
 <p><em>Functionality unknown</em></p>
 <p>Color doesn't change when C_W is set to another color -&gt; C_Id probably 'overlaps' C_W.
-System theme color has almost no effect (except for DATA: 0 ('off') and 42 so far).
+System theme color has almost no effect (except for <code>0</code> ('off')).
 All stuff here was tested on the lockscreen, and does vary per menu.</p>
 <p>Type: <code>1</code><br />
-Data: <code>[X]</code></p>
+Format: <code>[X]</code></p>
 <h5 id="example_2">Example<a class="headerlink" href="#example_2" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_Id&quot;</span><span class="p">,</span>
@@ -1991,7 +2008,7 @@ Data: <code>[X]</code></p>
     <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
-<h5 id="tested-values_1">Tested values<a class="headerlink" href="#tested-values_1" title="Permanent link">&para;</a></h5>
+<h5 id="values_1">Values<a class="headerlink" href="#values_1" title="Permanent link">&para;</a></h5>
 <div class="color-table">
 <p>| Value | Light theme                | Comments                                      |
 | ----- | -------------------------- | --------------------------------------------- | ------------- |
@@ -2022,7 +2039,7 @@ Data: <code>[X]</code></p>
 <h4 id="c_ti"><strong><code>C_TI</code></strong><a class="headerlink" href="#c_ti" title="Permanent link">&para;</a></h4>
 <p><em>Functionality unknown</em></p>
 <p>Type: <code>1</code><br />
-Data: <code>[X]</code></p>
+Format: <code>[X]</code></p>
 <h5 id="example_3">Example<a class="headerlink" href="#example_3" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_Ti&quot;</span><span class="p">,</span>
@@ -2030,12 +2047,12 @@ Data: <code>[X]</code></p>
     <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
-<h5 id="tested-values_2">Tested values<a class="headerlink" href="#tested-values_2" title="Permanent link">&para;</a></h5>
+<h5 id="tested-values">Tested Values<a class="headerlink" href="#tested-values" title="Permanent link">&para;</a></h5>
 <table>
 <thead>
 <tr>
 <th>Value</th>
-<th>Comments</th>
+<th>Comment</th>
 </tr>
 </thead>
 <tbody>
@@ -2051,19 +2068,16 @@ Data: <code>[X]</code></p>
 <td>10</td>
 <td>nothing</td>
 </tr>
-<tr>
-<td>99999999999</td>
-<td>freezes</td>
-</tr>
 </tbody>
 </table>
 <hr />
 <h3 id="border">Border<a class="headerlink" href="#border" title="Permanent link">&para;</a></h3>
 <h4 id="s_roundradius"><strong><code>S_RoundRadius</code></strong><a class="headerlink" href="#s_roundradius" title="Permanent link">&para;</a></h4>
-<p>Changes the border radius of picture(!) panels.
+<p>Changes the border radius of picture panels.
 Percentage/pixels?</p>
 <p>Type: <code>2</code><br />
-Data: <code>[X]</code></p>
+Format: <code>[X]</code>
+Pane types: Picture only</p>
 <h5 id="example_4">Example<a class="headerlink" href="#example_4" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_RoundRadius&quot;</span><span class="p">,</span>
@@ -2074,9 +2088,8 @@ Data: <code>[X]</code></p>
 <hr />
 <h4 id="s_borderdrawmode"><strong><code>S_BorderDrawMode</code></strong><a class="headerlink" href="#s_borderdrawmode" title="Permanent link">&para;</a></h4>
 <p><em>Functionality unknown</em></p>
-<p>There are different drawmodes</p>
 <p>Type: <code>1</code><br />
-Data: <code>[X]</code><br />
+Format: <code>[X]</code><br />
 Common value: <code>1</code><br />
 Example usage: <code>Cursor3</code></p>
 <h5 id="example_5">Example<a class="headerlink" href="#example_5" title="Permanent link">&para;</a></h5>
@@ -2086,12 +2099,34 @@ Example usage: <code>Cursor3</code></p>
     <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+<h5 id="values_2">Values<a class="headerlink" href="#values_2" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Don't draw</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Draw</td>
+</tr>
+<tr>
+<td>other</td>
+<td>Unknown</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h4 id="s_bordervolume"><strong><code>S_BorderVolume</code></strong><a class="headerlink" href="#s_bordervolume" title="Permanent link">&para;</a></h4>
-<p>Color intensity of the border.</p>
+<p>Opacity of the border.</p>
 <p>Type: <code>2</code><br />
-Data: <code>[X]</code><br />
-Example usage: <code>Cursor3</code></p>
+Format: <code>[X]</code></p>
 <h5 id="example_6">Example<a class="headerlink" href="#example_6" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_BorderVolume&quot;</span><span class="p">,</span>
@@ -2099,11 +2134,34 @@ Example usage: <code>Cursor3</code></p>
     <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+<h5 id="values_3">Values<a class="headerlink" href="#values_3" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>No opacity</td>
+</tr>
+<tr>
+<td>0-1</td>
+<td>Other opacity</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Full opacity</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h4 id="s_bordersize"><strong><code>S_BorderSize</code></strong><a class="headerlink" href="#s_bordersize" title="Permanent link">&para;</a></h4>
-<p>Width of the border in pixels.</p>
+<p>Size of the border.</p>
 <p>Type: <code>2</code><br />
-Data: <code>[X]</code><br />
+Format: <code>[X]</code><br />
 Example usage: <code>Cursor3</code></p>
 <h5 id="example_7">Example<a class="headerlink" href="#example_7" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -2112,13 +2170,13 @@ Example usage: <code>Cursor3</code></p>
     <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+<h5 id="values_4">Values<a class="headerlink" href="#values_4" title="Permanent link">&para;</a></h5>
+<p>Width in pixels.</p>
 <hr />
 <h4 id="s_bordercolorselect0"><strong><code>S_BorderColorSelect0</code></strong><a class="headerlink" href="#s_bordercolorselect0" title="Permanent link">&para;</a></h4>
-<p><em>Functionality unknown</em></p>
-<p>Another kind of color. Used in the Cursor and has the same value for <code>C_W</code> somewhere in the cursor.</p>
+<p>Sets the color of the border. Overwrites <a href="#s_bordercolor0"><code>S_BorderColor0</code></a>.</p>
 <p>Type: <code>1</code><br />
-Data: <code>[X]</code><br />
-Example usage: <code>Cursor3</code></p>
+Format: <code>[X]</code></p>
 <h5 id="example_8">Example<a class="headerlink" href="#example_8" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_BorderColorSelect0&quot;</span><span class="p">,</span>
@@ -2126,14 +2184,13 @@ Example usage: <code>Cursor3</code></p>
     <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+<h5 id="values_5">Values<a class="headerlink" href="#values_5" title="Permanent link">&para;</a></h5>
+<p>Uses the <a href="#global-color-values">global color values</a>.</p>
 <hr />
 <h4 id="s_bordercolor0"><strong><code>S_BorderColor0</code></strong><a class="headerlink" href="#s_bordercolor0" title="Permanent link">&para;</a></h4>
-<p><em>Functionality unknown</em></p>
-<p>Yet another kind of color.</p>
+<p>Sets the color of the border.</p>
 <p>Type: <code>2</code><br />
-Data: <code>[X, X, X, X]</code><br />
-Common value: <code>[1.0, 1.0, 1.0, 1.0]</code><br />
-Example usage: <code>Cursor3</code></p>
+Format: <code>[R, G, B, A]</code></p>
 <h5 id="example_9">Example<a class="headerlink" href="#example_9" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_BorderColor0&quot;</span><span class="p">,</span>
@@ -2141,13 +2198,36 @@ Example usage: <code>Cursor3</code></p>
     <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+<h5 id="values_6">Values<a class="headerlink" href="#values_6" title="Permanent link">&para;</a></h5>
+<p>Normalized RGB decimals, from 0-1</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Result (normal rgb)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0-1</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td>1</td>
+<td>255</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h3 id="drop-shadow">Drop Shadow<a class="headerlink" href="#drop-shadow" title="Permanent link">&para;</a></h3>
 <h4 id="s_dropshadowdrawmode"><strong><code>S_DropShadowDrawMode</code></strong><a class="headerlink" href="#s_dropshadowdrawmode" title="Permanent link">&para;</a></h4>
 <p><em>Functionality unknown</em></p>
-<p>There are different drawmodes.</p>
 <p>Type: <code>1</code><br />
-Data: <code>[X]</code><br />
+Format: <code>[X]</code><br />
 Common value: <code>1</code><br />
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_10">Example<a class="headerlink" href="#example_10" title="Permanent link">&para;</a></h5>
@@ -2157,11 +2237,34 @@ Example usage: <code>RdtBtnIconGame</code></p>
     <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+<h5 id="values_7">Values<a class="headerlink" href="#values_7" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Don't draw</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Draw</td>
+</tr>
+<tr>
+<td>other</td>
+<td>Unknown</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h4 id="s_dropshadowvolume"><strong><code>S_DropShadowVolume</code></strong><a class="headerlink" href="#s_dropshadowvolume" title="Permanent link">&para;</a></h4>
 <p>Color density of the shadow.</p>
 <p>Type: <code>2</code><br />
-Data: <code>[X]</code><br />
+Format: <code>[X]</code><br />
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_11">Example<a class="headerlink" href="#example_11" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -2172,10 +2275,9 @@ Example usage: <code>RdtBtnIconGame</code></p>
 </code></pre></div>
 <hr />
 <h4 id="s_dropshadowcolorselect"><strong><code>S_DropShadowColorSelect</code></strong><a class="headerlink" href="#s_dropshadowcolorselect" title="Permanent link">&para;</a></h4>
-<p><em>Functionality unsure</em>
-Color of the border, same values as C_W?</p>
+<p>Sets the color of the drop shadow. Overwrites <a href="#s_dropshadowcolor"><code>S_DropShadowColor</code></a>.</p>
 <p>Type: <code>1</code><br />
-Data: <code>[X]</code><br />
+Format: <code>[X]</code><br />
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_12">Example<a class="headerlink" href="#example_12" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -2184,26 +2286,49 @@ Example usage: <code>RdtBtnIconGame</code></p>
     <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+<h5 id="values_8">Values<a class="headerlink" href="#values_8" title="Permanent link">&para;</a></h5>
+<p>Uses the <a href="#global-color-values">global color values</a>.</p>
 <hr />
 <h4 id="s_dropshadowcolor"><strong><code>S_DropShadowColor</code></strong><a class="headerlink" href="#s_dropshadowcolor" title="Permanent link">&para;</a></h4>
-<p>Color of the drop shadow.</p>
+<p>Sets the color of the drop shadow.</p>
 <p>Type: <code>2</code><br />
-Data: <code>[X, X, X, X]</code><br />
-Common value: <code>[0.0, 0.0, 0.0, 1.0]</code> (R, G, B, A)?<br />
-Example usage: <code>RdtBtnIconGame</code></p>
+Format: <code>[R, G, B, A]</code></p>
 <h5 id="example_13">Example<a class="headerlink" href="#example_13" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowColor&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]</span>
+    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+<h5 id="values_9">Values<a class="headerlink" href="#values_9" title="Permanent link">&para;</a></h5>
+<p>Normalized RGB decimals, from 0-1</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Result (normal rgb)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0-1</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td>1</td>
+<td>255</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h4 id="s_dropshadowangle"><strong><code>S_DropShadowAngle</code></strong><a class="headerlink" href="#s_dropshadowangle" title="Permanent link">&para;</a></h4>
-<p>Shadow direction in radians.</p>
+<p>Shadow direction.</p>
 <p>Type: <code>2</code><br />
-Data: <code>[X]</code><br />
-Example usage: <code>RdtBtnIconGame</code></p>
+Format: <code>[X]</code></p>
 <h5 id="example_14">Example<a class="headerlink" href="#example_14" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowAngle&quot;</span><span class="p">,</span>
@@ -2211,7 +2336,8 @@ Example usage: <code>RdtBtnIconGame</code></p>
     <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
-<h5 id="values">Values<a class="headerlink" href="#values" title="Permanent link">&para;</a></h5>
+<h5 id="values_10">Values<a class="headerlink" href="#values_10" title="Permanent link">&para;</a></h5>
+<p>Direction in radians.</p>
 <table>
 <thead>
 <tr>
@@ -2244,10 +2370,9 @@ Example usage: <code>RdtBtnIconGame</code></p>
 </table>
 <hr />
 <h4 id="s_dropshadowdistance"><strong><code>S_DropShadowDistance</code></strong><a class="headerlink" href="#s_dropshadowdistance" title="Permanent link">&para;</a></h4>
-<p>Shadow fade/blur distance in pixels.</p>
+<p>Shadow fade/blur distance.</p>
 <p>Type: <code>2</code><br />
-Data: <code>[X]</code><br />
-Example usage: <code>RdtBtnIconGame</code></p>
+Format: <code>[X]</code></p>
 <h5 id="example_15">Example<a class="headerlink" href="#example_15" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowDistance&quot;</span><span class="p">,</span>
@@ -2256,10 +2381,12 @@ Example usage: <code>RdtBtnIconGame</code></p>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
+<h5 id="values_11">Values<a class="headerlink" href="#values_11" title="Permanent link">&para;</a></h5>
+<p>Distance in pixels.</p>
 <h4 id="s_dropshadowsize"><strong><code>S_DropShadowSize</code></strong><a class="headerlink" href="#s_dropshadowsize" title="Permanent link">&para;</a></h4>
-<p>Shadow width in pixels.</p>
+<p>Shadow size.</p>
 <p>Type: <code>2</code><br />
-Data: <code>[X]</code><br />
+Format: <code>[X]</code><br />
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_16">Example<a class="headerlink" href="#example_16" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -2268,12 +2395,14 @@ Example usage: <code>RdtBtnIconGame</code></p>
     <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">10.0</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+<h5 id="values_12">Values<a class="headerlink" href="#values_12" title="Permanent link">&para;</a></h5>
+<p>Width in pixels.</p>
 <hr />
 <h4 id="s_dropshadowfunction"><strong><code>S_DropShadowFunction</code></strong><a class="headerlink" href="#s_dropshadowfunction" title="Permanent link">&para;</a></h4>
 <p><em>Functionality unsure</em>
 How the <code>S_DropShadowDistance</code> is drawn. For example, blur or solid?</p>
 <p>Type: <code>1</code><br />
-Data: <code>[X]</code><br />
+Format: <code>[X]</code><br />
 Common value: <code>5</code> and <code>4</code><br />
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_17">Example<a class="headerlink" href="#example_17" title="Permanent link">&para;</a></h5>
@@ -2288,7 +2417,7 @@ Example usage: <code>RdtBtnIconGame</code></p>
 <p><em>Functionality unsure</em>
 Enables/disables shadow fading?</p>
 <p>Type: <code>1</code><br />
-Data: <code>[X]</code><br />
+Format: <code>[X]</code><br />
 Common value: <code>1</code><br />
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_18">Example<a class="headerlink" href="#example_18" title="Permanent link">&para;</a></h5>
