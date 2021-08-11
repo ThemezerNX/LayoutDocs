@@ -49,7 +49,7 @@ Let's say you want the album icon to be red (`#FF0000`). The following example s
 
 <!-- prettier-ignore -->
 !!! Important
-	-   Since the color format is actually `FFbbggrr` (alpha, blue, green, red) you'll have to use a reversed version of the normal hex color. For example, the hex color code `FF0000` (rgb)/`FF0000FF` (rgb) would become `FF0000FF` (abgr).
+	-   Since the color format is actually `FFbbggrr` (alpha, blue, green, red) you'll have to use a reversed version of the normal hex color. For example, the hex color code `0000FF` (rgb)/`0000FFFF` (rgba) would become `FFFF0000` (abgr).
 
 ---
 

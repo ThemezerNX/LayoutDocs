@@ -19,7 +19,7 @@ _The two layers P_Main (left) and P_Grow (right) separated_
 
 <!-- prettier-ignore -->
 !!! Important
-	-   Since the color format is actually `aabbggrr` (alpha, blue, green, red) you'll have to use a reversed version of the normal hex color. For example, the hex color code `FF0000` (rgb)/`FF0000FF` (rgba) would become `FF0000FF` (abgr).
+	-   Since the color format is actually `aabbggrr` (alpha, blue, green, red) you'll have to use a reversed version of the normal hex color. For example, the hex color code `0000FF` (rgb)/`0000FFFF` (rgba) would become `FFFF0000` (abgr).
 
 ### Stock Animation, Custom Colors
 
