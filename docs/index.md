@@ -6,7 +6,7 @@
 
 ## Contributing
 
-If you're interested in contributing to LayoutDocs you can create a Pull Request in the GitHub repository.
-You may also DM `Migush#4096` on Discord with the details you'd like to add [LayoutDocs GitHub Repository](https://github.com/ThemezerNX/LayoutDocs).
+If you're interested in [contributing to LayoutDocs](https://github.com/ThemezerNX/LayoutDocs) you may create a Pull Request with your changes/additions.
+You may also DM `Migush#4096` on Discord.
 
 # [Getting Started](guide/index.md) :octicons-arrow-right-16:
