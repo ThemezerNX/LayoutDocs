@@ -2,7 +2,7 @@
 
 # Menu Files
 
-In order to work efficiently, it is important to understand the structure of the Switch's menus and get familiar with the themeing slang. This and a few following pages will introduce you to some basics.
+In order to work efficiently, it is important to understand the structure of the Switch's menus and get familiar with the theming slang. This and a few following pages will introduce you to some basics.
 
 The Switch's menus can be found in multiple firmware files. Separated into multiple [applets](../definitions.md#applet). The following table shows which menus (supported in themes) can be found where:
 

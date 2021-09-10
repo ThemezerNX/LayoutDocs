@@ -6,7 +6,7 @@ For this guide it is expected that you already have basic knowledge on how to in
 
 -   A hacked Switch, connected to LAN (use, for example, [90dns](https://gbatemp.net/threads/90dns-dns-server-for-blocking-all-nintendo-servers.516234/) to block connections to Nintendo)
 -   A Windows computer
--   [NXThemes Installer](https://github.com/exelix11/SwitchThemeInjector/releases/latest) version ≥2.6.2 (not out yet)
+-   [NXThemes Installer](https://github.com/exelix11/SwitchThemeInjector/releases/latest) version ≥2.6.2
     -   You probably already have this.
     -   You only need the `NXThemesInstaller.nro`.
     -   You can also install this homebrew app from the HB App Store.
