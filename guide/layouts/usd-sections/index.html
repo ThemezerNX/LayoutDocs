@@ -1361,7 +1361,7 @@ Type: <code>Int</code></p>
 <td>18</td>
 <td>blue (50,80,240)</td>
 <td>(0,255,201)</td>
-<td></td>
+<td>Pill and text color of navigation (the list on the left) in e.g. settings when selected</td>
 </tr>
 <tr>
 <td>19</td>
@@ -1970,7 +1970,8 @@ A property that is used to give elements certain colors. These colors are dynami
 Used almost everywhere (all menus have to support dark and light theme).</p>
 <p>Type: <code>1</code><br />
 Format: <code>[X, X, X, X]</code></p>
-<p>Often only the first <code>X</code> is non-<code>0</code>. Sometimes multiple <code>X</code>s are non-<code>0</code>, but changing the second, third and fourth to <code>0</code> seems to have no effect on appearance.</p>
+<p>Often only the first <code>X</code> is non-<code>0</code>. Sometimes multiple <code>X</code>s are non-<code>0</code>.</p>
+<p>For text panes, the second <code>X</code> may also be used. In the case that the flyt has a <em>decide key</em>, it has a special state: selected by the cursor. In this case, the first <code>X</code> will be the color when the text is <em>un-selected</em>, and the second <code>X</code> will be the color once the flyt <strong>is</strong> selected.</p>
 <h5 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
