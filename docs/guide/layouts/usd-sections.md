@@ -217,7 +217,9 @@ Used almost everywhere (all menus have to support dark and light theme).
 Type: `1`  
 Format: `[X, X, X, X]`
 
-Often only the first `X` is non-`0`. Sometimes multiple `X`s are non-`0`, but changing the second, third and fourth to `0` seems to have no effect on appearance.
+Often only the first `X` is non-`0`. Sometimes multiple `X`s are non-`0`.
+
+For text panes, the second `X` may also be used. In the case that the flyt has a _decide key_, it has a special state: selected by the cursor. In this case, the first `X` will be the color when the text is _un-selected_, and the second `X` will be the color once the flyt **is** selected.
 
 ##### Example
 
