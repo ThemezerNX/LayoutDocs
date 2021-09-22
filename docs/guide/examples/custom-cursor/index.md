@@ -127,7 +127,8 @@ You need four colors: two base colors and two slightly lighter variants (see [Ad
 
 #### Result
 
-![](stock_animation_custom_colors.gif)
+![](stock_animation_custom_colors.gif)  
+(The yellow above is actually green on the Switch itself)
 
 ### Static
 
