@@ -352,7 +352,7 @@ You can optionally set [`S_BorderColor0`](../../layouts/usd-sections.md#s_border
 ### 4. Shadow Color
 
 The cursor also has a shadow to add a bit of depth. By default it adds a slight blue tone, but nothing noticable.
-Set the USD sections as follows to disable this shadow. It often does more harm than good:
+Set the USD sections as follows if you like to disable this shadow.
 
 -   `P_Main`/`P_Grow`
     -   [`S_DropShadowColorSelect`](../../layouts/usd-sections.md#s_dropshadowcolorselect): `0`
