@@ -1,5 +1,7 @@
 # LayoutDocs
 
+<a href="https://ko-fi.com/Q5Q47KAM3"><img height="20" src="https://ko-fi.com/img/githubbutton_sm.svg" alt="ko-fi" /></a>
+
 This repository holds the documentation for custom Nintendo Switch layouts.
 
 ## Building And Contributing
