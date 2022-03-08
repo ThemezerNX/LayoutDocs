@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.3">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.edf004c2.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2d9f7617.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -28,8 +28,9 @@
     
       
         
+        
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -932,22 +933,37 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../../custom-messages/" class="md-nav__link">
+        Custom Messages/Text
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_5">
+        <label class="md-nav__link" for="__nav_6">
           Extras
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Extras" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Extras
         </label>
@@ -1260,48 +1276,49 @@
               
                 
 
+
 <h5 id="back-to-getting-started"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.78 12.53a.75.75 0 0 1-1.06 0L2.47 8.28a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 1.06L4.81 7h7.44a.75.75 0 0 1 0 1.5H4.81l2.97 2.97a.75.75 0 0 1 0 1.06z"/></svg></span> <a href="../">Back to Getting Started</a><a class="headerlink" href="#back-to-getting-started" title="Permanent link">&para;</a></h5>
 <h1 id="usd-sections">USD Sections<a class="headerlink" href="#usd-sections" title="Permanent link">&para;</a></h1>
 <p>USD sections define additional data about another pane. It usually just follows the pane it is related to, but can be in any order as long as it has the name of the pane it belongs to.</p>
 <p>This is a simplified example of a pane followed by a <code>usd</code> section:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;pic1 - P_Item&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;x translation&quot;</span><span class="p">:</span> <span class="mf">100.0</span><span class="p">,</span>
-        <span class="nt">&quot;y translation&quot;</span><span class="p">:</span> <span class="mf">100.0</span><span class="p">,</span>
-        <span class="nt">&quot;width&quot;</span><span class="p">:</span> <span class="mf">50.0</span><span class="p">,</span>
-        <span class="nt">&quot;height&quot;</span><span class="p">:</span> <span class="mf">50.0</span><span class="p">,</span>
-        <span class="nt">&quot;material&quot;</span><span class="p">:</span> <span class="s2">&quot;P_Item&quot;</span>
-    <span class="p">},</span>
-    <span class="nt">&quot;usd1 - P_Item&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;entries&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowDrawMode&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-                <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowColor&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-                <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowAngle&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-                <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">]</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowDistance&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-                <span class="nt">&quot;unk1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">]</span>
-            <span class="p">}</span>
-        <span class="p">]</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;pic1 - P_Item&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;P_Item&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;x translation&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">100.0</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;y translation&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">100.0</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;width&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">50.0</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;height&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">50.0</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;material&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;P_Item&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;usd1 - P_Item&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;entries&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S_DropShadowDrawMode&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;unk1&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S_DropShadowColor&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;unk1&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">]</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S_DropShadowAngle&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;unk1&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">1.5</span><span class="p">]</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S_DropShadowDistance&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;unk1&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">0.0</span><span class="p">]</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <!-- prettier-ignore -->
 <div class="admonition important">
@@ -2061,11 +2078,11 @@ Format: <code>[X, X, X, X]</code></p>
 <p>Often only the first <code>X</code> is non-<code>0</code>. Sometimes multiple <code>X</code>s are non-<code>0</code>.</p>
 <p>For text panes, the second <code>X</code> may also be used. In the case that the flyt has a <em>decide key</em>, it has a special state: selected by the cursor. In this case, the first <code>X</code> will be the color when the text is <em>un-selected</em>, and the second <code>X</code> will be the color once the flyt <strong>is</strong> selected.</p>
 <h5 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_W&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;C_W&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h5 id="values">Values<a class="headerlink" href="#values" title="Permanent link">&para;</a></h5>
 <p>Uses the <a href="#global-color-values">global color values</a>.</p>
@@ -2076,11 +2093,11 @@ Doesn't always have an effect. Seems to be used in for example the cursor.</p>
 <p>Type: <code>1</code><br />
 Format: <code>[X, X, X, X]</code></p>
 <h5 id="example_1">Example<a class="headerlink" href="#example_1" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_B&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">65</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;C_B&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">65</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <hr />
 <h4 id="c_id"><strong><code>C_Id</code></strong><a class="headerlink" href="#c_id" title="Permanent link">&para;</a></h4>
@@ -2091,11 +2108,11 @@ All stuff here was tested on the lockscreen, and does vary per menu.</p>
 <p>Type: <code>1</code><br />
 Format: <code>[X]</code></p>
 <h5 id="example_2">Example<a class="headerlink" href="#example_2" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_Id&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;C_Id&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h5 id="values_1">Values<a class="headerlink" href="#values_1" title="Permanent link">&para;</a></h5>
 <div class="color-table">
@@ -2130,11 +2147,11 @@ Format: <code>[X]</code></p>
 <p>Type: <code>1</code><br />
 Format: <code>[X]</code></p>
 <h5 id="example_3">Example<a class="headerlink" href="#example_3" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;C_Ti&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;C_Ti&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h5 id="tested-values">Tested Values<a class="headerlink" href="#tested-values" title="Permanent link">&para;</a></h5>
 <table>
@@ -2168,11 +2185,11 @@ Percentage/pixels?</p>
 Format: <code>[X]</code>
 Pane types: Picture only</p>
 <h5 id="example_4">Example<a class="headerlink" href="#example_4" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_RoundRadius&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">50.0</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S_RoundRadius&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">50.0</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <hr />
 <h4 id="s_borderdrawmode"><strong><code>S_BorderDrawMode</code></strong><a class="headerlink" href="#s_borderdrawmode" title="Permanent link">&para;</a></h4>
@@ -2182,11 +2199,11 @@ Format: <code>[X]</code><br />
 Common value: <code>1</code><br />
 Example usage: <code>Cursor3</code></p>
 <h5 id="example_5">Example<a class="headerlink" href="#example_5" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_BorderDrawMode&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S_BorderDrawMode&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h5 id="values_2">Values<a class="headerlink" href="#values_2" title="Permanent link">&para;</a></h5>
 <table>
@@ -2217,11 +2234,11 @@ Example usage: <code>Cursor3</code></p>
 <p>Type: <code>2</code><br />
 Format: <code>[X]</code></p>
 <h5 id="example_6">Example<a class="headerlink" href="#example_6" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_BorderVolume&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S_BorderVolume&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">1.5</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h5 id="values_3">Values<a class="headerlink" href="#values_3" title="Permanent link">&para;</a></h5>
 <table>
@@ -2253,11 +2270,11 @@ Format: <code>[X]</code></p>
 Format: <code>[X]</code><br />
 Example usage: <code>Cursor3</code></p>
 <h5 id="example_7">Example<a class="headerlink" href="#example_7" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_BorderSize&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S_BorderSize&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">5.0</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h5 id="values_4">Values<a class="headerlink" href="#values_4" title="Permanent link">&para;</a></h5>
 <p>Width in pixels.</p>
@@ -2267,11 +2284,11 @@ Example usage: <code>Cursor3</code></p>
 <p>Type: <code>1</code><br />
 Format: <code>[X]</code></p>
 <h5 id="example_8">Example<a class="headerlink" href="#example_8" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_BorderColorSelect0&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S_BorderColorSelect0&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h5 id="values_5">Values<a class="headerlink" href="#values_5" title="Permanent link">&para;</a></h5>
 <p>Uses the <a href="#global-color-values">global color values</a>.</p>
@@ -2281,11 +2298,11 @@ Format: <code>[X]</code></p>
 <p>Type: <code>2</code><br />
 Format: <code>[R, G, B, A]</code></p>
 <h5 id="example_9">Example<a class="headerlink" href="#example_9" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_BorderColor0&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S_BorderColor0&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">5.0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h5 id="values_6">Values<a class="headerlink" href="#values_6" title="Permanent link">&para;</a></h5>
 <p>Normalized RGB decimals, from 0-1</p>
@@ -2320,11 +2337,11 @@ Format: <code>[X]</code><br />
 Common value: <code>1</code><br />
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_10">Example<a class="headerlink" href="#example_10" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowDrawMode&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S_DropShadowDrawMode&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h5 id="values_7">Values<a class="headerlink" href="#values_7" title="Permanent link">&para;</a></h5>
 <table>
@@ -2356,11 +2373,11 @@ Example usage: <code>RdtBtnIconGame</code></p>
 Format: <code>[X]</code><br />
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_11">Example<a class="headerlink" href="#example_11" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowVolume&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S_DropShadowVolume&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">5.0</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <hr />
 <h4 id="s_dropshadowcolorselect"><strong><code>S_DropShadowColorSelect</code></strong><a class="headerlink" href="#s_dropshadowcolorselect" title="Permanent link">&para;</a></h4>
@@ -2369,11 +2386,11 @@ Example usage: <code>RdtBtnIconGame</code></p>
 Format: <code>[X]</code><br />
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_12">Example<a class="headerlink" href="#example_12" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowColorSelect&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S_DropShadowColorSelect&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h5 id="values_8">Values<a class="headerlink" href="#values_8" title="Permanent link">&para;</a></h5>
 <p>Uses the <a href="#global-color-values">global color values</a>.</p>
@@ -2383,11 +2400,11 @@ Example usage: <code>RdtBtnIconGame</code></p>
 <p>Type: <code>2</code><br />
 Format: <code>[R, G, B, A]</code></p>
 <h5 id="example_13">Example<a class="headerlink" href="#example_13" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowColor&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S_DropShadowColor&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h5 id="values_9">Values<a class="headerlink" href="#values_9" title="Permanent link">&para;</a></h5>
 <p>Normalized RGB decimals, from 0-1</p>
@@ -2419,11 +2436,11 @@ Format: <code>[R, G, B, A]</code></p>
 <p>Type: <code>2</code><br />
 Format: <code>[X]</code></p>
 <h5 id="example_14">Example<a class="headerlink" href="#example_14" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowAngle&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S_DropShadowAngle&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">1.5</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h5 id="values_10">Values<a class="headerlink" href="#values_10" title="Permanent link">&para;</a></h5>
 <p>Direction in radians.</p>
@@ -2463,11 +2480,11 @@ Format: <code>[X]</code></p>
 <p>Type: <code>2</code><br />
 Format: <code>[X]</code></p>
 <h5 id="example_15">Example<a class="headerlink" href="#example_15" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowDistance&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">5.2</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S_DropShadowDistance&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">5.2</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <hr />
 <h5 id="values_11">Values<a class="headerlink" href="#values_11" title="Permanent link">&para;</a></h5>
@@ -2478,11 +2495,11 @@ Format: <code>[X]</code></p>
 Format: <code>[X]</code><br />
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_16">Example<a class="headerlink" href="#example_16" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowSize&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">10.0</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S_DropShadowSize&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">10.0</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h5 id="values_12">Values<a class="headerlink" href="#values_12" title="Permanent link">&para;</a></h5>
 <p>Width in pixels.</p>
@@ -2495,11 +2512,11 @@ Format: <code>[X]</code><br />
 Common value: <code>5</code> and <code>4</code><br />
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_17">Example<a class="headerlink" href="#example_17" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowFunction&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S_DropShadowFunction&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <hr />
 <h4 id="s_dropshadowknockout"><strong><code>S_DropShadowKnockout</code></strong><a class="headerlink" href="#s_dropshadowknockout" title="Permanent link">&para;</a></h4>
@@ -2510,11 +2527,11 @@ Format: <code>[X]</code><br />
 Common value: <code>1</code><br />
 Example usage: <code>RdtBtnIconGame</code></p>
 <h5 id="example_18">Example<a class="headerlink" href="#example_18" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;PropName&quot;</span><span class="p">:</span> <span class="s2">&quot;S_DropShadowKnockout&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;PropValues&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S_DropShadowKnockout&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;PropValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h1 id="continue-to-animations"><a href="../../animations/">Continue to Animations</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06l2.97-2.97H3.75a.75.75 0 0 1 0-1.5h7.44L8.22 4.03a.75.75 0 0 1 0-1.06z"/></svg></span><a class="headerlink" href="#continue-to-animations" title="Permanent link">&para;</a></h1>
 
@@ -2582,10 +2599,10 @@ Example usage: <code>RdtBtnIconGame</code></p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.0bbba5b5.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.e1a181d9.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.467223ff.min.js"></script>
       
         <script src="../../../js/color_blocks.js"></script>
       
