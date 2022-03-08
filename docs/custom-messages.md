@@ -19,6 +19,8 @@ The messages strings are stored in `0100000000001000\romfs\message\<lang code>\<
 4. It will ask you where to decompress it. It will retain the "szs" in the end, but it will say decomp.szs so its unpackaged
 5. Now open up the `qlaunch.msbt.decomp.szs` in Kuriimu and it should look like this screenshot (with a list of string names on the left) ![image](https://cdn.discordapp.com/attachments/495784470377398282/495850914872295424/unknown.png)
 6. To change the eShop button label, go down to the ones labeled `RdtSystemTitle_Shop`
-7. Change it to whatever, save it. Then repeat the "Decompress" steps but instead to Compress this time
+7. Change it to whatever, save it. Then repeat the "Decompress" steps but instead compress this time
 8. Rename the compressed `.szs` to `qlaunch.msbt.szs`
 9. Copy the modified `qlaunch.msbt.szs` to `SD:\atmosphere\contents\0100000000001000\romfs\message\<lang code>\qlaunch.msbt.szs`
+
+For a more extensive guide (although not yet finished) [check out this one](https://github.com/bandithedoge/switch-pl/wiki) by bandithedoge
