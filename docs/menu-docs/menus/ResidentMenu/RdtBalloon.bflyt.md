@@ -5,6 +5,7 @@
         -   **N_Size**
             -   **N_Scissor**
                 -   **N_Offset**
+					-	`P_Color [pic 1]`: Game text color
                     -   _P_Reset_
                     -   **N_Scroll**: `contains all scrolling pars in the balloon (so only the text really)`
                         -   **T_Main**: `the icon's name`
