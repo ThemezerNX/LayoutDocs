@@ -35,5 +35,3 @@
 | [RdtBtnSet.bflyt](RdtBtnSet.bflyt.md)            		| ResidentMenuButtonSettings      | Settings applet button                                                         |
 | RdtBtnShop.bflyt                                		| ResidentMenuButtonShop          | eShop applet button                                                            |
 | RdtIconPromotion.bflyt                          		| ResidentMenuIconPromotion       |                                                                                |
-
-[coloring the UI](colors.md)

@@ -1,7 +1,3 @@
-## Tree
-
-[](index.md)
-
 -   `N_Root`
     -   `N_Delete`
         -   `N_DecideKey`
@@ -29,9 +25,6 @@
     -   [`RdtBalloon.bflyt`](RdtBalloon.bflyt.md): the game's name/text in blue
 -   `B_Hit`: hitbox of all the items in N_DecideKey
 
-
-
----
 <!-- prettier-ignore -->
 !!! Info
     Material Editing colors can be tricky, edit background colors (RGB) 255;255;255 (would be white)
@@ -39,3 +32,6 @@
 -	`Materials`
 	-	`2:T_Suspend`: 'Playing' Text Color
 	-	`12:P_Suspend`: 'Background color of suspend text'
+---
+
+< [ResidentMenu.szs](index.md)

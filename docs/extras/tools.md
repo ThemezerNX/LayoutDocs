@@ -39,4 +39,9 @@ Here are some tools that might be useful for theming and other types of modding.
     Kuriimu2 is a general purpose game translation project manager and toolkit for authors of fan translations and game mods. This tool also works for the Switch's menus. [Here's an example](https://github.com/bandithedoge/switch-pl) of a fan-translation in Polish.
 -   [Game Icon Customizer](https://github.com/hotshotz79/NX-Game-Icon-Customizer)  
     **Supported filetype:** N/A  
-    An application to simplify the method of changing game icons in Atmosphere.
+    An application to simplify the method of changing game icons in Atmosphere via your pc.
+-   [IconGrabber](https://github.com/Slluxx/IconGrabber)
+
+    **Supported filetype:** N/A
+
+    A homebrew method of changing game icons in Atmosphere via your switch. (steamgriddb api key required).

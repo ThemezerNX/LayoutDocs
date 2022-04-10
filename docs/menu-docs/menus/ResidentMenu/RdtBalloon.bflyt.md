@@ -1,5 +1,3 @@
-## Tree
-
 -   **N_Root**
     -   **N_Trans**
         -   **N_Size**
@@ -12,4 +10,7 @@
                         -   _N_Margin_
                         -   _T_Sub_
         -   **N_Card**
-            -   **P_Card**: `the card icon`
+            -   **P_Card**: `no gamecard icon`
+---
+
+< [ResidentMenu.szs](index.md)

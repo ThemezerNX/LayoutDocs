@@ -1,7 +1,3 @@
-## Tree
-
-[](index.md)
-
 background circle color:
 
 -	`RootPane`
@@ -11,9 +7,9 @@ background circle color:
 				-	`P_PicBase [pic 1]`: full launcher background color
 				-	`N_Pict [pan1]`
 					-	`P_Pict_00 [pic1]`:four square icons - TL
-					-	`P_Pict_01 [pic1]`:
-					-	`P_Pict_02 [pic1]`:
-					-	`P_Pict_03 [pic1]`:
+					-	`P_Pict_01 [pic1]`:four square icons - TR
+					-	`P_Pict_02 [pic1]`:four square icons - BL
+					-	`P_Pict_03 [pic1]`:four Square icons - BR
 
 
 <!-- prettier-ignore -->
@@ -22,3 +18,7 @@ background circle color:
 
 -	`Materials`
 	-	`12: P_PictBase`: Background launcher color opacity
+
+---
+
+< [ResidentMenu.szs](index.md)

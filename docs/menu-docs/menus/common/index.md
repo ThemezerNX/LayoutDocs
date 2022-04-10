@@ -17,6 +17,11 @@
 | FooterCtrl.bflyt           | LineFooter                    | Controller/Switch Icon                                            |
 | LineFooter.bflyt           | LineFooter                    | The actual footer line                                            |
 | DCntIconLauncherText.bflyt | DContentIconLauncherText(box?)| Close Current Software textbox                                    |
+| BgNml.bflyt		     | BackGround Normal		 | background panel								   |
+| BtnDialogNml.bflyt         | Dialog Button Normal		 | applet button									   |
+| BtnLineNml.bflyt	     | Button Line Normal		 | Button seperator colors							   |
+| DBaseNml.bflyt		     | Dialog Base Normal		 | Applet background								   |
+| DBtmBaseNml.bflyt	     | Dialog Bottom Base Normal	 | background Blur / Dropdown list background				   |
 
 
 _Not finished yet_
