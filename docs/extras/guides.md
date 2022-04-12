@@ -24,4 +24,5 @@
 -   [A translation guide for the Switch's system menus](https://github.com/bandithedoge/switch-pl/wiki)
 -   [Homebrew Menu Theming Instructions](https://switchbrew.org/wiki/Homebrew_Menu#Themes)
 -   [You can change the theme icon in the settings menu](https://www.reddit.com/r/NXThemes/comments/anejej/psa_you_can_change_the_theme_icon_in_the_settings/)
--   [Custom Game Icons](https://github.com/hotshotz79/NX-Custom-Game-Icons)
+-   [Custom Game Icons-hotshotz79 repo](https://github.com/hotshotz79/NX-Custom-Game-Icons)
+-   [Custom Game Icons-SodaSoba1 repo](https://github.com/sodasoba1/NSW-Custom-Game-Icons)

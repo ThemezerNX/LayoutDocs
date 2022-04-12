@@ -47,12 +47,12 @@ nav:
     - Menu Documentation:
           - Introduction: menu-docs/index.md
           - Menus:
-                - common: menu-docs/menus/common/index.md
+                - Common: menu-docs/menus/common/index.md
                 - Home Menu: menu-docs/menus/ResidentMenu/index.md
                 #     - Lockscreen: menu-docs/menus/Entrance/index.md
                 - All Apps: menu-docs/menus/Flaunch/index.md
                   #     - Settings: menu-docs/menus/Set/index.md
-                  #     - Player Select: menu-docs/Psl/index.md
+                - Player Select: menu-docs/menus/Psl/index.md
                   #     - User Page: menu-docs/MyPage/index.md
                   #     - News: menu-docs/Notification/index.md
     - Definitions: definitions.md

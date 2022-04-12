@@ -1,5 +1,3 @@
-## Tree
-
 -   `RdtBase.bflyt`
     -   `L_BgNml`: contains the original light/dark background, but the 'exelixbg' panel as well after being patched with a custom background
     -   `N_Root`
@@ -20,3 +18,6 @@
             -   `L_BtnAccount_[00-07]`:`all usericons which make use of a single layout
         -   `L_Hud`: the hud (clock, network, battery)
         -   `L_BalloonCtrl`: the balloon that pops up when (dis)connecting a controller
+---
+
+< [ResidentMenu.szs](index.md)
