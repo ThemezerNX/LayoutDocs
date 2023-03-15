@@ -424,10 +424,10 @@ Related to vertex colors transformations listed below.
 
 ## <a href="#thanks"></a>VI. Additional notes and special thanks
 
-At last, special (and big) thanks to:
-- exelix and Migush for all the tips
-- Zhi for the animated background testing part
-- All the contributors from the Nintendo Switch modding scene
+At last, special (and big) thanks to:  
+- exelix and Migush for all the tips  
+- Zhi for the animated background testing part  
+- All the contributors from the Nintendo Switch modding scene  
 
 
 ## Additional Guides
