@@ -4,7 +4,7 @@ Here are some tools that might be useful for theming and other types of modding.
 
 <!-- prettier-ignore -->
 !!! Info
-    Some of these tools are used in LayoutKit. Those that are, are marked with :octicons-tasklist-16:.
+    Some of these tools are included in LayoutKit. Those that are, are marked with :octicons-tasklist-16:.
 
 ## Theming Tools
 
@@ -16,7 +16,7 @@ Here are some tools that might be useful for theming and other types of modding.
     -   Switch Theme Injector (Windows app) :octicons-tasklist-16:: An app to create and edit custom themes.
     -   [Switch Theme Injector Online](http://exelix11.github.io/SwitchThemeInjector/v2) (also called WebInjector): A port of the windows injector as a web app, however, it lacks some features like custom icons and `common.szs` support.
     -   NXThemes Installer: An homebrew app that runs on the switch itself and can be used to install and manage themes.
--   [Switch Layout Editor](https://github.com/FuryBaguette/SwitchLayoutEditor)  
+-   [Switch Layout Editor](https://github.com/FuryBaguette/SwitchLayoutEditor) :octicons-tasklist-16:  
     **Supported filetypes:** `blfyt`, `bflan`  
     The Switch Layout Editor was specially developed for creating custom layouts. This is a visual editor. A basic introduction to the tool is available [here](https://github.com/FuryBaguette/SwitchLayoutEditor/wiki).
 -   [3DSKit](https://github.com/Tyulis/3DSkit)  
