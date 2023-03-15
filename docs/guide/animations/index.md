@@ -5,41 +5,11 @@ _Written by [Capybara](https://themezer.net/creators/382997176307154945)_
 
 <br />
 This tutorial virtually sums up everything I know about animations. However, some parts of this tutorial aren't as complete and rigorous as I'd have wanted them to be, so feel free to reach out to either me or Migush (links down below) if you know about additional resource that can be put into this document.
-	
-## Table of contents
-
-- **[I. Introduction](#i-introduction)**
-- **[II. Requirements](#ii-requirements)**
-- **[III. Before actually starting](#iii-before-actually-starting)**
-	- [III.1. A few words on .szs files](#iii1-a-few-words-on-szs-files)
-	- [III.2. Layout Editor and diffing](#iii2-layout-editor-and-diffing)
-	- [III.3. Summing up the process](#iii3-summing-up-the-process)
-- **[IV. Tutorial](#iv-tutorial)**
-- **[V. Going further](#v-going-further)**
-	- [V.1. Active and Inactive states](#v1-active-and-inactive-states)
-	- [V.2. Looping animations](#v2-looping-animations)
-	- [V.3. Fade in and fade out animations](#v3-fade-in-and-fade-out-animations)
-	- [V.4. Animated backgrounds](#v4-animated-backgrounds)
-	- [V.5. Animations may overwrite things](#v5-animations-may-overwrite-things)
-    - [V.6. Useful tables](#v6-useful-tables)
-	    - [V.6.a. PaiTag entries](#v6a-paitag-entries)
-         - [V.6.b. AnimationTarget](#v6b-animationtarget)
-         - [V.6.c. Notable files](#v6c-notable-files)
-- **[VI. Additional notes and special thanks](#vi-additional-notes-and-special-thanks)**
 
 ## Useful links
 
 #### Documentation and download links
-- [LayoutDocs](https://layoutdocs.themezer.net/)
-- [exelix's github (Switch Theme Injector)](https://github.com/exelix11/SwitchThemeInjector)
-- [FuryBaguette's github (Switch Layout Editor)](https://github.com/FuryBaguette/SwitchLayoutEditor)
-- [Migush's github (ThemezerNX)](https://github.com/ThemezerNX/)
 - [Zhi's github (Patterns theme)](https://github.com/zzzribas/Patterns)
-
-#### To ask for support
-- [ThemezerNX Discord server](https://discord.com/invite/nnm8wyM)
-- [exelix's Discord server](https://discord.gg/rqU5Tf8)
-- [NXTheme subreddit](https://www.reddit.com/r/NXThemes/)
 
 
 ## <a href="#intro"></a>I. Introduction
