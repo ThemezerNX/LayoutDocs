@@ -1,3 +1,5 @@
+##### :octicons-arrow-left-16: [Back to USD Sections](../layouts/usd-sections.md)
+
 # Creating custom animations for your NX themes
 _Written by [Capybara](https://themezer.net/creators/382997176307154945)_
 

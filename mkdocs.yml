@@ -21,17 +21,16 @@ markdown_extensions:
 
 nav:
     - Home: index.md
-    - Creating Custom Layouts:
+    - Guides:
           - Getting Started: guide/index.md
           - Menu Files: guide/menu-files.md
           - Filetypes: guide/filetypes.md
           - Layouts:
                 - Getting Started: guide/layouts/index.md
                 - USD Sections: guide/layouts/usd-sections.md
-          - Animations:
-                - Getting Started: guide/animations/index.md
+          - Animations: guide/animations/index.md
           - Diffing: guide/diffing.md
-          - Examples:
+          - Specific Guides:
                 Getting Started: guide/examples/index.md
                 #     Changing Component Sizes: guide/examples/changing-component-sizes/index.md
                 #     Repositioning the Gamerow: guide/examples/reposition-gamerow/index.md
