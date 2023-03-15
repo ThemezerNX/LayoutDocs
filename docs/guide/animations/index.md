@@ -1,10 +1,5 @@
 # Creating custom animations for your NX themes
-
-*Written by [Capybara](https://themezer.net/creators/382997176307154945), March 2023*
-
-<div align="center">
-<img src="https://avatars.githubusercontent.com/u/65415089?s=200&v=4" />
-</div>
+_Written by [Capybara](https://themezer.net/creators/382997176307154945)_
 
 <br />
 This tutorial virtually sums up everything I know about animations. However, some parts of this tutorial aren't as complete and rigorous as I'd have wanted them to be, so feel free to reach out to either me or Migush (links down below) if you know about additional resource that can be put into this document.
@@ -462,3 +457,8 @@ At last, special (and big) thanks to:
 - Zhi for the animated background testing part
 - All the contributors from the Nintendo Switch modding scene
 
+
+## Additional Guides
+
+[This tool guide](https://github.com/KillzXGaming/Switch-Toolbox/wiki/BFLYT-Editing#animations) shows how you can create animations.  
+[This guide](https://www.reddit.com/r/NXThemes/comments/biu5hc/making_your_own_custom_animations/) shows how you have to implement the groups so that the animations work with the Switch Theme Injector
