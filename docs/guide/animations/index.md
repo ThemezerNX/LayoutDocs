@@ -358,6 +358,8 @@ To give another example, a highlighted game in my Spotify Deck home menu has a g
 | `FLVI`     | *unknown*           |
 | `FLMC`     | *unknown*                      |
 
+[This list](https://github.com/Tyulis/3DSkit/blob/master/doc/BFLAN.md#constants) has more types, together with the possible target values and their function.
+
 #### V.6.b. AnimationTarget
 
 ##### FLPA PaiTag
