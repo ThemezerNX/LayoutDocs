@@ -28,7 +28,9 @@ nav:
           - Layouts:
                 - Getting Started: guide/layouts/index.md
                 - USD Sections: guide/layouts/usd-sections.md
-          - Animations: guide/animations/index.md
+          - Animations:
+                - The Guide: guide/animations/index.md
+                - PaiTags and Targets: guide/animations/paitags-and-targets.md
           - Diffing: guide/diffing.md
           - Specific Guides:
                 Getting Started: guide/examples/index.md
