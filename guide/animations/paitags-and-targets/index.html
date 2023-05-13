@@ -1156,20 +1156,19 @@ used, while the <code>AnimationTarget</code> specifies a specific property.</p>
 </tr>
 </tbody>
 </table>
-<p>Next a PaiTarget (or simply 'target') has to be specified. This is the object that will be animated. The table below
-shows all known types of targets in the (b)flan filetype. The PaiTag indicates what specific property will be modified (
+<p>Next a <code>PaiTag</code> has to be specified. This is the object that will be animated. The table below
+shows all known types of targets in the (b)flan filetype. Next, the <code>AnimationTarget</code> indicates what specific property will be modified (
 e.g. x position, y rotation, etc.).</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Note that SwitchLayoutEditor does not support all PaiTags and PaiTargets, although the most important ones are
 supported.</p>
 </div>
-<p>For more info about these tags and the different versions, check
+<p>For more info about these tags and the different versions among consoles, check
 out <a href="https://github.com/KillzXGaming/Switch-Toolbox/blob/c9e74e0be114885f347789f3bd348baccacf0842/File_Format_Library/FileFormats/Layout/Common.cs">this file</a>
 from Switch Toolbox.</p>
 <h3 id="flpa-pane-srt"><a href="#FLPA"></a>FLPA (Pane SRT)<a class="headerlink" href="#flpa-pane-srt" title="Permanent link">&para;</a></h3>
-<p>Related to basic transformations listed below.
-Expected value type for <code>KeyFrames</code> is <code>float</code>.</p>
+<p>Related to basic transformations listed below.</p>
 <table>
 <thead>
 <tr>
@@ -1245,14 +1244,7 @@ Expected value type for <code>KeyFrames</code> is <code>float</code>.</p>
 <ul>
 <li>Translations are relative to the (x, y) coordinates defined in your <code>.json</code> layout, so a (0, 0) translation means that
   the pane keeps its base position</li>
-<li>Scaling is also relative to what is defined in your <code>.json</code> layout. To keep your pane size at a 1:1 ratio, <code>KeyFrames</code>
-  values should be set to <code>1</code></li>
-<li>Value <code>3</code> for <code>AnimationTarget</code> scales the pane down along the y-axis by a certain px amount (no cropping involved), *
-  <em>although</em>* it needs further testing to be completely sure. It seems to work with absolute values within <code>KeyFrames</code>,
-  meaning that negative values have the same effect as if they were positive</li>
-<li>Value <code>2</code> for <code>AnimationTarget</code> also needs further testing. This time I couldn't figure out what it actually does. An
-  obvious guess would be that it scales the pane down along the x-axis, but my trial and error sessions haven't given
-  any luck towards that expected result</li>
+<li>Scaling is also relative to what is defined in your <code>.json</code> layout. To keep your pane size at a 1:1 ratio, KeyFrame <code>value</code>s should be set to <code>1</code></li>
 </ul>
 <h3 id="flvi-visibility"><a href="#FLVI"></a>FLVI (Visibility)<a class="headerlink" href="#flvi-visibility" title="Permanent link">&para;</a></h3>
 <table>
@@ -1637,10 +1629,6 @@ Expected value type for <code>KeyFrames</code> is <code>float</code>.</p>
 </tr>
 </tbody>
 </table>
-<p><em>NB: I haven't tested this thoroughly for RGB channels (now you're probably seeing how annoying it is), but my guess is
-that <code>AnimationTarget</code> values follow a fairly simple and similar pattern: <code>0</code>, <code>1</code>, <code>2</code> = R, G, B for a specific pane
-corner, <code>3</code> = alpha for that same corner ; <code>4</code>, <code>5</code>, <code>6</code> = R, G, B for another corner, <code>7</code> = alpha for this second
-corner, ..., <code>16</code> = alpha channel for the whole pane.</em></p>
 <h3 id="fltp-texture-pattern"><a href="#FLTP"></a>FLTP (Texture Pattern)<a class="headerlink" href="#fltp-texture-pattern" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
