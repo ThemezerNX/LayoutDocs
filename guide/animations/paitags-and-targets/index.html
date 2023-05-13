@@ -1,0 +1,1897 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../diffing/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
+    
+    
+      
+        <title>PaiTags and Targets - LayoutDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.85bb2934.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a6bdf11c.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#paitags-and-targets-for-flan-animations" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="LayoutDocs" class="md-header__button md-logo" aria-label="LayoutDocs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LayoutDocs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              PaiTags and Targets
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="LayoutDocs" class="md-nav__button md-logo" aria-label="LayoutDocs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    LayoutDocs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../menu-files/" class="md-nav__link">
+        Menu Files
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../filetypes/" class="md-nav__link">
+        Filetypes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+          Layouts
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Layouts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/usd-sections/" class="md-nav__link">
+        USD Sections
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+          Animations
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          Animations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        The Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          PaiTags and Targets
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        PaiTags and Targets
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#paitags" class="md-nav__link">
+    PaiTags
+  </a>
+  
+    <nav class="md-nav" aria-label="PaiTags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flpa-pane-srt" class="md-nav__link">
+    FLPA (Pane SRT)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flvi-visibility" class="md-nav__link">
+    FLVI (Visibility)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flts-texture-srt" class="md-nav__link">
+    FLTS (Texture SRT)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flmc-material-color" class="md-nav__link">
+    FLMC (Material Color)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flvc-vertex-color" class="md-nav__link">
+    FLVC (Vertex Color)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fltp-texture-pattern" class="md-nav__link">
+    FLTP (Texture Pattern)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flim-indirect-texture-srt" class="md-nav__link">
+    FLIM (Indirect Texture SRT)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flct-indirect-texture-srt" class="md-nav__link">
+    FLCT (Indirect Texture SRT)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fleu-extended-user-information" class="md-nav__link">
+    FLEU (Extended User Information)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-thanks" class="md-nav__link">
+    Special Thanks
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diffing/" class="md-nav__link">
+        Diffing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+          Specific Guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_7">
+          <span class="md-nav__icon md-icon"></span>
+          Specific Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/stationary-game-icons/" class="md-nav__link">
+        Stationary Game Icons
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/custom-element-colors/" class="md-nav__link">
+        Custom Element Colors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/custom-applet-icons/" class="md-nav__link">
+        Custom Applet Icons
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/custom-cursor/" class="md-nav__link">
+        Custom Cursor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/hide-footer-line/" class="md-nav__link">
+        Hide Footer Line
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/hide-header-lines/" class="md-nav__link">
+        Hide Header Lines
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/pull-push-front-back/" class="md-nav__link">
+        Pulling & Pushing Panes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/disabling-clock-movement-caused-by-battery/" class="md-nav__link">
+        Disabling Hud Movement
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Menu Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Menu Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../menu-docs/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          Menus
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Menus
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../menu-docs/menus/common/" class="md-nav__link">
+        common
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../menu-docs/menus/ResidentMenu/" class="md-nav__link">
+        Home Menu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../menu-docs/menus/Flaunch/" class="md-nav__link">
+        All Apps
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../definitions/" class="md-nav__link">
+        Definitions
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../custom-messages/" class="md-nav__link">
+        Custom Messages/Text
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          Extras
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Extras
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../extras/guides/" class="md-nav__link">
+        Guides
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../extras/tools/" class="md-nav__link">
+        Tools
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../extras/discord-servers/" class="md-nav__link">
+        Discord Servers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../extras/other/" class="md-nav__link">
+        Other
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#paitags" class="md-nav__link">
+    PaiTags
+  </a>
+  
+    <nav class="md-nav" aria-label="PaiTags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flpa-pane-srt" class="md-nav__link">
+    FLPA (Pane SRT)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flvi-visibility" class="md-nav__link">
+    FLVI (Visibility)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flts-texture-srt" class="md-nav__link">
+    FLTS (Texture SRT)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flmc-material-color" class="md-nav__link">
+    FLMC (Material Color)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flvc-vertex-color" class="md-nav__link">
+    FLVC (Vertex Color)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fltp-texture-pattern" class="md-nav__link">
+    FLTP (Texture Pattern)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flim-indirect-texture-srt" class="md-nav__link">
+    FLIM (Indirect Texture SRT)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flct-indirect-texture-srt" class="md-nav__link">
+    FLCT (Indirect Texture SRT)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fleu-extended-user-information" class="md-nav__link">
+    FLEU (Extended User Information)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-thanks" class="md-nav__link">
+    Special Thanks
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h5 id="back-to-animation-guide"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M7.78 12.53a.75.75 0 0 1-1.06 0L2.47 8.28a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L4.81 7h7.44a.75.75 0 0 1 0 1.5H4.81l2.97 2.97a.75.75 0 0 1 0 1.06Z"/></svg></span> <a href="../">Back to Animation Guide</a><a class="headerlink" href="#back-to-animation-guide" title="Permanent link">&para;</a></h5>
+<h1 id="paitags-and-targets-for-flan-animations">PaiTags and targets for FLAN Animations<a class="headerlink" href="#paitags-and-targets-for-flan-animations" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="paitags">PaiTags<a class="headerlink" href="#paitags" title="Permanent link">&para;</a></h2>
+<p>All kinds of different animations exist, from simple transformations to changing shadows or color. The table below shows
+all encountered types of animation in the (b)flan filetype. The <code>PaiTag</code> indicates which types of animations will be
+used, while the <code>AnimationTarget</code> specifies a specific property.</p>
+<ul>
+<li>Items with a ✅ are properly understood and documented and supported by many tools.</li>
+<li>Items with a 🟧 are properly understood and documented.</li>
+<li>Items with a ⛔ have never really been tested, documented, nor implemented in any tool. Their exact workings are
+  unknown.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><code>PaiTag</code></th>
+<th></th>
+<th>Name</th>
+<th>Used for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#FLPA">FLPA</a></td>
+<td>✅</td>
+<td><strong>PA</strong>ne SRT</td>
+<td>Basic transformations</td>
+</tr>
+<tr>
+<td><a href="#FLVI">FLVI</a></td>
+<td>✅</td>
+<td><strong>VI</strong>sibility</td>
+<td>Visibility (shown or hidden)</td>
+</tr>
+<tr>
+<td><a href="#FLTS">FLTS</a></td>
+<td>✅</td>
+<td><strong>T</strong>exture <strong>S</strong>RT</td>
+<td>Texture transformations</td>
+</tr>
+<tr>
+<td><a href="#FLVC">FLVC</a></td>
+<td>✅</td>
+<td><strong>V</strong>ertex <strong>C</strong>olor</td>
+<td>Vertex color</td>
+</tr>
+<tr>
+<td><a href="#FLMC">FLMC</a></td>
+<td>✅</td>
+<td><strong>M</strong>aterial <strong>C</strong>olor</td>
+<td>Material Color</td>
+</tr>
+<tr>
+<td><a href="#FLTP">FLTP</a></td>
+<td>🟧</td>
+<td><strong>T</strong>exture <strong>P</strong>attern</td>
+<td>Texture pattern</td>
+</tr>
+<tr>
+<td><a href="#FLIM">FLIM</a></td>
+<td>✅</td>
+<td><strong>I</strong>ndirect Texture SRT</td>
+<td>Indirect(?) texture transformations</td>
+</tr>
+<tr>
+<td>FLAC</td>
+<td>⛔</td>
+<td><strong>A</strong>lpha Test</td>
+<td><em>unknown</em></td>
+</tr>
+<tr>
+<td><a href="#FLCT">FLCT</a></td>
+<td>⛔</td>
+<td>Font Shadow</td>
+<td>Font shadows</td>
+</tr>
+<tr>
+<td>FLCC</td>
+<td>⛔</td>
+<td>Per-<strong>C</strong>haracter Transform <strong>C</strong>urve</td>
+<td><em>unknown</em></td>
+</tr>
+<tr>
+<td><a href="#FLEU">FLEU</a></td>
+<td>⛔</td>
+<td><strong>E</strong>xtended <strong>U</strong>ser Information</td>
+<td>USD patches (e.g. battery color based on charge level). These animation require code in the applications</td>
+</tr>
+</tbody>
+</table>
+<p>Next a PaiTarget (or simply 'target') has to be specified. This is the object that will be animated. The table below
+shows all known types of targets in the (b)flan filetype. The PaiTag indicates what specific property will be modified (
+e.g. x position, y rotation, etc.).</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Note that SwitchLayoutEditor does not support all PaiTags and PaiTargets, although the most important ones are
+supported.</p>
+</div>
+<p>For more info about these tags and the different versions, check
+out <a href="https://github.com/KillzXGaming/Switch-Toolbox/blob/c9e74e0be114885f347789f3bd348baccacf0842/File_Format_Library/FileFormats/Layout/Common.cs">this file</a>
+from Switch Toolbox.</p>
+<h3 id="flpa-pane-srt"><a href="#FLPA"></a>FLPA (Pane SRT)<a class="headerlink" href="#flpa-pane-srt" title="Permanent link">&para;</a></h3>
+<p>Related to basic transformations listed below.
+Expected value type for <code>KeyFrames</code> is <code>float</code>.</p>
+<table>
+<thead>
+<tr>
+<th><code>AnimationTarget</code></th>
+<th>Name</th>
+<th>Type</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0</code></td>
+<td>X-axis translation</td>
+<td>float</td>
+<td>any (px)</td>
+</tr>
+<tr>
+<td><code>1</code></td>
+<td>Y-axis translation</td>
+<td>float</td>
+<td>any (px)</td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td>Z-axis translation</td>
+<td>float</td>
+<td>any (px)</td>
+</tr>
+<tr>
+<td><code>3</code></td>
+<td>X-axis rotation (vertical)</td>
+<td>float</td>
+<td>any (radians)</td>
+</tr>
+<tr>
+<td><code>4</code></td>
+<td>Y-axis rotation (horizontal)</td>
+<td>float</td>
+<td>any (radians)</td>
+</tr>
+<tr>
+<td><code>5</code></td>
+<td>Z-axis rotation (flat)</td>
+<td>float</td>
+<td>any (radians)</td>
+</tr>
+<tr>
+<td><code>6</code></td>
+<td>X-axis scale</td>
+<td>float</td>
+<td>any</td>
+</tr>
+<tr>
+<td><code>7</code></td>
+<td>Y-axis scale</td>
+<td>float</td>
+<td>any</td>
+</tr>
+<tr>
+<td><code>8</code></td>
+<td>X-axis size</td>
+<td>float</td>
+<td>any (px)</td>
+</tr>
+<tr>
+<td><code>9</code></td>
+<td>Y-axis size</td>
+<td>float</td>
+<td>any (px)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Translations are relative to the (x, y) coordinates defined in your <code>.json</code> layout, so a (0, 0) translation means that
+  the pane keeps its base position</li>
+<li>Scaling is also relative to what is defined in your <code>.json</code> layout. To keep your pane size at a 1:1 ratio, <code>KeyFrames</code>
+  values should be set to <code>1</code></li>
+<li>Value <code>3</code> for <code>AnimationTarget</code> scales the pane down along the y-axis by a certain px amount (no cropping involved), *
+  <em>although</em>* it needs further testing to be completely sure. It seems to work with absolute values within <code>KeyFrames</code>,
+  meaning that negative values have the same effect as if they were positive</li>
+<li>Value <code>2</code> for <code>AnimationTarget</code> also needs further testing. This time I couldn't figure out what it actually does. An
+  obvious guess would be that it scales the pane down along the x-axis, but my trial and error sessions haven't given
+  any luck towards that expected result</li>
+</ul>
+<h3 id="flvi-visibility"><a href="#FLVI"></a>FLVI (Visibility)<a class="headerlink" href="#flvi-visibility" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><code>AnimationTarget</code></th>
+<th>Name</th>
+<th>Type</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0</code></td>
+<td>Visible</td>
+<td>int</td>
+<td><code>0</code> (hidden), <code>1</code> (visible)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="flts-texture-srt"><a href="#FLTS"></a>FLTS (Texture SRT)<a class="headerlink" href="#flts-texture-srt" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><code>AnimationTarget</code></th>
+<th>Name</th>
+<th>Type</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0</code></td>
+<td>U-axis translation</td>
+<td>float</td>
+<td>any (px)</td>
+</tr>
+<tr>
+<td><code>1</code></td>
+<td>V-axis translation</td>
+<td>float</td>
+<td>any (px)</td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td>Rotation</td>
+<td>float</td>
+<td>any (radians)</td>
+</tr>
+<tr>
+<td><code>3</code></td>
+<td>U-axis scale</td>
+<td>float</td>
+<td>any</td>
+</tr>
+<tr>
+<td><code>4</code></td>
+<td>V-axis scale</td>
+<td>float</td>
+<td>any</td>
+</tr>
+</tbody>
+</table>
+<h3 id="flmc-material-color"><a href="#FLMC"></a>FLMC (Material Color)<a class="headerlink" href="#flmc-material-color" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><code>AnimationTarget</code></th>
+<th>Name</th>
+<th>Type</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0</code></td>
+<td>Black Color Red</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>1</code></td>
+<td>Black Color Green</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td>Black Color Blue</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>3</code></td>
+<td>Black Color Alpha</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>4</code></td>
+<td>White Color Red</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>5</code></td>
+<td>White Color Green</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>6</code></td>
+<td>White Color Blue</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>7</code></td>
+<td>White Color Alpha</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>8</code></td>
+<td>Texture Color Blend Ratio</td>
+<td>float</td>
+<td>any</td>
+</tr>
+<tr>
+<td><code>9</code></td>
+<td>Tev Color 0 Red</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>10</code></td>
+<td>Tev Color 0 Green</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>11</code></td>
+<td>Tev Color 0 Blue</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>12</code></td>
+<td>Tev Color 0 Alpha</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>13</code></td>
+<td>Tev Color 1 Red</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>14</code></td>
+<td>Tev Color 1 Green</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>15</code></td>
+<td>Tev Color 1 Blue</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>16</code></td>
+<td>Tev Color 1 Alpha</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>17</code></td>
+<td>Tev Color 2 Red</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>18</code></td>
+<td>Tev Color 2 Green</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>19</code></td>
+<td>Tev Color 2 Blue</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>20</code></td>
+<td>Tev Color 2 Alpha</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>21</code></td>
+<td>Tev Konstant Color 0 Red</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>22</code></td>
+<td>Tev Konstant Color 0 Green</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>23</code></td>
+<td>Tev Konstant Color 0 Blue</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>24</code></td>
+<td>Tev Konstant Color 0 Alpha</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>25</code></td>
+<td>Tev Konstant Color 1 Red</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>26</code></td>
+<td>Tev Konstant Color 1 Green</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>27</code></td>
+<td>Tev Konstant Color 1 Blue</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>28</code></td>
+<td>Tev Konstant Color 1 Alpha</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>29</code></td>
+<td>Tev Konstant Color 2 Red</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>30</code></td>
+<td>Tev Konstant Color 2 Green</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>31</code></td>
+<td>Tev Konstant Color 2 Blue</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>32</code></td>
+<td>Tev Konstant Color 2 Alpha</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+</tbody>
+</table>
+<h3 id="flvc-vertex-color"><a href="#FLVC"></a>FLVC (Vertex Color)<a class="headerlink" href="#flvc-vertex-color" title="Permanent link">&para;</a></h3>
+<p>Related to vertex colors transformations listed below.</p>
+<table>
+<thead>
+<tr>
+<th><code>AnimationTarget</code></th>
+<th>Name</th>
+<th>Type</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0</code></td>
+<td>Top Left Red</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>1</code></td>
+<td>Top Left Green</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td>Top Left Blue</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>3</code></td>
+<td>Top Left Alpha</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>4</code></td>
+<td>Top Right Red</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>5</code></td>
+<td>Top Right Green</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>6</code></td>
+<td>Top Right Blue</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>7</code></td>
+<td>Top Right Alpha</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>8</code></td>
+<td>Bottom Left Red</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>9</code></td>
+<td>Bottom Left Green</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>10</code></td>
+<td>Bottom Left Blue</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>11</code></td>
+<td>Bottom Left Alpha</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>12</code></td>
+<td>Bottom Right Red</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>13</code></td>
+<td>Bottom Right Green</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>14</code></td>
+<td>Bottom Right Blue</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>15</code></td>
+<td>Bottom Right Alpha</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+</tbody>
+</table>
+<p><em>NB: I haven't tested this thoroughly for RGB channels (now you're probably seeing how annoying it is), but my guess is
+that <code>AnimationTarget</code> values follow a fairly simple and similar pattern: <code>0</code>, <code>1</code>, <code>2</code> = R, G, B for a specific pane
+corner, <code>3</code> = alpha for that same corner ; <code>4</code>, <code>5</code>, <code>6</code> = R, G, B for another corner, <code>7</code> = alpha for this second
+corner, ..., <code>16</code> = alpha channel for the whole pane.</em></p>
+<h3 id="fltp-texture-pattern"><a href="#FLTP"></a>FLTP (Texture Pattern)<a class="headerlink" href="#fltp-texture-pattern" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><code>AnimationTarget</code></th>
+<th>Name</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0</code></td>
+<td>Image 1</td>
+<td></td>
+</tr>
+<tr>
+<td><em>the next rows are unconfirmed</em></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>1</code></td>
+<td>Image 2</td>
+<td></td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td>Image 3</td>
+<td></td>
+</tr>
+<tr>
+<td>etc.</td>
+<td>etc.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="flim-indirect-texture-srt"><a href="#FLIM"></a>FLIM (Indirect Texture SRT)<a class="headerlink" href="#flim-indirect-texture-srt" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><code>AnimationTarget</code></th>
+<th>Name</th>
+<th>Type</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0</code></td>
+<td>Rotation</td>
+<td>float</td>
+<td>any (radians)</td>
+</tr>
+<tr>
+<td><code>1</code></td>
+<td>U scale</td>
+<td>float</td>
+<td>any</td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td>V scale</td>
+<td>float</td>
+<td>any</td>
+</tr>
+</tbody>
+</table>
+<h3 id="flct-indirect-texture-srt"><a href="#FLCT"></a>FLCT (Indirect Texture SRT)<a class="headerlink" href="#flct-indirect-texture-srt" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><code>AnimationTarget</code></th>
+<th>Name</th>
+<th>Type</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0</code></td>
+<td>Black Color Red</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>1</code></td>
+<td>Black Color Green</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td>Black Color Blue</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>3</code></td>
+<td>Black Color Alpha</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>4</code></td>
+<td>White Color Red</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>5</code></td>
+<td>White Color Green</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>6</code></td>
+<td>White Color Blue</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td><code>7</code></td>
+<td>White Color Alpha</td>
+<td>int</td>
+<td>0-255</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fleu-extended-user-information"><a href="#FLEU"></a>FLEU (Extended User Information)<a class="headerlink" href="#fleu-extended-user-information" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><code>AnimationTarget</code></th>
+<th>Name</th>
+<th>Type</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0</code></td>
+<td>Pane SRT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>1</code></td>
+<td>Visibility</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td>Vertex Color / Transparency</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>3</code></td>
+<td>Material Color / Text Shadows</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>4</code></td>
+<td>Alpha Test</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>5</code></td>
+<td>Texture Pattern</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>6</code></td>
+<td>Texture SRT</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>7</code></td>
+<td>Per-character transformation offset time</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>8</code></td>
+<td>Extended User Information</td>
+<td>String, Integer value list or Real number value list</td>
+<td></td>
+</tr>
+<tr>
+<td><code>9</code></td>
+<td>Indirect</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="special-thanks">Special Thanks<a class="headerlink" href="#special-thanks" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/KillzXGaming/Switch-Toolbox/">Switch Toolbox</a></li>
+<li><a href="https://github.com/Tyulis/3DSkit/">3DSkit</a></li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c2be25ad.min.js"></script>
+      
+        <script src="../../../js/color_blocks.js"></script>
+      
+    
+  </body>
+</html>
