@@ -11,23 +11,23 @@ all encountered types of animation in the (b)flan filetype. The `PaiTag` indicat
 used, while the `AnimationTarget` specifies a specific property.
 
 - Items with a ✅ are properly understood and documented and supported by many tools.
-- Items with a 🟧 are properly understood and documented.
+- Items with a 🟧 are partially understood and documented.
 - Items with a ⛔ have never really been tested, documented, nor implemented in any tool. Their exact workings are
   unknown.
 
-| `PaiTag`      |    | Name                                  | Used for                                                                                                 |
-|---------------|----|---------------------------------------|----------------------------------------------------------------------------------------------------------|
-| [FLPA](#FLPA) | ✅  | **PA**ne SRT                          | Basic transformations                                                                                    |
-| [FLVI](#FLVI) | ✅  | **VI**sibility                        | Visibility (shown or hidden)                                                                             |
-| [FLTS](#FLTS) | ✅  | **T**exture **S**RT                   | Texture transformations                                                                                  |
-| [FLVC](#FLVC) | ✅  | **V**ertex **C**olor                  | Vertex color                                                                                             |
-| [FLMC](#FLMC) | ✅  | **M**aterial **C**olor                | Material Color                                                                                           |
+| `PaiTag`      |   | Name                                  | Used for                                                                                                 |
+|---------------|---|---------------------------------------|----------------------------------------------------------------------------------------------------------|
+| [FLPA](#FLPA) | ✅ | **PA**ne SRT                          | Basic transformations                                                                                    |
+| [FLVI](#FLVI) | ✅ | **VI**sibility                        | Visibility (shown or hidden)                                                                             |
+| [FLTS](#FLTS) | ✅ | **T**exture **S**RT                   | Texture transformations                                                                                  |
+| [FLVC](#FLVC) | ✅ | **V**ertex **C**olor                  | Vertex color                                                                                             |
+| [FLMC](#FLMC) | ✅ | **M**aterial **C**olor                | Material Color                                                                                           |
 | [FLTP](#FLTP) | 🟧 | **T**exture **P**attern               | Texture pattern                                                                                          |
-| [FLIM](#FLIM) | ✅  | **I**ndirect Texture SRT              | Indirect(?) texture transformations                                                                      |
-| FLAC          | ⛔  | **A**lpha Test                        | _unknown_                                                                                                |
-| [FLCT](#FLCT) | ⛔  | Font Shadow                           | Font shadows                                                                                             |
-| FLCC          | ⛔  | Per-**C**haracter Transform **C**urve | _unknown_                                                                                                |
-| [FLEU](#FLEU) | ⛔  | **E**xtended **U**ser Information     | USD patches (e.g. battery color based on charge level). These animation require code in the applications |
+| [FLIM](#FLIM) | ✅ | **I**ndirect Texture SRT              | Indirect(?) texture transformations                                                                      |
+| FLAC          | ⛔ | **A**lpha Test                        | _unknown_                                                                                                |
+| [FLCT](#FLCT) | 🟧  | Font Shadow                           | Font shadows                                                                                             |
+| FLCC          | ⛔ | Per-**C**haracter Transform **C**urve | _unknown_                                                                                                |
+| [FLEU](#FLEU) | ⛔ | **E**xtended **U**ser Information     | USD patches (e.g. battery color based on charge level). These animation require code in the applications |
 
 Next a `PaiTag` has to be specified. This is the object that will be animated. The table below
 shows all known types of targets in the (b)flan filetype. Next, the `AnimationTarget` indicates what specific property will be modified (
