@@ -27,7 +27,7 @@ used, while the `AnimationTarget` specifies a specific property.
 | FLAC          | ⛔ | **A**lpha Test                        | _unknown_                                                                                                |
 | [FLCT](#FLCT) | 🟧  | Font Shadow                           | Font shadows                                                                                             |
 | FLCC          | ⛔ | Per-**C**haracter Transform **C**urve | _unknown_                                                                                                |
-| [FLEU](#FLEU) | ⛔ | **E**xtended **U**ser Information     | USD patches (e.g. battery color based on charge level). These animation require code in the applications |
+| [FLEU](#FLEU) | ⛔ | **E**xtended **U**ser Information     | USD patches (e.g. battery color based on charge level). These animations are controlled from the application's code |
 
 Next a `PaiTag` has to be specified. This is the object that will be animated. The table below
 shows all known types of targets in the (b)flan filetype. Next, the `AnimationTarget` indicates what specific property will be modified (
