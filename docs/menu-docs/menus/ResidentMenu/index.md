@@ -34,4 +34,5 @@
 | RdtBtnPvr.bflyt                                 | ResidentMenuButtonPictureviewer | Album applet button                                                            |
 | RdtBtnSet.bflyt                                 | ResidentMenuButtonSettings      | Settings applet button                                                         |
 | RdtBtnShop.bflyt                                | ResidentMenuButtonShop          | eShop applet button                                                            |
+| RdtBtnLR.bflyt                                  | ResidentMenuButtonLR            | Nintendo Switch Online applet button                                           |
 | RdtIconPromotion.bflyt                          | ResidentMenuIconPromotion       |                                                                                |
