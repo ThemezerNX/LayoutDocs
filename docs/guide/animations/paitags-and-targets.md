@@ -29,22 +29,21 @@ used, while the `AnimationTarget` specifies a specific property.
 | FLCC          | ⛔  | Per-**C**haracter Transform **C**urve | _unknown_                                                                                                |
 | [FLEU](#FLEU) | ⛔  | **E**xtended **U**ser Information     | USD patches (e.g. battery color based on charge level). These animation require code in the applications |
 
-Next a PaiTarget (or simply 'target') has to be specified. This is the object that will be animated. The table below
-shows all known types of targets in the (b)flan filetype. The PaiTag indicates what specific property will be modified (
+Next a `PaiTag` has to be specified. This is the object that will be animated. The table below
+shows all known types of targets in the (b)flan filetype. Next, the `AnimationTarget` indicates what specific property will be modified (
 e.g. x position, y rotation, etc.).
 
 !!! Info
     Note that SwitchLayoutEditor does not support all PaiTags and PaiTargets, although the most important ones are
     supported.
 
-For more info about these tags and the different versions, check
+For more info about these tags and the different versions among consoles, check
 out [this file](https://github.com/KillzXGaming/Switch-Toolbox/blob/c9e74e0be114885f347789f3bd348baccacf0842/File_Format_Library/FileFormats/Layout/Common.cs)
 from Switch Toolbox.
 
 ### <a href="#FLPA"></a>FLPA (Pane SRT)
 
 Related to basic transformations listed below.
-Expected value type for `KeyFrames` is `float`.
 
 | `AnimationTarget` | Name                         | Type  | Values        | 
 |-------------------|------------------------------|-------|---------------|
@@ -61,14 +60,7 @@ Expected value type for `KeyFrames` is `float`.
 
 - Translations are relative to the (x, y) coordinates defined in your `.json` layout, so a (0, 0) translation means that
   the pane keeps its base position
-- Scaling is also relative to what is defined in your `.json` layout. To keep your pane size at a 1:1 ratio, `KeyFrames`
-  values should be set to `1`
-- Value `3` for `AnimationTarget` scales the pane down along the y-axis by a certain px amount (no cropping involved), *
-  *although** it needs further testing to be completely sure. It seems to work with absolute values within `KeyFrames`,
-  meaning that negative values have the same effect as if they were positive
-- Value `2` for `AnimationTarget` also needs further testing. This time I couldn't figure out what it actually does. An
-  obvious guess would be that it scales the pane down along the x-axis, but my trial and error sessions haven't given
-  any luck towards that expected result
+- Scaling is also relative to what is defined in your `.json` layout. To keep your pane size at a 1:1 ratio, KeyFrame `value`s should be set to `1`
 
 ### <a href="#FLVI"></a>FLVI (Visibility)
 
@@ -146,11 +138,6 @@ Related to vertex colors transformations listed below.
 | `13`              | Bottom Right Green | int  | 0-255  |
 | `14`              | Bottom Right Blue  | int  | 0-255  |
 | `15`              | Bottom Right Alpha | int  | 0-255  |
-
-*NB: I haven't tested this thoroughly for RGB channels (now you're probably seeing how annoying it is), but my guess is
-that `AnimationTarget` values follow a fairly simple and similar pattern: `0`, `1`, `2` = R, G, B for a specific pane
-corner, `3` = alpha for that same corner ; `4`, `5`, `6` = R, G, B for another corner, `7` = alpha for this second
-corner, ..., `16` = alpha channel for the whole pane.*
 
 ### <a href="#FLTP"></a>FLTP (Texture Pattern)
 
