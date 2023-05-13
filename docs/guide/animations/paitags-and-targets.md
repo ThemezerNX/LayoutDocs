@@ -157,7 +157,7 @@ Related to vertex colors transformations listed below.
 | `1`               | U scale  | float | any           |
 | `2`               | V scale  | float | any           |
 
-### <a href="#FLCT"></a>FLCT (Indirect Texture SRT)
+### <a href="#FLCT"></a>FLCT (Font Shadow)
 
 | `AnimationTarget` | Name              | Type | Values |
 |-------------------|-------------------|------|--------|
