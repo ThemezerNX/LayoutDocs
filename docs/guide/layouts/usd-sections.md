@@ -82,7 +82,7 @@ The system has special values that can be used throughout the system. These colo
 | 0     | -                             | -             | default (off)                                                                           |
 | 1     | white (255,255,255)           | (29,32,37)    |                                                                                         |
 | 2     | black (0,0,0)                 | (0,0,0)       |                                                                                         |
-| 3     | green (114,201,0)             | (149,231,0)   |                                                                                         |
+| 3     | green (114,201,0)             | (149,231,0)   | Charge indicator                                                                        |
 | 4     | white (255,255,255)           | (255,255,255) |                                                                                         |
 | 5     | white (235,235,235)           | (45,45,45)    | Light/dark theme bg                                                                     |
 | 6     | white (255,255,255)           | (67,67,67)    |                                                                                         |
