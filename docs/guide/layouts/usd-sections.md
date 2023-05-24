@@ -282,30 +282,30 @@ Format: `[X]`
 
 <div class="color-table" markdown="1">
 
-| Value | Light theme                | Comments                                      |
+| Value | Light theme                | Comments                                      |               |
 | ----- | -------------------------- | --------------------------------------------- | ------------- |
 | 0     | -                          | -                                             | default (off) |
-| 1     | white                      |                                               |
-| 2     | white                      |                                               |
-| 3     | white                      |                                               |
-| 4     | black                      |                                               |
-| 5     | black                      |                                               |
-| 6     | black                      |                                               |
-| 7     | black                      |                                               |
-| 8     | dark blue (19,29,90)       |                                               |
-| 9     | black                      |                                               |
-| 10    | grey                       |                                               |
-| 11    | black                      |                                               |
-| 12    | blue-purpleish (50,80,240) |                                               |
-| 13    | blue-purpleish (50,80,240) |                                               |
-| 14    | white                      |                                               |
-| 15    | ligher grey                | Seems to overlap the entrance homebutton icon |
-| 16    | white                      |                                               |
-| 17    | white                      |                                               |
-| 18    | white                      |                                               |
-| 19    | black                      |                                               |
-| 20    | white                      |                                               |
-| 42    | grey                       | dark theme: white                             |
+| 1     | white                      |                                               |               |
+| 2     | white                      |                                               |               |
+| 3     | white                      |                                               |               |
+| 4     | black                      |                                               |               |
+| 5     | black                      |                                               |               |
+| 6     | black                      |                                               |               |
+| 7     | black                      |                                               |               |
+| 8     | dark blue (19,29,90)       |                                               |               |
+| 9     | black                      |                                               |               |
+| 10    | grey                       |                                               |               |
+| 11    | black                      |                                               |               |
+| 12    | blue-purpleish (50,80,240) |                                               |               |
+| 13    | blue-purpleish (50,80,240) |                                               |               |
+| 14    | white                      |                                               |               |
+| 15    | ligher grey                | Seems to overlap the entrance homebutton icon |               |
+| 16    | white                      |                                               |               |
+| 17    | white                      |                                               |               |
+| 18    | white                      |                                               |               |
+| 19    | black                      |                                               |               |
+| 20    | white                      |                                               |               |
+| 42    | grey                       | dark theme: white                             |               |
 
 </div>
 
