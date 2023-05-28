@@ -29,10 +29,4 @@ Every menu has its own file. Here is a list of the supported menus and their fil
 | Player Select    | `Psl.szs`          |
 | User Page        | `MyPage.szs`       |
 
-Can Be customised but not included in standard themeing:
-
-| Menu		 | Filename		    |
-| ---------------- | ------------------ |
-| Option (Advanced)| `Option.szs`       |
-
 # [Continue to Filetypes](filetypes.md) :octicons-arrow-right-16:

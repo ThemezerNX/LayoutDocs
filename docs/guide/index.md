@@ -4,7 +4,7 @@ For this guide it is expected that you already have basic knowledge on how to in
 
 ### What You'll Need
 
--   A hacked Switch, connected to LAN (use, for example, [90dns](https://gbatemp.net/threads/90dns-dns-server-for-blocking-all-nintendo-servers.516234/) to block connections to Nintendo)
+-   A hacked Switch, connected over LAN or WiFi (use, for example, [90dns](https://gbatemp.net/threads/90dns-dns-server-for-blocking-all-nintendo-servers.516234/) to block connections to Nintendo)
 -   A Windows computer
 -   [NXThemes Installer](https://github.com/exelix11/SwitchThemeInjector/releases/latest) version ≥2.6.2
     -   You probably already have this.

@@ -10,4 +10,4 @@
 
 | Filename                                              | Hypothetical full name          | Function                                                                       |
 | ----------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------ |
-| PslBtnCardPlayer.bflyt					  | PlayerSelectButtonCardPlayer    | Player Select Window
+| [PslBtnCardPlayer.bflyt](PslBtnCardPlayer.bflyt/index.md)								  | PlayerSelectButtonCardPlayer    | Player Select Window |
