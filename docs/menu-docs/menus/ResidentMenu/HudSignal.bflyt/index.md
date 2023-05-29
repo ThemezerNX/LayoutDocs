@@ -19,5 +19,5 @@
 	-	**P_Plane [pic 1]** `Flightmode Icon (plane)`
 	-	**N_Signal [pan 1]**
 		-	**P_Wifi [pic 1]** `Wifi icon`
-		-	**P_Local [pic 1]** `Lan Icon?`
-		-	**P_WireLine [pic 1]** `Lan Icon?`
+		-	**P_Local [pic 1]** `Local Play Wifi icon`
+		-	**P_WireLine [pic 1]** `LAN Icon`
