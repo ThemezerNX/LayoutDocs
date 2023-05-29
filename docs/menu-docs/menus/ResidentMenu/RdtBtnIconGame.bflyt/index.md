@@ -28,7 +28,7 @@
 						-   **N_SuspendPos [pan 1]**
 							-   **N_TextPos [pan 1]**
 								-   **P_Suspend_00 [pic 1]** `the white oval background behind the text`
-								-   **T_Suspend [txt 1]** `the 'Playing' text when a game is opened**
+								-   **T_Suspend [txt 1]** `the 'Playing' text when a game is opened`
 							-   **P_account_03 [pic 1]** `the usericon displayed on the left of the 'Playing' indicator`
 							-	**P_account_02 [pic 1]** `the usericon displayed on the left of the 'Playing' indicator`
 							-	**P_account_01 [pic 1]** `the usericon displayed on the left of the 'Playing' indicator`
