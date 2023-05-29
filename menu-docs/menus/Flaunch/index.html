@@ -12,7 +12,7 @@
         <link rel="prev" href="../ResidentMenu/">
       
       
-        <link rel="next" href="../../../definitions/">
+        <link rel="next" href="../Psl/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.14">
@@ -655,7 +655,7 @@
   
     <li class="md-nav__item">
       <a href="../common/" class="md-nav__link">
-        common
+        Common
       </a>
     </li>
   
@@ -722,6 +722,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Psl/" class="md-nav__link">
+        Player Select
+      </a>
     </li>
   
 
@@ -910,7 +924,7 @@
   <h1>All Apps</h1>
 
 <p><strong>File:</strong> <code>Flaunch.szs</code><br />
-<strong>Main <code>bflyt</code> file:</strong> <a href="FlcCntMain.bflyt.md"><code>FlcCntMain.bflyt</code></a></p>
+<strong>Main <code>bflyt</code> file:</strong> <a href="FlcCntMain.bflyt/"><code>FlcCntMain.bflyt</code></a></p>
 <hr />
 <h2 id="layout-files-in-flaunchszs">Layout Files in <code>Flaunch.szs</code><a class="headerlink" href="#layout-files-in-flaunchszs" title="Permanent link">&para;</a></h2>
 <!-- prettier-ignore -->
@@ -928,14 +942,74 @@
 </thead>
 <tbody>
 <tr>
+<td>AreaNml.bflyt</td>
+<td>AreaNormal</td>
+<td>Defines scroll/touch/cursor area</td>
+</tr>
+<tr>
+<td>AreaNmlL.bflyt</td>
+<td>AreaNormalLarge</td>
+<td>Scroll/touch/cursor Larger area</td>
+</tr>
+<tr>
+<td>AreaNmlLGrp.bflyt</td>
+<td>AreaNormalLargeGroup</td>
+<td>Scroll/Touch/Cursor group windows</td>
+</tr>
+<tr>
+<td>AreaNmlNav.bflyt</td>
+<td>AreaNormalNavigation</td>
+<td>Scroll/Touch/Cursor Navigation area (side of add/create group)</td>
+</tr>
+<tr>
+<td>AreaNmlNavMain.bflyt</td>
+<td>AreaNormalNavigationMain(window?)</td>
+<td>Scroll/Touch/Cursor MainNavigation window (icons?)</td>
+</tr>
+<tr>
 <td>BaseBg.bflyt</td>
 <td>BaseBackground</td>
 <td>Contains a loading indicator for when the list is still loading</td>
 </tr>
 <tr>
+<td>BaseChild.bflyt</td>
+<td>BaseChild (applet?)</td>
+<td>Contains Basic Layout information for applet parts (header/side/main content)</td>
+</tr>
+<tr>
+<td>BgNav_Root.bflyt</td>
+<td>BackgroundNavigation_Root</td>
+<td>Navigation Background Panel</td>
+</tr>
+<tr>
 <td>BgNml.bflyt</td>
 <td>BackgroundNormal</td>
-<td>Contains menu background pane + '<a href="../../../definitions/#exelixbg">exelixbg</a>'</td>
+<td>Contains mainmenu background pane + '<a href="../../../definitions/#exelixbg">exelixbg</a>'</td>
+</tr>
+<tr>
+<td>BtnIslandIcon.bflyt</td>
+<td>ButtonIslandIcon</td>
+<td>Button contents text color/icon (L R +)</td>
+</tr>
+<tr>
+<td>BtnIslandNml.bflyt</td>
+<td>ButtonIslandNormal</td>
+<td>Standard Button information text color</td>
+</tr>
+<tr>
+<td>BtnLineNml.bflyt</td>
+<td>ButtonLineNormal</td>
+<td>Button "inline" ie dropdown list?</td>
+</tr>
+<tr>
+<td>BtnOpt_Root.bflyt</td>
+<td>ButtonOption_Root</td>
+<td>Button information in drop down? Contains checkbox invalid &amp; valid inc mark</td>
+</tr>
+<tr>
+<td>BtnExpand.bflyt</td>
+<td>ButtonExpand</td>
+<td>Drop Down Menu [groups?/sort] possibly changed in 14.0</td>
 </tr>
 <tr>
 <td>Cursor3.bflyt</td>
@@ -943,9 +1017,29 @@
 <td>Cursor</td>
 </tr>
 <tr>
+<td>DBtmFlcSortAndFilter.bflyt</td>
+<td>BottomFullLauncherSortAndFilter</td>
+<td>contains the "sort and filter" menu base information</td>
+</tr>
+<tr>
+<td>DBtmHeaderNml.bflyt</td>
+<td>BottomHeaderNormal</td>
+<td>Contains header information icon / text &amp; top line</td>
+</tr>
+<tr>
 <td>FlcBalloon.bflyt</td>
 <td>FullLauncherBalloon</td>
 <td>App name balloon</td>
+</tr>
+<tr>
+<td>FlcBtnGrp.bflyt</td>
+<td>FullLaunchButtonGroup</td>
+<td>Group Icon with clustered Icon includes the sort allows / text</td>
+</tr>
+<tr>
+<td>FlcBtnGrpBlock.bflyt</td>
+<td>FullLaunchButtonGroupBlock</td>
+<td>Group Icon block information scrolling/spacing of the 4 groupicon rows</td>
 </tr>
 <tr>
 <td>FlcBtnIconGame.bflyt</td>
@@ -955,17 +1049,82 @@
 <tr>
 <td>FlcBtnIconGameBlock.bflyt</td>
 <td>FullLauncherButtonIconGameBlock</td>
-<td>A row with six of the <code>FlcBtnIconGame</code>s</td>
+<td>Game Icon information in Rows/padding</td>
+</tr>
+<tr>
+<td>FlcBtnIconGameEdit.bflyt</td>
+<td>FullLaunchButtonIconGameEdit</td>
+<td>Game Icon in edit screen (sort/move/check)</td>
+</tr>
+<tr>
+<td>FlcBtnIconGameEditBlock.bflyt</td>
+<td>FullLaunchButtonIconGameEditBlock</td>
+<td>Edit Game Icon Layout Padding information</td>
+</tr>
+<tr>
+<td>FlcBtnLineAddGrp.bflyt</td>
+<td>FullLaunchButtonLineAddGroup</td>
+<td>Create Group Button</td>
+</tr>
+<tr>
+<td>FlcCntMain.bflyt</td>
+<td>FullLauncherContentMain</td>
+<td>The Main AllApps screen window</td>
+</tr>
+<tr>
+<td>FlcDGrpDelete.bflyt</td>
+<td>FullLaunchDialogGroupDelete</td>
+<td>"Delete Group" Applet layout information</td>
+</tr>
+<tr>
+<td>FlcDGrpOption.bflyt</td>
+<td>FullLaunchDialogGroupOption</td>
+<td>"Edit Group" drop down list information</td>
+</tr>
+<tr>
+<td>FlcGrpList.bflyt</td>
+<td>FullLaunchGroupList</td>
+<td>Groups Main Window / Sort Groups Main Window (both layouts are in this window)</td>
+</tr>
+<tr>
+<td>FlcGrpMain.bflyt</td>
+<td>FullLaunchGroupMain</td>
+<td>Group Folder Contents Window (icons in group folder)</td>
+</tr>
+<tr>
+<td>FlcGrpSoftArrangement.bflyt</td>
+<td>FullLaunchGroupSoftwareArrangement</td>
+<td>Sort Software Contents Window (Sort Games in a Group Folder)</td>
+</tr>
+<tr>
+<td>FlcGrpSoftEdit.bflyt</td>
+<td>FullLaunchGroupSoftwareEdit</td>
+<td>Add/Remove Software Contents Window (Add &amp; remove/search games window)</td>
 </tr>
 <tr>
 <td>LineHeader_Root.bflyt</td>
 <td>LineHeader Root</td>
-<td>The horizontal line that is shown in the header</td>
+<td>The horizontal line that is shown in the header (size &amp; relative position)</td>
+</tr>
+<tr>
+<td>NtfBtnSearchChannel.bflyt</td>
+<td>NotificationButtonSearchChannel</td>
+<td>"Search by Keyword" Box/button &amp; magnifier icon</td>
 </tr>
 <tr>
 <td>TextH1.bflyt</td>
 <td>TextHeader1</td>
-<td>The complete header component</td>
+<td>The complete main header component</td>
+</tr>
+<tr>
+<td>TextH2.bflyt</td>
+<td>TextHeader2</td>
+<td>Header Text within groups</td>
+</tr>
+<tr>
+<td>Waitingicon.bflyt</td>
+<td>WaitingIcon</td>
+<td>Loading icon</td>
 </tr>
 </tbody>
 </table>

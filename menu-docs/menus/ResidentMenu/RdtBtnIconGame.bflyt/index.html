@@ -15,7 +15,7 @@
     
     
       
-        <title>RdtBtnIconGame.bflyt - LayoutDocs</title>
+        <title>Index - LayoutDocs</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tree" class="md-skip">
+        <a href="#rdtbtnicongamebflyt" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              RdtBtnIconGame.bflyt
+              Index
             
           </span>
         </div>
@@ -647,7 +647,7 @@
   
     <li class="md-nav__item">
       <a href="../../common/" class="md-nav__link">
-        common
+        Common
       </a>
     </li>
   
@@ -676,6 +676,20 @@
     <li class="md-nav__item">
       <a href="../../Flaunch/" class="md-nav__link">
         All Apps
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Psl/" class="md-nav__link">
+        Player Select
       </a>
     </li>
   
@@ -833,12 +847,21 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#layout-of-residentmenuszsblytrdtbtnicongamebflyt" class="md-nav__link">
+    Layout of ResidentMenu.szs/blyt/RdtBtnIconGame.bflyt
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#tree" class="md-nav__link">
@@ -862,60 +885,90 @@
                   
 
 
-  <h1>RdtBtnIconGame.bflyt</h1>
-
+<h5 id="back-residentmenuszs"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M7.78 12.53a.75.75 0 0 1-1.06 0L2.47 8.28a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L4.81 7h7.44a.75.75 0 0 1 0 1.5H4.81l2.97 2.97a.75.75 0 0 1 0 1.06Z"/></svg></span> <a href="../">Back ResidentMenu.szs</a><a class="headerlink" href="#back-residentmenuszs" title="Permanent link">&para;</a></h5>
+<h1 id="rdtbtnicongamebflyt">RdtBtnIconGame.bflyt<a class="headerlink" href="#rdtbtnicongamebflyt" title="Permanent link">&para;</a></h1>
+<p><strong>File:</strong> <code>ResidentMenu.szs/blyt/RdtBtnIconGame.bflyt</code><br>
+<strong>Main <code>bflyt</code> file:</strong> <a href="../RdtBase.bflyt/"><code>RdtBase.bflyt</code></a></p>
+<hr />
+<h2 id="layout-of-residentmenuszsblytrdtbtnicongamebflyt">Layout of <code>ResidentMenu.szs/blyt/RdtBtnIconGame.bflyt</code><a class="headerlink" href="#layout-of-residentmenuszsblytrdtbtnicongamebflyt" title="Permanent link">&para;</a></h2>
+<!-- prettier-ignore -->
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>These aren't all the functions, most are unknown or the component is unimportant.</p>
+</div>
 <h2 id="tree">Tree<a class="headerlink" href="#tree" title="Permanent link">&para;</a></h2>
-<p><a href="../"></a></p>
 <ul>
-<li><code>N_Root</code><ul>
-<li><code>N_Delete</code><ul>
-<li><code>N_DecideKey</code><ul>
-<li><code>N_DecideTouch</code><ul>
-<li><code>P_BtnBase</code>: the white background hidden behind a game icon. Can shortly be seen after boot.</li>
-<li><code>P_IconGame</code>: the game's icon</li>
-<li><code>P_Blank</code><ul>
-<li><code>L_Loading</code>: the loading icon displayed on top of P_BtnBase`</li>
+<li><strong>RootPane [pan 1]</strong><ul>
+<li><strong>N_Root [pan 1]</strong><ul>
+<li><strong>N_Delete [pan 1]</strong><ul>
+<li><strong>N_DecideKey [pan 1]</strong><ul>
+<li><strong>N_DecideTouch [pan 1]</strong><ul>
+<li><strong>P_BtnBase [pic 1]</strong> <code>the white background hidden behind a game icon. Can shortly be seen after boot</code></li>
+<li><strong>P_IconGame [pic 1]</strong> <code>the game's icon</code></li>
+<li><strong>P_Blank [pic 1]</strong><ul>
+<li><strong>L_Loading [prt 1]</strong> <code>the loading icon displayed on top of P_BtnBase</code></li>
 </ul>
 </li>
-<li><code>N_Suspend</code><ul>
-<li><code>N_SuspendPos</code><ul>
-<li><code>N_TextPos</code><ul>
-<li><code>P_Suspend_00</code>: the white oval background behind the text</li>
-<li><code>T_Suspend</code>: the 'Playing' text when a game is opened</li>
+<li><strong>N_Suspend [pan 1]</strong><ul>
+<li><strong>N_SuspendPos [pan 1]</strong><ul>
+<li><strong>N_TextPos [pan 1]</strong><ul>
+<li><strong>P_Suspend_00 [pic 1]</strong> <code>the white oval background behind the text</code></li>
+<li><strong>T_Suspend [txt 1]</strong> <code>the 'Playing' text when a game is opened</code></li>
 </ul>
 </li>
-<li><code>P_account_[03-00]</code>: the usericon displayed on the left of the 'Playing' indicator</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><em>N_DL: loading bars you don't have to care about</em></li>
-<li><code>P_BtnDecideKey</code>: the blue overlay which can be seen when a game is launched via the controller</li>
-<li><code>P_BtnTouch</code>: the blue overlay which can be seen when tapping/holding the game icon</li>
-<li><code>P_InnerCursor</code>: the white ring displayed between the blue cursor and the game icon</li>
-<li><code>N_BtnFocusKey</code><ul>
-<li><code>UF_Cursor</code>: the blue cursor displayed around the game icon</li>
-</ul>
-</li>
-<li><code>P_EffectDecide</code>: the effect when a game is launched, a second game icon can be seen dissolving</li>
-<li><code>N_Promotion</code><ul>
-<li><code>L_Promotion</code>: the not-yet-in-use 'test' or 'try' function for games</li>
+<li><strong>P_account_03 [pic 1]</strong> <code>the usericon displayed on the left of the 'Playing' indicator</code></li>
+<li><strong>P_account_02 [pic 1]</strong> <code>the usericon displayed on the left of the 'Playing' indicator</code></li>
+<li><strong>P_account_01 [pic 1]</strong> <code>the usericon displayed on the left of the 'Playing' indicator</code></li>
+<li><strong>P_account_00 [pic 1]</strong> <code>the usericon displayed on the left of the 'Playing' indicator</code></li>
 </ul>
 </li>
 </ul>
 </li>
+<li><strong>N_DL [pan 1]</strong> <code>loading bars you don't have to care about</code><ul>
+<li><strong>N_DlNml [pan 1]</strong><ul>
+<li><strong>L_ProgressBarNml [prt1]</strong></li>
+</ul>
+</li>
+<li><strong>N_DlErr [pan 1]</strong><ul>
+<li><strong>L_ProgressBarErr [prt1]</strong></li>
+<li><strong>N_Offkine [pan 1]</strong></li>
+<li><strong>L_ProgressBarOffline [prt1]</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>P_BtnDecideKey [pic 1]</strong> <code>the blue overlay which can be seen when a game is launched via the controller</code></li>
+<li><strong>P_BtnTouch [pic 1]</strong> <code>the blue overlay which can be seen when tapping/holding the game icon</code></li>
+<li><strong>P_InnerCursor [pic 1]</strong> <code>the white ring displayed between the blue cursor and the game icon</code></li>
+<li><strong>N_BtnFocusKey [pan 1]</strong><ul>
+<li><strong>UF_Cursor [prt 1]</strong> <code>the blue cursor displayed around the game icon</code></li>
+</ul>
+</li>
+<li><strong>P_EffectDecide [pic 1]</strong> <code>the effect when a game is launched, a second game icon can be seen dissolving</code></li>
+<li><strong>N_Promotion [pan 1]</strong><ul>
+<li><strong>L_Promotion [prt 1]</strong> <code>the not-yet-in-use 'test' or 'try' function for games</code></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><code>N_Tip</code><ul>
-<li><a href="../RdtBalloon.bflyt/"><code>RdtBalloon.bflyt</code></a>: the game's name/text in blue</li>
 </ul>
 </li>
-<li><code>B_Hit</code>: hitbox of all the items in N_DecideKey</li>
 </ul>
+</li>
+</ul>
+</li>
+<li><strong>N_Tip [pan 1]</strong> <code>can be used to position RdtBalloon</code><ul>
+<li><strong>L_Balloon [prt 1]</strong> - <a href="RdtBalloon.bflyt.md"><code>RdtBalloon.bflyt</code></a>: the game's name/text in blue</li>
+</ul>
+</li>
+<li><strong>B_Hit [bnd 1]</strong> <code>hitbox of all the items in N_DecideKey</code></li>
+</ul>
+<hr />
+<h5 id="back-residentmenuszs_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M7.78 12.53a.75.75 0 0 1-1.06 0L2.47 8.28a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L4.81 7h7.44a.75.75 0 0 1 0 1.5H4.81l2.97 2.97a.75.75 0 0 1 0 1.06Z"/></svg></span> <a href="../">Back ResidentMenu.szs</a><a class="headerlink" href="#back-residentmenuszs_1" title="Permanent link">&para;</a></h5>
+<p><strong>File:</strong> <code>ResidentMenu.szs/blyt/RdtBtnIconGame.bflyt</code><br>
+<strong>Main <code>bflyt</code> file:</strong> <a href="../RdtBase.bflyt/"><code>RdtBase.bflyt</code></a></p>
 
 
 

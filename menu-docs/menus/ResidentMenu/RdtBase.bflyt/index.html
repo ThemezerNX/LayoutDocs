@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tree" class="md-skip">
+        <a href="#rdtbasebflyt-main-bflyt" class="md-skip">
           Skip to content
         </a>
       
@@ -647,7 +647,7 @@
   
     <li class="md-nav__item">
       <a href="../../common/" class="md-nav__link">
-        common
+        Common
       </a>
     </li>
   
@@ -676,6 +676,20 @@
     <li class="md-nav__item">
       <a href="../../Flaunch/" class="md-nav__link">
         All Apps
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Psl/" class="md-nav__link">
+        Player Select
       </a>
     </li>
   
@@ -833,12 +847,21 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#layout-of-residentmenuszsblytrdtbasebflyt" class="md-nav__link">
+    Layout of ResidentMenu.szs/blyt/RdtBase.bflyt
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#tree" class="md-nav__link">
@@ -862,38 +885,54 @@
                   
 
 
-  <h1>RdtBase.bflyt</h1>
+<h5 id="back-residentmenuszs"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M7.78 12.53a.75.75 0 0 1-1.06 0L2.47 8.28a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L4.81 7h7.44a.75.75 0 0 1 0 1.5H4.81l2.97 2.97a.75.75 0 0 1 0 1.06Z"/></svg></span> <a href="../">Back ResidentMenu.szs</a><a class="headerlink" href="#back-residentmenuszs" title="Permanent link">&para;</a></h5>
+<h1 id="rdtbasebflyt-main-bflyt">RdtBase.bflyt (Main bflyt)<a class="headerlink" href="#rdtbasebflyt-main-bflyt" title="Permanent link">&para;</a></h1>
+<p><strong>File:</strong> <code>ResidentMenu.szs/blyt/RdtBase.bflyt</code><br>
+<strong>This is the Main <code>bflyt</code> file</strong></p>
+<hr />
+<h2 id="layout-of-residentmenuszsblytrdtbasebflyt">Layout of <code>ResidentMenu.szs/blyt/RdtBase.bflyt</code><a class="headerlink" href="#layout-of-residentmenuszsblytrdtbasebflyt" title="Permanent link">&para;</a></h2>
+<!-- prettier-ignore -->
 
 <h2 id="tree">Tree<a class="headerlink" href="#tree" title="Permanent link">&para;</a></h2>
 <ul>
-<li><code>RdtBase.bflyt</code><ul>
-<li><code>L_BgNml</code>: contains the original light/dark background, but the 'exelixbg' panel as well after being patched with a custom background</li>
-<li><code>N_Root</code><ul>
-<li><code>N_GameRoot</code>: contains all items that will be scrolled<ul>
-<li><a href="../RdtBtnIconGame.bflyt/"><code>N_Icon[00-11]</code></a>: all 12 game icons. They make use of the same layout</li>
-<li><code>N_Icon_12</code><ul>
-<li><code>L_BtnFlc</code>: the 13th icon in the gameroot: the 'all apps' button`</li>
+<li><strong>RootPane [pan 1]</strong><ul>
+<li><strong>L_BgNml [prt 1]</strong> <code>contains the original light/dark background, but the 'exelixbg' panel as well after being patched with a custom background</code></li>
+<li><strong>N_Root [pan 1]</strong><ul>
+<li><strong>N_ScrollArea [pan 1]</strong> <code>game icon scroll area</code></li>
+<li><strong>N_ScrollWindow [pan 1]</strong> <code>game icon scroll window "Touch related"</code></li>
+<li><strong>T_Blank [txt 1]</strong></li>
+<li><strong>N_GameRoot [pan 1]</strong> <code>panel contains all items that will be scrolled</code><ul>
+<li><strong>N_Game [pan 1]</strong><ul>
+<li><strong><a href="RdtBtnIconGame.bflyt.md"><code>N_Icon[00-11] [pan 1]</code></a></strong> <code>all 12 game icons. They make use of the same layout</code><ul>
+<li><strong>L_BtnChangeUser [prt 1]</strong> <code>contains "</code><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 6v4h2v-4l2-6h-2l-1 3-1-3H9m3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2Z"/></svg></span><code>Switch user" RdtBtnChangeUser.bflyt</code></li>
+</ul>
+</li>
+<li><strong>N_Icon_12 [pan 1]</strong> <code>The 13th icon : All Apps Root panel</code><ul>
+<li><strong>L_BtnFlc [prt 1]</strong> <code>All Apps button</code> <a href="../RdtBtnFullLauncher.bflyt/"><code>RdtBtnFullLauncher.bflyt</code></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><code>N_System</code>: contains all six system applets<ul>
-<li><code>L_BtnNoti</code>: the notifications button</li>
-<li><code>L_BtnShop</code>: the eshop button</li>
-<li><code>L_BtnCtrl</code>: the album button</li>
-<li><code>L_BtnPvr</code>: the controllers button</li>
-<li><code>L_BtnSet</code>: the settings button</li>
-<li><code>L_BtnPow</code>: the power button</li>
 </ul>
 </li>
-<li><code>L_ChildLock</code>: the childlock button</li>
-<li><code>N_Balloon</code></li>
-<li><code>N_MyPage</code><ul>
-<li><code>L_BtnAccount_[00-07]</code>:`all usericons which make use of a single layout</li>
+<li><strong>N_System [pan 1]</strong> <code>contains all Nintendo system applets</code><ul>
+<li><strong>L_BtnLR [prt 1]</strong> <code>Nintendo Switch Online button not able to be hidden via visibility</code></li>
+<li><strong>L_BtnNoti [prt 1]</strong> <code>the notifications button RdtBtnNtf.bflyt</code></li>
+<li><strong>L_BtnShop [prt 1]</strong> <code>the eshop button RdtBtnShop.bflyt</code></li>
+<li><strong>L_BtnPvr [prt 1]</strong> <code>the album button RdtBtnPvr.bflyt</code></li>
+<li><strong>L_BtnCtrl [prt 1]</strong> <code>the controllers button RdtBtnCtrl.bflyt</code></li>
+<li><strong>L_BtnSet [prt 1]</strong> <code>the settings button RdtBtnSet.bflyt</code></li>
+<li><strong>L_BtnPow [prt 1]</strong> <code>the power button RdtBtnPow</code></li>
 </ul>
 </li>
-<li><code>L_Hud</code>: the hud (clock, network, battery)</li>
-<li><code>L_BalloonCtrl</code>: the balloon that pops up when (dis)connecting a controller</li>
+<li><strong>L_ChildLock [prt 1]</strong> <code>the childlock button</code></li>
+<li><strong>N_Balloon [pan 1]</strong></li>
+<li><strong>N_MyPage [pan 1]</strong> <code>usericons root panel</code><ul>
+<li><strong>L_BtnAccount_[00-07] [prt1]</strong> <code>all usericons which make use of a single layout</code></li>
+</ul>
+</li>
+<li><strong>L_Hud [prt 1]</strong> <code>the hud (clock, network, battery) Hud.bflyt</code></li>
+<li><strong>L_BalloonCtrl [prt 1]</strong> <code>the balloon that pops up when (dis)connecting a controller RdtBalloonCtrl.bflyt</code></li>
 </ul>
 </li>
 </ul>

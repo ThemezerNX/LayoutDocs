@@ -15,7 +15,7 @@
     
     
       
-        <title>RdtBalloon.bflyt - LayoutDocs</title>
+        <title>Index - LayoutDocs</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tree" class="md-skip">
+        <a href="#rdtballoonbflyt" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              RdtBalloon.bflyt
+              Index
             
           </span>
         </div>
@@ -647,7 +647,7 @@
   
     <li class="md-nav__item">
       <a href="../../common/" class="md-nav__link">
-        common
+        Common
       </a>
     </li>
   
@@ -676,6 +676,20 @@
     <li class="md-nav__item">
       <a href="../../Flaunch/" class="md-nav__link">
         All Apps
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Psl/" class="md-nav__link">
+        Player Select
       </a>
     </li>
   
@@ -833,12 +847,21 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#layout-of-residentmenuszsblytrdtballoonbflyt" class="md-nav__link">
+    Layout of ResidentMenu.szs/blyt/RdtBalloon.bflyt
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#tree" class="md-nav__link">
@@ -862,22 +885,33 @@
                   
 
 
-  <h1>RdtBalloon.bflyt</h1>
-
+<h5 id="back-residentmenuszs"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M7.78 12.53a.75.75 0 0 1-1.06 0L2.47 8.28a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L4.81 7h7.44a.75.75 0 0 1 0 1.5H4.81l2.97 2.97a.75.75 0 0 1 0 1.06Z"/></svg></span> <a href="../">Back ResidentMenu.szs</a><a class="headerlink" href="#back-residentmenuszs" title="Permanent link">&para;</a></h5>
+<h1 id="rdtballoonbflyt">RdtBalloon.bflyt<a class="headerlink" href="#rdtballoonbflyt" title="Permanent link">&para;</a></h1>
+<p><strong>File:</strong> <code>ResidentMenu.szs/blyt/RdtBalloon.bflyt</code><br>
+<strong>Main <code>bflyt</code> file:</strong> <a href="../RdtBase.bflyt/"><code>RdtBase.bflyt</code></a></p>
+<hr />
+<h2 id="layout-of-residentmenuszsblytrdtballoonbflyt">Layout of <code>ResidentMenu.szs/blyt/RdtBalloon.bflyt</code><a class="headerlink" href="#layout-of-residentmenuszsblytrdtballoonbflyt" title="Permanent link">&para;</a></h2>
+<!-- prettier-ignore -->
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>These aren't all the functions, most are unknown or the component is unimportant.</p>
+</div>
 <h2 id="tree">Tree<a class="headerlink" href="#tree" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>N_Root</strong><ul>
-<li><strong>N_Trans</strong><ul>
-<li><strong>N_Size</strong><ul>
-<li><strong>N_Scissor</strong><ul>
-<li><strong>N_Offset</strong><ul>
-<li><em>P_Reset</em></li>
-<li><strong>N_Scroll</strong>: <code>contains all scrolling pars in the balloon (so only the text really)</code><ul>
-<li><strong>T_Main</strong>: <code>the icon's name</code></li>
-<li><em>N_Margin</em></li>
-<li><em>T_Sub</em></li>
+<li><strong>N_Root [pan 1]</strong><ul>
+<li><strong>N_Trans [pan 1]</strong><ul>
+<li><strong>N_Size [pan 1]</strong><ul>
+<li><strong>N_Scissor [pan 1]</strong><ul>
+<li><strong>N_Offset [pan 1]</strong><ul>
+<li><strong>P_Reset [pic 1]</strong></li>
+<li><strong>N_Scroll [pan 1]</strong> <code>contains all scrolling parts in the balloon (so only the text really)</code><ul>
+<li><strong>T_Main [txt 1]</strong> <code>the icon's name</code></li>
+<li><strong>N_Margin [pan 1]</strong></li>
+<li><strong>T_Sub [txt 1]</strong></li>
 </ul>
 </li>
+<li><strong>W_Fade [wnd 1]</strong></li>
+<li><strong>P_Color [pic 1]</strong> <code>Game text color</code></li>
 </ul>
 </li>
 </ul>
@@ -885,7 +919,7 @@
 </ul>
 </li>
 <li><strong>N_Card</strong><ul>
-<li><strong>P_Card</strong>: <code>the card icon</code></li>
+<li><strong>P_Card</strong>: <code>gamecard icon</code></li>
 </ul>
 </li>
 </ul>
