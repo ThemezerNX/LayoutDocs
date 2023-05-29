@@ -28,4 +28,4 @@
 					-	**W_Fade [wnd 1]**
 					-	**P_Color [pic 1]** `Game text color`
         -   **N_Card**
-            -   **P_Card**: `no gamecard icon`
+            -   **P_Card**: `gamecard icon`
