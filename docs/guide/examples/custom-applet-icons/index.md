@@ -24,3 +24,6 @@ As you can see in the preview above, the album icon is replaced with a flame.
 
 ![Pack 1](pack1.jpg)
 An example icon pack by u/akaisora255 can be downloaded [from here :octicons-download-16:](Icon Pack 1.zip).
+
+![Pack 2](pack2.png)
+A icon pack by [sodasoba](https://github.com/sodasoba1) can be downloaded [from here :octicons-download-16:](Icon Pack 2.zip).

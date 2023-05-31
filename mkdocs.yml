@@ -18,48 +18,49 @@ markdown_extensions:
           emoji_generator: !!python/name:materialx.emoji.to_svg
     - pymdownx.highlight
     - pymdownx.superfences
-
 nav:
-    - Home: index.md
-    - Guides:
-          - Getting Started: guide/index.md
-          - Menu Files: guide/menu-files.md
-          - Filetypes: guide/filetypes.md
-          - Layouts:
-                - Getting Started: guide/layouts/index.md
-                - USD Sections: guide/layouts/usd-sections.md
-          - Animations:
-                - The Guide: guide/animations/index.md
-                - PaiTags and Targets: guide/animations/paitags-and-targets.md
-          - Diffing: guide/diffing.md
-          - Specific Guides:
-                Getting Started: guide/examples/index.md
-                #     Changing Component Sizes: guide/examples/changing-component-sizes/index.md
-                #     Repositioning the Gamerow: guide/examples/reposition-gamerow/index.md
-                Stationary Game Icons: guide/examples/stationary-game-icons/index.md
-                Custom Element Colors: guide/examples/custom-element-colors/index.md
-                Custom Applet Icons: guide/examples/custom-applet-icons/index.md
-                Custom Cursor: guide/examples/custom-cursor/index.md
-                Hide Footer Line: guide/examples/hide-footer-line/index.md
-                Hide Header Lines: guide/examples/hide-header-lines/index.md
-                #     Changing Applet Cursor Size: guide/examples/changing-applet-cursor-size/index.md
-                Pulling & Pushing Panes: guide/examples/pull-push-front-back/index.md
-                Disabling Hud Movement: guide/examples/disabling-clock-movement-caused-by-battery/index.md
-    - Menu Documentation:
-          - Introduction: menu-docs/index.md
-          - Menus:
-                - Common: menu-docs/menus/common/index.md
-                - Home Menu: menu-docs/menus/ResidentMenu/index.md
-                #     - Lockscreen: menu-docs/menus/Entrance/index.md
-                - All Apps: menu-docs/menus/Flaunch/index.md
-                  #     - Settings: menu-docs/menus/Set/index.md
-                - Player Select: menu-docs/menus/Psl/index.md
-                  #     - User Page: menu-docs/MyPage/index.md
-                  #     - News: menu-docs/Notification/index.md
-    - Definitions: definitions.md
-    - Custom Messages/Text: custom-messages.md
-    - Extras:
-          - Guides: extras/guides.md
-          - Tools: extras/tools.md
-          - Discord Servers: extras/discord-servers.md
-          - Other: extras/other.md
+  - Home: index.md
+  - Guides:
+      - Getting Started: guide/index.md
+      - Menu Files: guide/menu-files.md
+      - Filetypes: guide/filetypes.md
+      - Layouts:
+          - Getting Started: guide/layouts/index.md
+          - USD Sections: guide/layouts/usd-sections.md
+      - Animations:
+          - The Guide: guide/animations/index.md
+          - PaiTags and Targets: guide/animations/paitags-and-targets.md
+      - Diffing: 
+          - What is Diffing?:  guide/diffing.md 
+          - Diffpatching: guide/diffpatch/index.md
+      - Specific Guides:
+          - Getting Started: guide/examples/index.md
+          #     Changing Component Sizes: guide/examples/changing-component-sizes/index.md
+          #     Repositioning the Gamerow: guide/examples/reposition-gamerow/index.md
+          - Stationary Game Icons: guide/examples/stationary-game-icons/index.md
+          - Custom Element Colors: guide/examples/custom-element-colors/index.md
+          - Custom Applet Icons: guide/examples/custom-applet-icons/index.md
+          - Custom Cursor: guide/examples/custom-cursor/index.md
+          - Hide Footer Line: guide/examples/hide-footer-line/index.md
+          - Hide Header Lines: guide/examples/hide-header-lines/index.md
+          #     Changing Applet Cursor Size: guide/examples/changing-applet-cursor-size/index.md
+          - Pulling & Pushing Panes: guide/examples/pull-push-front-back/index.md
+          - Disabling Hud Movement: guide/examples/disabling-clock-movement-caused-by-battery/index.md
+  - Menu Documentation:
+      - Introduction: menu-docs/index.md
+      - Menus:
+          - Common: menu-docs/menus/common/index.md
+          - Home Menu: menu-docs/menus/ResidentMenu/index.md
+          #     - Lockscreen: menu-docs/menus/Entrance/index.md
+          - All Apps: menu-docs/menus/Flaunch/index.md
+          #     - Settings: menu-docs/menus/Set/index.md
+          - Player Select: menu-docs/menus/Psl/index.md
+          #     - User Page: menu-docs/MyPage/index.md
+          #     - News: menu-docs/Notification/index.md
+  - Definitions: definitions.md
+  - Custom Messages/Text: custom-messages.md
+  - Extras:
+      - Guides: extras/guides.md
+      - Tools: extras/tools.md
+      - Discord Servers: extras/discord-servers.md
+      - Other: extras/other.md
