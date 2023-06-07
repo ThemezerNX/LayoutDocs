@@ -18,6 +18,7 @@ markdown_extensions:
           emoji_generator: !!python/name:materialx.emoji.to_svg
     - pymdownx.highlight
     - pymdownx.superfences
+    - pymdownx.details
 nav:
   - Home: index.md
   - Guides:
@@ -31,8 +32,8 @@ nav:
           - The Guide: guide/animations/index.md
           - PaiTags and Targets: guide/animations/paitags-and-targets.md
       - Diffing: 
-          - What is Diffing?:  guide/diffing.md 
-          - Diffpatching: guide/diffpatch/index.md
+          - What is Diffing?:  guide/diffpatch/index.md
+          - Diffpatching: guide/diffpatch/diff-example.md
       - Specific Guides:
           - Getting Started: guide/examples/index.md
           #     Changing Component Sizes: guide/examples/changing-component-sizes/index.md
@@ -51,7 +52,7 @@ nav:
       - Menus:
           - Common: menu-docs/menus/common/index.md
           - Home Menu: menu-docs/menus/ResidentMenu/index.md
-          #     - Lockscreen: menu-docs/menus/Entrance/index.md
+          - Lockscreen: menu-docs/menus/Entrance/index.md
           - All Apps: menu-docs/menus/Flaunch/index.md
           #     - Settings: menu-docs/menus/Set/index.md
           - Player Select: menu-docs/menus/Psl/index.md

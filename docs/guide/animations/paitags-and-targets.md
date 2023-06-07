@@ -189,3 +189,5 @@ Related to vertex colors transformations listed below.
 
 - [Switch Toolbox](https://github.com/KillzXGaming/Switch-Toolbox/)
 - [3DSkit](https://github.com/Tyulis/3DSkit/)
+
+# [Continue to Diffing](../diffpatch/index.md) :octicons-arrow-right-16:
