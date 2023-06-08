@@ -8,6 +8,9 @@
 <!-- prettier-ignore -->
 !!! Info
     These aren't all files, because either the function is unknown or the component is unimportant.
+	
+	ResidentMenu.szs is the switch home screen it's the "main" menu of the switch
+	normally .nxtheme files have common.szs patch inside the same file as the home screen
 
 | Filename                                       	  | Hypothetical full name          | Function                                                                       |
 | --------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------ |
