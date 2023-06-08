@@ -422,7 +422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guide/diffing/" class="md-nav__link">
+      <a href="../guide/diffpatch/" class="md-nav__link">
         What is Diffing?
       </a>
     </li>
@@ -436,7 +436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guide/diffpatch/" class="md-nav__link">
+      <a href="../guide/diffpatch/diff-example/" class="md-nav__link">
         Diffpatching
       </a>
     </li>
@@ -731,6 +731,20 @@
   
   
     <li class="md-nav__item">
+      <a href="menus/Entrance/" class="md-nav__link">
+        Lockscreen
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="menus/Flaunch/" class="md-nav__link">
         All Apps
       </a>
@@ -921,6 +935,112 @@
   <h1>Introduction</h1>
 
 <p>In order to get started, it is essential to know where you can find specific parts of the menus. The following pages lists many known components, but there also some yet undocumented. Feel free to contribute to this repository to help complete this list.</p>
+<p>in the next few pages you will see file trees for bflyt files that can be altered a quick breakdown of a bflyt tree may contain:</p>
+<ul>
+<li><strong>panel [pan 1]</strong> - <code>[pan 1] usually the Root panel but you may have more panels within the root panel</code></li>
+<li><strong>part [prt 1]</strong> - <code>[prt 1] partname which is linked to a seperate bflyt within the szs</code></li>
+<li><strong>pic [pic 1]</strong> - <code>[pic 1] image related could be a icon / button example or similar</code></li>
+<li><strong>bnd [bnd 1]</strong> - <code>[bnd 1] Button related</code></li>
+<li><strong>txt [txt 1]</strong> - <code>[txt 1] text area -actual text isn't changable just color/opacity size &amp; location</code></li>
+</ul>
+<p>Currently we have partial documentation for:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Common Name</strong></th>
+<th><strong>SZS file name</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="menus/common">Common</a></strong></td>
+<td><code>common.szs</code></td>
+<td>shared with resident menu / has minor menu settings &amp; icons</td>
+</tr>
+<tr>
+<td><strong><a href="menus/ResidentMenu">Home Menu</a></strong></td>
+<td><code>ResidentMenu.szs</code></td>
+<td>home screen of the switch or 'main menu'  applet icons, game icons</td>
+</tr>
+<tr>
+<td><strong><a href="menus/Entrance">Lockscreen</a></strong></td>
+<td><code>Entrance.szs</code></td>
+<td>lockscreen wake screen, icons, hud and promotional information on lockscreen</td>
+</tr>
+<tr>
+<td><strong><a href="menus/Flaunch">All Apps</a></strong></td>
+<td><code>Flaunch.szs</code></td>
+<td>Groups, sorting add, remove and the older all apps</td>
+</tr>
+<tr>
+<td>Settings</td>
+<td><code>Set.szs</code></td>
+<td>switch settings page</td>
+</tr>
+<tr>
+<td><strong><a href="menus/Psl">Player Select</a></strong></td>
+<td><code>Psl.szs</code></td>
+<td>icons, name popup when choosing a game and loading a  profile</td>
+</tr>
+<tr>
+<td>User Page</td>
+<td><code>MyPage.szs</code></td>
+<td>User profile page</td>
+</tr>
+<tr>
+<td>News</td>
+<td><code>Notification.szs</code></td>
+<td>News page with latest game releases and console information</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition cite">
+<p class="admonition-title">unsupported</p>
+<p>The files below are not Supported by NXTheme 
+some can be modified but modifications can crash your switch</p>
+</div>
+<table>
+<thead>
+<tr>
+<th><strong>Common Name</strong></th>
+<th><strong>SZS file name</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Eula</td>
+<td><code>Eula.szs</code></td>
+<td>contains Eula agreemeny information menus</td>
+</tr>
+<tr>
+<td>Gift</td>
+<td><code>Gift.szs</code></td>
+<td></td>
+</tr>
+<tr>
+<td>Interrupt</td>
+<td><code>Interrupt.szs</code></td>
+<td>contains alarm screens and error / game crash screens</td>
+</tr>
+<tr>
+<td>Migration</td>
+<td><code>Migration.szs</code></td>
+<td>contains account migration screens</td>
+</tr>
+<tr>
+<td>Option</td>
+<td><code>Option.szs</code></td>
+<td>contains applets when you press <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg></span> on a game icons</td>
+</tr>
+<tr>
+<td>SaveMove</td>
+<td><code>SaveMove.szs</code></td>
+<td>save migration panel / cloud save information?</td>
+</tr>
+</tbody>
+</table>
 
 
 
