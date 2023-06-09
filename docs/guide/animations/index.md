@@ -2,7 +2,7 @@
 
 # Creating custom animations for your NX themes
 
-_Written by [Capybara](https://themezer.net/creators/382997176307154945), revisioned by Migush_
+_Written by [Capybara](https://themezer.net/creators/382997176307154945)_
 
 ---
 
