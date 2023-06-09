@@ -16,7 +16,7 @@ Almost all menu-related applets also have a `common.szs` file that defines struc
 
 ## Filenames
 
-Every menu has its own file. Here is a list of the supported menus and their filenames:
+Every menu has its own file. Here is a list of the supported menus by the nxtheme format and their filenames:
 
 | Menu             | Filename           |
 | ---------------- | ------------------ |
