@@ -29,7 +29,7 @@ Templates must be placed in the `BflanTemplates` folder of your Layout Editor fo
 To get a better grasp, here is the template that the release 15 provides by default:
 
 - `ColorAnimation.template`
-```json
+```
 [
   {
     "Unknown": 0,
@@ -134,7 +134,7 @@ Hence we will need to use the following values of `PaiTag` and `AnimationTarget`
 This is how the template looks like:
 
 - **`gameIcon.template`**
-```json
+```
 [
   {
     "Unknown": 0,
@@ -255,7 +255,7 @@ Please take those as general principles:
     - My personal recommendation is typing the `.template` first so you can properly set up your parameters in the `.json` afterwards
     - You can name parameters to your convenience, just enclose them with `%` symbols
     - Adding more keyframes is possible by simply expanding the `KeyFrames` array for the `AnimationTarget` of your choice within the `.template`:
-        ```json
+        ```
         { "Frame": %FRAME_ONE%, "Value": %VALUE_ONE%, "Blend": 0 },
         { "Frame": %FRAME_TWO%, "Value": %VALUE_TWO%, "Blend": 0 },
         { "Frame": %FRAME_THREE%, "Value": %VALUE_THREE%, "Blend": 0 },
@@ -308,7 +308,7 @@ This time around, `PaiTag` and `AnimationTarget`s are the following:
 We will make some adjustments to the pre-configured template that Layout Editor 15 provides by default:
 
 - **`ColorAnimation.template`**
-```json
+```
 [
   {
     "Unknown": 0,
