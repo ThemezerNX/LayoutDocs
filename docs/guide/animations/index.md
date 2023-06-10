@@ -22,7 +22,7 @@ creativity.
 - Color based animations, which also include transparency.
 
 There are some more types but for the sake of pedagogy, I'll elaborate on the animation creation process by going through one easy example. In case
-you want to expand your possibilities, additional documentation and [tables](#tables) with the values you'll be needing will be provided later on in this
+you want to expand your possibilities, additional documentation and tables with the values you'll be needing will be provided later on in this
 tutorial, so you can try them out by yourself.
 
 You can have a glance at [my Themezer profile](https://themezer.net/creators/382997176307154945) for examples. If you

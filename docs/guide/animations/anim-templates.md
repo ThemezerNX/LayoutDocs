@@ -228,7 +228,7 @@ This is how the template looks like:
       "Keyword": "%BASE_SCALE%"
     },
     {
-      "Kind": "Int",
+      "Kind": "Float",
       "Name": "Scaling factor",
       "Default": "1.04",
       "Keyword": "%SCALE_FACTOR%"
@@ -240,11 +240,12 @@ This is how the template looks like:
 Please take those as general principles:
 
 - All the values of interest (i.e. that will determine how the animation actually looks) are stored in parameters: `%START_FRAME_POSITION%`, `%END_FRAME_POSITION%`, `%START_FRAME_SCALE%`, `%END_FRAME_SCALE%`, `%BASE_POSITION%`, `%POSITION_OFFSET%`, `%BASE_SCALE%`, `%SCALE_FACTOR%`
+- In the `.json` descriptor, parameters' value type (specified by `Kind`) must be defined accordingly: `Int` (integer), `Float` (real number), `String` (text)
 - Each defined parameter within the `.template` has its own entry in the `.json` descriptor. For example:
     - **`%SCALE_FACTOR%`** :octicons-arrow-right-16:
         ```json
         {
-          "Kind": "Int",
+          "Kind": "Float",
           "Name": "Scaling factor",
           "Default": "1.04",
           "Keyword": "%SCALE_FACTOR%"
