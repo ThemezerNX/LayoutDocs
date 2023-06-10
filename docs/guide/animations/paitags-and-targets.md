@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Back to Animation Guide](./index.md)
+##### :octicons-arrow-left-16: [Back to Animations: extras](./going-further.md)
 
 # PaiTags and targets for FLAN Animations
 
@@ -185,9 +185,11 @@ Related to vertex colors transformations listed below.
 | `8`               | Extended User Information                | String, Integer value list or Real number value list |        |
 | `9`               | Indirect                                 |                                                      |        |
 
+# [Continue to Animations: szs, bflyt, bflan files](./szs-bflyt-bflan.md) :octicons-arrow-right-16:
+
+---
+
 ## Special Thanks
 
 - [Switch Toolbox](https://github.com/KillzXGaming/Switch-Toolbox/)
 - [3DSkit](https://github.com/Tyulis/3DSkit/)
-
-# [Continue to Diffing](../diffpatch/index.md) :octicons-arrow-right-16:
