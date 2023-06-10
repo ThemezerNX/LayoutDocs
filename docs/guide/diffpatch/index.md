@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Back to USD Animations PaiTags and Targets](../animations/paitags-and-targets.md)
+##### :octicons-arrow-left-16: [Back to Animations: szs, bflyt, bflan files](../animations/szs-bflyt-bflan.md)
 
 # Diffing
 

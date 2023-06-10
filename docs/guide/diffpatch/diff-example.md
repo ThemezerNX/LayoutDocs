@@ -71,4 +71,4 @@ paste the patched option.szs from your desktop onto the SD card
 	
 Reboot your switch and that's it.
 
-# [Continue to Examples](../examples/index.md) :octicons-arrow-right-16:
+# [Continue to Manual szs theming](../manualszs/index.md) :octicons-arrow-right-16:
