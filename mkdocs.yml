@@ -29,11 +29,17 @@ nav:
           - Getting Started: guide/layouts/index.md
           - USD Sections: guide/layouts/usd-sections.md
       - Animations:
-          - The Guide: guide/animations/index.md
-          - PaiTags and Targets: guide/animations/paitags-and-targets.md
+          - Introduction: guide/animations/index.md
+          - "Quick refresher course: Nintendo Switch files, diffing": guide/animations/refresher.md
+          - Main tutorial: guide/animations/main-tutorial.md
+          - Animation templates: guide/animations/anim-templates.md
+          - More on animations: guide/animations/going-further.md
+          - "PaiTags and Targets": guide/animations/paitags-and-targets.md
+          - "szs, bflyt, bflan files": guide/animations/szs-bflyt-bflan.md
       - Diffing: 
           - What is Diffing?:  guide/diffpatch/index.md
           - Diffpatching: guide/diffpatch/diff-example.md
+      - Manual szs theming (unsupported applets): guide/manualszs/index.md
       - Specific Guides:
           - Getting Started: guide/examples/index.md
           #     Changing Component Sizes: guide/examples/changing-component-sizes/index.md
