@@ -1326,7 +1326,7 @@
 <span class="w">      </span><span class="nt">&quot;Keyword&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;%BASE_SCALE%&quot;</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;Kind&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Int&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;Kind&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Float&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Scaling factor&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;Default&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.04&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;Keyword&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;%SCALE_FACTOR%&quot;</span>
@@ -1339,10 +1339,11 @@
 <p>Please take those as general principles:</p>
 <ul>
 <li>All the values of interest (i.e. that will determine how the animation actually looks) are stored in parameters: <code>%START_FRAME_POSITION%</code>, <code>%END_FRAME_POSITION%</code>, <code>%START_FRAME_SCALE%</code>, <code>%END_FRAME_SCALE%</code>, <code>%BASE_POSITION%</code>, <code>%POSITION_OFFSET%</code>, <code>%BASE_SCALE%</code>, <code>%SCALE_FACTOR%</code></li>
+<li>In the <code>.json</code> descriptor, parameters' value type (specified by <code>Kind</code>) must be defined accordingly: <code>Int</code> (integer), <code>Float</code> (real number), <code>String</code> (text)</li>
 <li>Each defined parameter within the <code>.template</code> has its own entry in the <code>.json</code> descriptor. For example:<ul>
 <li><strong><code>%SCALE_FACTOR%</code></strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l2.97-2.97H3.75a.75.75 0 0 1 0-1.5h7.44L8.22 4.03a.75.75 0 0 1 0-1.06Z"/></svg></span>
     <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;Kind&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Int&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;Kind&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Float&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Scaling factor&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;Default&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.04&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;Keyword&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;%SCALE_FACTOR%&quot;</span>
