@@ -73,8 +73,6 @@ and there are a few themes that already have achieved this out there. To do so, 
 need to add `L_BgNml` to the pane list in `RdtBase_Enter.bflan` and make your edits to your convenience. However, this
 solution has its limitations:
 
-- You're still stuck with a static background image since there is no support for animated images of any kind, nor for
-  video files
 - `RdtBase_Enter.bflan` contains the home screen unlocking animation. Try to loop your animation using the `Flags` item
   and maybe you can guess what will happen (boot loop, UI and sound glitches). The only thing you can do to sort of
   reproduce a looping behavior is to duplicate your animation pattern all the way through an absurd amount of key
@@ -83,6 +81,12 @@ solution has its limitations:
   minutes). If you are interested in learning the whole process, you can read
   through [his own documentation there](https://github.com/zzzribas/Patterns/wiki). As a side note, you might want to
   stay tuned for Zhi's next releases because he comes up with quite some good ideas!
+
+- You're still stuck with a static background image since there is no support for animated images of any kind, nor for
+  video files
+- You could make a collage of frames in a single background (each corner a 360p image). This way you could use an animation to focus on different corners and make it look like your background has four frames. You could make it two frames by putting the images simply next to each other. You will probably have to reduce quality of each picture to ~480p. You will still have to rely on manually adding many frame entries.
+- You can make gradient animations by animating Top/Bottom Left/Right corner colors, and not use a background image. Still, manually repeating the frames is required.
+- On firmware versions 5.x and below you could very easily loop background animations, as the `loop` flag did not affect the 'enter' animation when coming from the lockscreen.
 
 For the other applets (e.g. settings, user page, etc.), there is actually no known way at all to apply any kind of animation to a custom background image.
 
