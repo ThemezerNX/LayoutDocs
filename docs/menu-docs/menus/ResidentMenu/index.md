@@ -38,5 +38,7 @@
 | [RdtBtnPvr.bflyt](RdtBtnPvr.bflyt)                  | ResidentMenuButtonPictureviewer | Album applet button                                                            |
 | [RdtBtnSet.bflyt](RdtBtnSet.bflyt)                  | ResidentMenuButtonSettings      | Settings applet button                                                         |
 | RdtBtnShop.bflyt                                	  | ResidentMenuButtonShop          | eShop applet button                                                            |
-| RdtBtnLR.bflyt                                      | ResidentMenuButtonLR            | Nintendo Switch Online applet button                                           |
-| RdtIconPromotion.bflyt                          	  | ResidentMenuIconPromotion       |                                                                                |
+| RdtBtnLR.bflyt                                      | ResidentMenuButtonLR            | Nintendo Switch Online applet button    |
+| RdtBtnSplay.bflyt       | ResidentMenuButtonShareplay        | GameShare applet button        |
+| RdtBtnVgc.bflyt         | ResidentMenuButtonVirtualgamecard  | Virtual Game Cards             |
+| RdtIconPromotion.bflyt  | ResidentMenuIconPromotion          |                                |
