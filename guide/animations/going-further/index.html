@@ -1751,7 +1751,7 @@ solution has its limitations:</p>
 changes you make to a pane (e.g. colors, position, etc.), even while having the <code>C_W</code> and <code>C_B</code> patches enabled, lead to
 no result. <strong>In such cases, chances are that an animation is overwriting your edits.</strong></p>
 <p>One notable case is the Redownload Software button at the bottom of the full launcher applet's main
-page (<code>Flauncher.szs</code>). The panes corresponding to this button are <code>L_Shop</code> and <code>T_Empty</code>, and these won't hide by
+page (<code>Flauncher.szs</code>). The panes corresponding to this button are <code>L_ReDL</code> (<code>L_Shop</code> before 20.x.x) and <code>T_Empty</code>, and these won't hide by
 simply attaching the <code>Visible: false</code> property to them. This is due to the <code>FLVI</code> entries in <code>FlcCntMain_Type.bflan</code>
 that overwrite any modification attempt made within your <code>.json</code> code. To sort this out, the <code>KeyFrames</code> values under each <code>FLVI</code> entry
 must be set to <code>0</code> (<code>1</code> by default).</p>
@@ -1764,7 +1764,7 @@ must be set to <code>0</code> (<code>1</code> by default).</p>
 </thead>
 <tbody>
 <tr>
-<td><code>L_Shop</code> &gt; <code>FLVI</code> &gt; <code>KeyFrames</code></td>
+<td><code>L_ReDL</code> &gt; <code>FLVI</code> &gt; <code>KeyFrames</code></td>
 <td><code>T_Empty</code> &gt; <code>FLVI</code> &gt; <code>KeyFrames</code></td>
 </tr>
 </tbody>
