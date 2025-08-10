@@ -97,14 +97,14 @@ changes you make to a pane (e.g. colors, position, etc.), even while having the 
 no result. **In such cases, chances are that an animation is overwriting your edits.**
 
 One notable case is the Redownload Software button at the bottom of the full launcher applet's main
-page (`Flauncher.szs`). The panes corresponding to this button are `L_Shop` and `T_Empty`, and these won't hide by
+page (`Flauncher.szs`). The panes corresponding to this button are `L_ReDL` (`L_Shop` before 20.x.x) and `T_Empty`, and these won't hide by
 simply attaching the `Visible: false` property to them. This is due to the `FLVI` entries in `FlcCntMain_Type.bflan`
 that overwrite any modification attempt made within your `.json` code. To sort this out, the `KeyFrames` values under each `FLVI` entry
 must be set to `0` (`1` by default).
 
 | ![Shop (1)](tuto16.jpg "Shop (1)") | ![Full launcher (2)](tuto17.jpg "Shop (2)") |
 |------------------------------------|---------------------------------------------|
-| `L_Shop` > `FLVI` > `KeyFrames`    | `T_Empty` > `FLVI` > `KeyFrames`            |
+| `L_ReDL` > `FLVI` > `KeyFrames`    | `T_Empty` > `FLVI` > `KeyFrames`            |
 
 | ![Full launcher (1)](flaunch1.jpg "Full launcher (1)") | ![Full launcher (2)](flaunch2.jpg "Full launcher (2)") |
 |--------------------------------------------------------|--------------------------------------------------------|
