@@ -12,3 +12,4 @@
 -   [You can change the theme icon in the settings menu](https://www.reddit.com/r/NXThemes/comments/anejej/psa_you_can_change_the_theme_icon_in_the_settings/)
 -   [Custom Game Icons guide by SobaSoba1](https://sodasoba1.github.io/)
 -   [Custom Game Icons guide by hotshotz79](https://github.com/hotshotz79/NX-Custom-Game-Icons)
+-   [Animated backgrounds guide by zzzribas](https://github.com/zzzribas/Patterns/wiki)
