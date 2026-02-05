@@ -6,9 +6,9 @@
 !!! info
         For more details, see the following sections:
         
-        - **[Menu files](../menu-files.md) :octicons-arrow-right-16:**
+        - **[Menu files](../2-firmware-files.md) :octicons-arrow-right-16:**
 
-        - **[Filetypes](../filetypes.md) :octicons-arrow-right-16:**
+        - **[Filetypes](../3-filetypes.md) :octicons-arrow-right-16:**
 
 Making themes means altering `.szs` files. Those are archives that contain the UI's graphical assets, all of them being
 stored in `.bflyt` and `.bflan` files. Basically, the whole UI is broken down into such files. So in order to create
@@ -53,7 +53,7 @@ want to make edits to the all apps section, `Flauncher.szs` is the file we will 
 !!! info
         For more details, see the following section:
         
-        - **[Diffing](../diffing.md) :octicons-arrow-right-16:**
+        - **[Diffing](../4-diffpatch/index.md) :octicons-arrow-right-16:**
 
 
 You should be used to messing around with `.json` files and compiling themes with Switch Theme Injector, but maybe
