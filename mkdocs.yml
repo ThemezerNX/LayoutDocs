@@ -21,51 +21,51 @@ markdown_extensions:
     - pymdownx.details
 nav:
   - Home: index.md
-  - Guides:
-      - Getting Started: guide/index.md
-      - Menu Files: guide/menu-files.md
-      - Filetypes: guide/filetypes.md
-      - Layouts:
-          - Getting Started: guide/layouts/index.md
-          - USD Sections: guide/layouts/usd-sections.md
-      - Animations:
-          - Introduction: guide/animations/index.md
-          - "Quick refresher course: Nintendo Switch files, diffing": guide/animations/refresher.md
-          - Main tutorial: guide/animations/main-tutorial.md
-          - Animation templates: guide/animations/anim-templates.md
-          - More on animations: guide/animations/going-further.md
-          - "PaiTags and Targets": guide/animations/paitags-and-targets.md
-          - "szs, bflyt, bflan files": guide/animations/szs-bflyt-bflan.md
-      - Diffing: 
-          - What is Diffing?:  guide/diffpatch/index.md
-          - Diffpatching: guide/diffpatch/diff-example.md
-      - Manual szs theming (unsupported applets): guide/manualszs/index.md
-      - Specific Guides:
-          - Getting Started: guide/examples/index.md
-          #     Changing Component Sizes: guide/examples/changing-component-sizes/index.md
-          #     Repositioning the Gamerow: guide/examples/reposition-gamerow/index.md
-          - Stationary Game Icons: guide/examples/stationary-game-icons/index.md
-          - Custom Element Colors: guide/examples/custom-element-colors/index.md
-          - Custom Applet Icons: guide/examples/custom-applet-icons/index.md
-          - Custom Cursor: guide/examples/custom-cursor/index.md
-          - Hide Footer Line: guide/examples/hide-footer-line/index.md
-          - Hide Header Lines: guide/examples/hide-header-lines/index.md
-          #     Changing Applet Cursor Size: guide/examples/changing-applet-cursor-size/index.md
-          - Pulling & Pushing Panes: guide/examples/pull-push-front-back/index.md
-          - Disabling Hud Movement: guide/examples/disabling-clock-movement-caused-by-battery/index.md
-  - Menu Documentation:
-      - Introduction: menu-docs/index.md
-      - Menus:
-          - Common: menu-docs/menus/common/index.md
-          - Home Menu: menu-docs/menus/ResidentMenu/index.md
-          - Lockscreen: menu-docs/menus/Entrance/index.md
-          - All Apps: menu-docs/menus/Flaunch/index.md
-          #     - Settings: menu-docs/menus/Set/index.md
-          - Player Select: menu-docs/menus/Psl/index.md
-          #     - User Page: menu-docs/MyPage/index.md
-          #     - News: menu-docs/Notification/index.md
   - Definitions: definitions.md
-  - Custom Messages/Text: custom-messages.md
+  - Guides:
+      - 1. Getting Started: guide/1-getting-started.md
+      - 2. Firmware Files: guide/2-firmware-files.md
+      - 3. Filetypes: guide/3-filetypes.md
+      - 4. Diffing: 
+          - What is Diffing?:  guide/4-diffpatch/index.md
+          - Diffpatching: guide/4-diffpatch/diff-example.md
+      - 5. Menu Files:
+        - Introduction: guide/5-menu-docs/index.md
+        - Menus:
+            - Common: guide/5-menu-docs/menus/common/index.md
+            - Home Menu: guide/5-menu-docs/menus/ResidentMenu/index.md
+            - Lockscreen: guide/5-menu-docs/menus/Entrance/index.md
+            - All Apps: guide/5-menu-docs/menus/Flaunch/index.md
+            #     - Settings: guide/5-menu-docs/menus/Set/index.md
+            - Player Select: guide/5-menu-docs/menus/Psl/index.md
+            #     - User Page: guide/5-menu-docs/MyPage/index.md
+            #     - News: guide/5-menu-docs/Notification/index.md
+      - 6. Layouts:
+          - Getting Started: guide/6-layouts/index.md
+          - USD Sections: guide/6-layouts/usd-sections.md
+      - 7. Animations:
+          - Introduction: guide/7-animations/index.md
+          - "Quick refresher course: Nintendo Switch files, diffing": guide/7-animations/refresher.md
+          - Main tutorial: guide/7-animations/main-tutorial.md
+          - Animation templates: guide/7-animations/anim-templates.md
+          - More on animations: guide/7-animations/going-further.md
+          - "PaiTags and Targets": guide/7-animations/paitags-and-targets.md
+          - "szs, bflyt, bflan files": guide/7-animations/szs-bflyt-bflan.md
+      - Custom Messages/Text: guide/8-messages/index.md
+      - Manual szs theming (unsupported applets): guide/9-manualszs/index.md
+  - Specific Guides:
+      - Getting Started: examples/index.md
+      #     Changing Component Sizes: examples/changing-component-sizes/index.md
+      #     Repositioning the Gamerow: examples/reposition-gamerow/index.md
+      - Stationary Game Icons: examples/stationary-game-icons/index.md
+      - Custom Element Colors: examples/custom-element-colors/index.md
+      - Custom Applet Icons: examples/custom-applet-icons/index.md
+      - Custom Cursor: examples/custom-cursor/index.md
+      - Hide Footer Line: examples/hide-footer-line/index.md
+      - Hide Header Lines: examples/hide-header-lines/index.md
+      #     Changing Applet Cursor Size: examples/changing-applet-cursor-size/index.md
+      - Pulling & Pushing Panes: examples/pull-push-front-back/index.md
+      - Disabling Hud Movement: examples/disabling-clock-movement-caused-by-battery/index.md
   - Extras:
       - Guides: extras/guides.md
       - Tools: extras/tools.md

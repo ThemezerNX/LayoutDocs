@@ -1,6 +1,16 @@
-# Animations: before actually starting
+##### :octicons-arrow-left-16: [Back to Animations: introduction](index.md)
 
-## Quick reminder on Nintendo Switch's files
+# Animations: refresher course on files and diffing
+---
+
+## Quick reminder on Nintendo Switch files
+
+!!! info
+        For more details, see the following sections:
+        
+        - **[Menu files](../menu-files.md) :octicons-arrow-right-16:**
+
+        - **[Filetypes](../filetypes.md) :octicons-arrow-right-16:**
 
 Making themes means altering `.szs` files. Those are archives that contain the UI's graphical assets, all of them being
 stored in `.bflyt` and `.bflan` files. Basically, the whole UI is broken down into such files. So in order to create
@@ -15,6 +25,8 @@ pane you want to animate.**
 In practice, **we'll essentially be focusing on**  `.bflan`  **files**, in which are stored parts of the animation data
 **for a specific**  `.bflyt`  **file**. Almost all the process is done through Switch Layout Editor which I'll start to
 introduce in the next subsection.
+
+![bflyt vs bflans](bflytvsbflans.png "bflyt vs bflans")
 
 Getting back to `.szs` archives, you'll find those in `themes/systemData` on your SD card, these have already been
 extracted by the NXTheme Installer homebrew app. Please note that `.szs` files contain copyrighted stuff, making them
@@ -40,6 +52,12 @@ want to make edits to the all apps section, `Flauncher.szs` is the file we will 
 
 ## Diffing with Layout Editor
 
+!!! info
+        For more details, see the following section:
+        
+        - **[Diffing](../diffing.md) :octicons-arrow-right-16:**
+
+
 You should be used to messing around with `.json` files and compiling themes with Switch Theme Injector, but maybe
 you're not familiar with Switch Layout Editor. Think of it as a `.szs` reader/archiver that also offers an actual
 on-screen preview of the panes' positioning, which is quite convenient for layout editing. It turns out that Layout
@@ -54,10 +72,7 @@ all the edits that have been made through Layout Editor. Layout diffing is the p
 these `.szs` files and spitting out a `.json` layout that reflects all your edits. The output `.json` file can then be used in Switch Theme Injector to compile
 the `.nxtheme` as you would normally do.
 
-!!! info
-      Making color based animations was very tedious and time consuming until the 15th release of Layout Editor by exelix. Not only this release adds convenience in making color based animations specifically, it greatly facilitates the whole animation making process by implementing user-defined templates. A section has been added to this tutorial to reflect those changes.
-
-## Short summary
+## In summary
 
 We'll go through these general steps that apply for **any type of animation editing**:
 
@@ -69,6 +84,4 @@ We'll go through these general steps that apply for **any type of animation edit
 
 - compile the `.nxtheme` using the output/diffed `.json` and install onto the console (usual process with Switch Theme Injector and NXTheme Installer)
 
-With that being said, we can finally start creating animations.
-
-# [Continue to Animations: Main tutorial](main-tutorial.md) :octicons-arrow-right-16:
+With all of that being introduced, we can finally start creating animations.

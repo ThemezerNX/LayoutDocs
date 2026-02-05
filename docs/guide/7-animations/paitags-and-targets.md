@@ -185,8 +185,6 @@ Related to vertex colors transformations listed below.
 | `8`               | Extended User Information                | String, Integer value list or Real number value list |        |
 | `9`               | Indirect                                 |                                                      |        |
 
-# [Continue to Animations: szs, bflyt, bflan files](./szs-bflyt-bflan.md) :octicons-arrow-right-16:
-
 ---
 
 ## Special Thanks

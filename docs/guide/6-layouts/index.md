@@ -46,5 +46,3 @@ Check out these guides for more info on how to create layouts:
 - [Making your own custom layouts using SwitchLayoutEditor](https://github.com/FuryBaguette/SwitchLayoutEditor/wiki) (this is not the same as modifying JSON layouts!)
 - [Rainbow Simple Homescreen with Rounded Icons and Album Icon Tutorial](https://www.reddit.com/r/NXThemes/comments/ba5o8i/rainbow_simple_homescreen_with_rounded_icons_and/)
 - [BFLYT Editing With Switch Toolbox](https://github.com/KillzXGaming/Switch-Toolbox/wiki/BFLYT-Editing)
-
-# [Continue to USD Sections](usd-sections.md) :octicons-arrow-right-16:

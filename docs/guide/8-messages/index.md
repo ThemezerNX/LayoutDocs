@@ -1,6 +1,6 @@
 # Custom Messages/Text/Translations
 
-It's possible to edit any text shown in a menu by editing the strings file
+It's possible to edit any text shown in a menu by editing the strings file. This is not supported by the Switch Themes Injector.
 
 ## Info
 

@@ -716,5 +716,3 @@ Example usage: `RdtBtnIconGame`
 	"PropValues": [1]
 }
 ```
-
-# [Continue to Animations](../animations/index.md) :octicons-arrow-right-16:

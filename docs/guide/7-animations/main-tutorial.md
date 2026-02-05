@@ -194,5 +194,3 @@ This will output a `.json` file we will be using to compile a `.nxtheme` with Sw
       | ![AddGroups section](tuto12.jpg "AddGroups section") | ![Anims section](tuto13.jpg "Anils section") |
       |------------------------------------------------------|----------------------------------------------|
       | `AddGroups` section                                  | `Anims` section                              |
-
-# [Continue to Animations: templates](anim-templates.md) :octicons-arrow-right-16:

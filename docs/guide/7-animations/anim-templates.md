@@ -525,5 +525,3 @@ This template has been used to create **[Unison R](https://themezer.net/packs/Un
 ## Defining targets
 
 As per [Layout Editor source code](https://github.com/FuryBaguette/SwitchLayoutEditor/blob/master/BflytPreview/Automation/BflanTemplates.cs), you can also use `.bflan` templates to add panes to the `Pai1` section, adding even more automation to the process. I haven't personally tested it but feel free to experiment and share your templates.
-
-# [Continue to Animations: extras](going-further.md) :octicons-arrow-right-16:

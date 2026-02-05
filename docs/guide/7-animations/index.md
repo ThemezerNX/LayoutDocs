@@ -68,8 +68,6 @@ Here is the general structure of this guide:
     - **Tables:** to experiment further and expand animation possibilities
 
 
-# [Continue to Animations: refresher course](refresher.md) :octicons-arrow-right-16:
-
 ---
 
 ## Special thanks

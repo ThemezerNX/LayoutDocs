@@ -111,5 +111,3 @@ must be set to `0` (`1` by default).
 | Visible Redownload Software button                     | Hidden Redownload Software button                      |
 
 Giving another example, take a look at my Unison R home menu theme: highlighted games have a white rounded card around their icon. These cards' corresponding pane is `P_BtnBase` from `RdtBtnIconGame.bflyt`. This pane actually has some transparency defined through animations by default. So in order to make this pane fully opaque, we need to look into the animations of `P_BtnBase` and change its `KeyFrames` value to `255` under the `FLVC` entry.
-
-# [Continue to Animations: PaiTags and AnimationTargets](./paitags-and-targets.md) :octicons-arrow-right-16:

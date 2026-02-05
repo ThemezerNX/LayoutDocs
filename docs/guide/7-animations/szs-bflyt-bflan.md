@@ -30,5 +30,3 @@ Here is a non-exhaustive list of UI components that can be animated.
 |----------------------|---------------------------------------------------------------|------------------------------------------------------------|
 | `FlcBtnIconGame`     | game icon in the main and group screens                       | `FlcBtnIconGame_Active`, `FlcBtnIconGame_Inactive`         |
 | `FlcBtnIconGameEdit` | game icon in the create group and add/remove software screens | `FlcBtnIconGameEdit_Active`, `FlcBtnIconGameEdit_Inactive` |
-
-# [Continue to Diffing](../diffpatch/index.md) :octicons-arrow-right-16:

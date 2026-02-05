@@ -66,5 +66,3 @@ For this guide it is expected that you already have basic knowledge on how to in
 <!-- prettier-ignore -->
 !!! Tip
     Any item that is deleted will be moved to the trash, so if you were to accidentally delete something you're in luck! Restoring the files from your trash and clicking the refresh button is enough.
-
-# [Continue to Menu Files](menu-files.md) :octicons-arrow-right-16:

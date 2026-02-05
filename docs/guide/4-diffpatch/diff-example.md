@@ -70,5 +70,3 @@ paste the patched option.szs from your desktop onto the SD card
 	Refer to [Menu Files](../menu-files.md) page for szs and their locations within `atmosphere/contents/<TITLEID>/romfs/lyt`
 	
 Reboot your switch and that's it.
-
-# [Continue to Manual szs theming](../manualszs/index.md) :octicons-arrow-right-16:

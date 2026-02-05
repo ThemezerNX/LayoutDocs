@@ -70,8 +70,3 @@ Check out these wikis for more information on all kinds of Nintendo file formats
 - [3DBrew](https://www.3dbrew.org/wiki/Category:File_formats)
 - [Custom Mario Kart Wiiki](https://wiki.tockdom.com/wiki/List_of_File_Formats)
 - [Switchbrew](https://switchbrew.org/)
-
-
-### **[Continue to Layouts (bflyt)](layouts/index.md) :octicons-arrow-right-16:**
-
-### **[Continue to Animations (bflan)](animations/index.md) :octicons-arrow-right-16:**

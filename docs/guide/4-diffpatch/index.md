@@ -53,5 +53,3 @@ the output of a diffpatch may look like the example below:
 this JSON (diffpatch) can be applied to a SZS file either with [Switch Theme injector](https://github.com/exelix11/SwitchThemeInjector) or with [LayoutKit](https://github.com/ThemezerNX/LayoutKit)
 
 Here is an example by sodasoba on how a diffpatch can be applied:
-
-# [Continue to Diffpatching](diff-example.md) :octicons-arrow-right-16:

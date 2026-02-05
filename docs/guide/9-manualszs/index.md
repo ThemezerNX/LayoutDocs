@@ -141,5 +141,3 @@ Custom background images for unsupported menus *may be* achievable as well using
 
 - exelix for his advice
 - contributors of the NX scene
-
-# [Continue to Specific Guides](../examples/index.md) :octicons-arrow-right-16:
