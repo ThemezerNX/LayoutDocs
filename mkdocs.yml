@@ -51,8 +51,8 @@ nav:
           - More on animations: guide/7-animations/going-further.md
           - "PaiTags and Targets": guide/7-animations/paitags-and-targets.md
           - "szs, bflyt, bflan files": guide/7-animations/szs-bflyt-bflan.md
-      - Custom Messages/Text: guide/8-messages/index.md
-      - Manual szs theming (unsupported applets): guide/9-manualszs/index.md
+      - 8. Custom Messages/Text: guide/8-messages/index.md
+      - 9. Manual szs theming (unsupported applets): guide/9-manualszs/index.md
   - Specific Guides:
       - Getting Started: examples/index.md
       #     Changing Component Sizes: examples/changing-component-sizes/index.md
