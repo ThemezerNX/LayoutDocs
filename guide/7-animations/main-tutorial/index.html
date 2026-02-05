@@ -1,0 +1,2093 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../refresher/">
+      
+      
+        <link rel="next" href="../anim-templates/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Main tutorial - LayoutDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#animations-main-tutorial" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="LayoutDocs" class="md-header__button md-logo" aria-label="LayoutDocs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LayoutDocs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Main tutorial
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="LayoutDocs" class="md-nav__button md-logo" aria-label="LayoutDocs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    LayoutDocs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../definitions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Definitions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-firmware-files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Firmware Files
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-filetypes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Filetypes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Diffing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    4. Diffing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-diffpatch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Diffing?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-diffpatch/diff-example/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diffpatching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Menu Files
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    5. Menu Files
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-menu-docs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_2" id="__nav_3_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Menus
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Menus
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-menu-docs/menus/common/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Common
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-menu-docs/menus/ResidentMenu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Menu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-menu-docs/menus/Entrance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lockscreen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-menu-docs/menus/Flaunch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    All Apps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-menu-docs/menus/Psl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Player Select
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Layouts
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    6. Layouts
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6-layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6-layouts/usd-sections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    USD Sections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Animations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    7. Animations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../refresher/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick refresher course: Nintendo Switch files, diffing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Main tutorial
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Main tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#our-goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Our goal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizing-our-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organizing our workflow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#animation-creation-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Animation creation process
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../anim-templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Animation templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../going-further/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    More on animations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paitags-and-targets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PaiTags and Targets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../szs-bflyt-bflan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    szs, bflyt, bflan files
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8-messages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Messages/Text
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../9-manualszs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manual szs theming (unsupported applets)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Specific Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Specific Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/stationary-game-icons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stationary Game Icons
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/custom-element-colors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Element Colors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/custom-applet-icons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Applet Icons
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/custom-cursor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Cursor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/hide-footer-line/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hide Footer Line
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/hide-header-lines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hide Header Lines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/pull-push-front-back/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pulling & Pushing Panes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/disabling-clock-movement-caused-by-battery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disabling Hud Movement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extras
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Extras
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../extras/guides/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../extras/tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../extras/discord-servers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Discord Servers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../extras/other/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Other
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#our-goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Our goal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizing-our-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organizing our workflow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#animation-creation-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Animation creation process
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h5 id="back-to-animations-refresher-course"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M7.78 12.53a.75.75 0 0 1-1.06 0L2.47 8.28a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042L4.81 7h7.44a.75.75 0 0 1 0 1.5H4.81l2.97 2.97a.75.75 0 0 1 0 1.06"/></svg></span> <a href="../refresher/">Back to Animations: refresher course</a><a class="headerlink" href="#back-to-animations-refresher-course" title="Permanent link">&para;</a></h5>
+<h1 id="animations-main-tutorial">Animations: Main tutorial<a class="headerlink" href="#animations-main-tutorial" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="our-goal">Our goal<a class="headerlink" href="#our-goal" title="Permanent link">&para;</a></h2>
+<p>From now on, I'll only focus on creating an animation for the game icons on the home screen. <strong>I want those icons to
+scale up when they are being selected, and to scale down to their initial size when the cursor goes off. This will be
+our goal throughout this tutorial section.</strong> As I mentioned in the introduction section, tables will be provided later
+on if you want to experiment further and make more exotic animations.</p>
+<h2 id="organizing-our-workflow">Organizing our workflow<a class="headerlink" href="#organizing-our-workflow" title="Permanent link">&para;</a></h2>
+<p>To keep track on what we are doing, we'll first properly set up our workspace. Here I suggest a directory hierarchy that
+makes my own workflow efficient enough, but you can do as you please as you get the hang of knowing what you're doing.</p>
+<p><strong>1-</strong></p>
+<p>Create a directory on your desktop and name it <code>animEdit</code>.</p>
+<p><strong>2-</strong></p>
+<p>Go in <code>themes/systemData</code> on your Switch's SD card. Since I'm interested in editing the home screen for this example, I'll only grab <code>ResidentMenu.szs</code>.</p>
+<p><strong>3-</strong></p>
+<p>Copy <code>ResidentMenu.szs</code>, paste it on your desktop and in <code>Desktop/animEdit</code>.</p>
+<table>
+<thead>
+<tr>
+<th><img alt="Desktop" src="../hierarchy1.jpg" title="Desktop/" /></th>
+<th><img alt="Desktop" src="../hierarchy2.jpg" title="Desktop/animEdit" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Desktop/</code></td>
+<td><code>Desktop/animEdit</code></td>
+</tr>
+</tbody>
+</table>
+<p>Remember, we'll need one vanilla <code>.szs</code> and one copy of it that we'll edit, so we can diff them at the end. Here the
+desktop one will remain vanilla, so we will edit the one in <code>Desktop/animEdit</code>.</p>
+<h2 id="animation-creation-process">Animation creation process<a class="headerlink" href="#animation-creation-process" title="Permanent link">&para;</a></h2>
+<p><strong>4-</strong></p>
+<p>Open Layout Editor and load up <code>animEdit/ResidentMenu.szs</code>. You can simply drag and drop the file onto the window. A little box will open listing all the files contained in the <code>.szs</code> archive.</p>
+<p><strong>5-</strong></p>
+<p>First, we will create the scaling up animation when the game icon is <strong>selected</strong>. In the box window, search for <code>RdtBtnIconGame_Active.bflan</code> and open by double clicking. A new window will show up. On this window, expand all the items by clicking the <code>+</code> icons.</p>
+<p><img alt="" src="../tuto1.jpg" /></p>
+<p>On the left are listed <em>some</em> panes contained in <code>RdtBtnIconGame.bflyt</code> (actually only one in this case,
+namely <code>P_InnerCursor</code>). Depending on what we want to achieve, we'll likely need to add more panes to this list. That
+will be the case here for our example.</p>
+<p>On the right are displayed items that are used to define the animation behavior. Don't worry, we'll only need to edit a
+few of them.</p>
+<p>Now I apologize in advance, but you'll need to blindly follow my instructions... for now. I will elaborate some of them
+throughout this section.</p>
+<p><strong>6-</strong></p>
+<p>In the left panel, click on the first entry, <code>Pat1 section</code>. Then on the right panel,</p>
+<ul>
+<li>
+<p>Set <code>AnimationBinding</code> to <code>0</code></p>
+</li>
+<li>
+<p>Expand the <code>Groups</code> entry by clicking on the left arrow, and set the <code>[0]</code> field to <code>custom_G_Active</code> (the value isn't relevant here so this actually can be anything).</p>
+</li>
+<li>
+<p>In the left panel, click on the second entry, <code>Pai1 section</code> and set the <code>FrameSize</code> to <code>9999</code>.</p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This 6th step is a recurring setup that always needs to be done in order to create <strong>any kind of animation</strong>, regardless of our current goal.</p>
+</div>
+<p>If you've done everything correctly, this should look like this.</p>
+<table>
+<thead>
+<tr>
+<th><img alt="Pat1 section" src="../tuto2.jpg" title="Pat1 section" /></th>
+<th><img alt="Pai1 section" src="../tuto3.jpg" title="Pai1 section" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Pat1 section</code></td>
+<td><code>Pai1 section</code></td>
+</tr>
+</tbody>
+</table>
+<p>Now about creating our actual animation, we will do so by editing the <code>N_Root</code> pane from <code>RdtBtnIconGame.bflyt</code>, which means adding an entry to the pane list.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you are familiar with theming, <code>N_Root</code> is the pane that basically contains all the others within the <code>.bflyt</code>. Thus here we won't bother and we will animate the whole thing (including text, cursor, etc.). But you can be more specific and animate, for example, only the game title text. In this very case, you would add the <code>L_Balloon</code> entry instead.</p>
+</div>
+<p><strong>7-</strong></p>
+<p>To add the <code>N_Root</code> pane to the list, left click AND THEN right click on the <code>Pai1 section</code> (otherwise
+   you'll encounter unexpected behavior). Select the <code>Add Entry</code> option. The left panel should update with the newly
+   added item at the end of the list. Click on it and rename it as <code>N_Root</code> in the right panel.</p>
+<table>
+<thead>
+<tr>
+<th><img alt="Adding a pane (1)" src="../tuto4.jpg" title="Adding a pane (1)" /></th>
+<th><img alt="Adding a pane (2)" src="../tuto5.jpg" title="Adding a pane (2)" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adding a pane (1)</td>
+<td>Adding a pane (2)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>8-</strong></p>
+<p>Right click on <code>N_Root</code> in the pane list and select <code>Add Entry</code>. Expand the <code>N_Root</code> pane and rename the <code>PaiTag</code>
+   entry as <code>FLPA</code>. Then again, add <em>2 sub-entries</em> to the <code>FLPA</code> entry.</p>
+<p>Now, the following steps will define the scaling up animation we want to achieve.</p>
+<p><strong>9-</strong></p>
+<p>Under <code>FLPA</code>, select the first <code>[Entry]</code>. The right panel will display another set of values. Some of them will actually matter, so please take note of these,</p>
+<ul>
+<li>
+<p><code>AnimationTarget</code> is the type of animation we choose to assign to our pane. This is basically here that we tell the pane to either scale up or down, translate along the x-axis or y-axis, or rotate around the z-axis clockwise/counterclockwise. Later on, this is where you might be interested in checking the tables to test the values associated to other types of animations.</p>
+</li>
+<li>
+<p><code>KeyFrames</code> is... self-explanatory, I guess. This allows us to break our animation down into properly defined key frames.</p>
+</li>
+<li>
+<p><code>DataType</code> refers to the type of our inputs in the <code>KeyFrames</code> field. <strong>Just keep in mind that it should always be set to <code>2</code></strong> (meaning <code>float</code>). Although it's not really relevant here, you can follow <a href="https://layoutdocs.themezer.net/guide/layouts/usd-sections/">this link</a> if you want to know a little more.</p>
+</li>
+</ul>
+<p><strong>10-</strong></p>
+<p>We will define our values as,</p>
+<ul>
+<li>
+<p><code>AnimationTarget</code> = <code>6</code></p>
+</li>
+<li>
+<p><code>DataType</code> = <code>2</code></p>
+</li>
+</ul>
+<p>Leave the rest unchanged. Value <code>6</code> for <code>AnimationTarget</code> means <em>"scale along the x-axis"</em> (horizontally).</p>
+<p><img alt="AnimationTarget and DataType" src="../tuto7.jpg" title="AnimationTarget and DataType" /></p>
+<p><strong>11-</strong></p>
+<p>Select the <code>KeyFrames</code> item and click on the dots button that shows up. A new window will pop up in which we can add our key frames using the <code>Add</code> / <code>Remove</code> buttons at the bottom. Do as shown below.</p>
+<p><img alt="KeyFrames (Active)" src="../tuto6.jpg" title="KeyFrames (Active)" /></p>
+<p>This is how you should read this: at frame <code>0</code>, value is <code>1</code>, meaning that at the initial frame, the <code>N_Root</code> pane will
+keep its base ratio <strong>along its horizontal axis</strong>. Then, <strong>up until frame <code>8</code></strong>, the pane will <em>progressively</em> scale up
+until reaching a <code>1.4</code> factor.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Note that we defined earlier the <code>FrameSize</code> to be <code>9999</code> in the <code>Pai1 section</code>. We're good as long as this value is superior to the <code>Keyframe</code> maximum value, which is <code>8</code> here.</p>
+</div>
+<div class="admonition cite">
+<p class="admonition-title">Blend value</p>
+<p><code>Blend</code> refers to the function's slope (as in math function) that guides the animation. In layman's terms, it conditions the pace at which a pane will travel from one frame to another. Since <code>Blend</code> values aren't documented and hard to figure out, I won't bother at all about them. I personally always set this value to <code>0</code>, which seems to represent a linear function, but feel free to experiment (and perhaps contribute to this guide).</p>
+</div>
+<p><strong>12-</strong></p>
+<p>Repeat the 9th, 10th and 11th steps to the second <code>[Entry]</code> under <code>FLPA</code>, but the <code>AnimationTarget</code> value should be <code>7</code> here instead of <code>6</code>, meaning <em>"scale along the y-axis"</em> (vertically).</p>
+<p>Now with all of these steps, we successfully made a scaling up animation when the game icon is <strong>selected</strong>. But what
+about when the icon is <strong>being unselected</strong>? Well, Switch's UI also offers us the possibility to tamper with that. If
+not done, the icon will actually keep its <code>1.4</code> factor <strong>even after being unhovered</strong>. So if we want to get things done
+properly, what follows is pretty much a mandatory thing to do. So, back to square one,</p>
+<p><strong>13-</strong></p>
+<p>Go back to the little box window that lists the <code>.szs</code> content and search for <code>RdtBtnIconGame_Inactive.bflan</code>. Open this file and repeat all the steps above starting from step 6. <strong>At step 6.b., change the <code>[0]</code> value to <code>custom_G_Inactive</code></strong> (it doesn't actually matter but it's for convenience). For the animation, we will do things the other way around, so step 12 should look like this.</p>
+<p><img alt="KeyFrames (Inactive)" src="../tuto8.jpg" title="KeyFrames (Inactive)" /></p>
+<p>This way, the game icon will scale down to its initial size when being unselected.</p>
+<p>Now, there is a last thing we must do before diffing, <strong>adding groups</strong>. More precisely, adding groups to
+the <code>RdtBtnIconGame.bflyt</code> file in this case. This is necessary to 1) prevent crashes that will very likely happen
+without doing so, and 2) order the <code>.bflyt</code> to not follow its vanilla animation. Basically, we need to create a group for each <code>.bflan</code> we tampered with,
+namely <code>RdtBtnIconGame_Active.bflan</code> and <code>RdtBtnIconGame_Inactive.bflan</code>.</p>
+<p><strong>14-</strong></p>
+<p>Go back to the <code>.szs</code> box window and open up <code>RdtBtnIconGame.bflyt</code>. Don't mind the gray area on the right, just add a new group as shown in the image below, and make sure to <strong>rename it the same name as we defined in step 6</strong> (i.e. <code>custom_G_Active</code>). Then select the <code>Panes</code> item in the rectangle area below the list and type the panes listed in the <code>RdtBtnIconGame_Active.bflan</code> file. Each pane must be separated by a line break.</p>
+<table>
+<thead>
+<tr>
+<th><img alt="Groups (1)" src="../tuto9.jpg" title="Groups (1)" /></th>
+<th><img alt="Groups (2)" src="../tuto10.jpg" title="Groups (2)" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adding a group</td>
+<td>Enumerating panes in the group</td>
+</tr>
+</tbody>
+</table>
+<p><strong>15-</strong></p>
+<p>Repeat the operation for <code>RdtBtnIconGame_Inactive.bflan</code>. Same process except the group needs to be called <code>custom_G_Inactive</code>.</p>
+<p>And with this, we are mostly done. Now is finally the time for diffing. <strong>Make sure to save the edits in all the opened
+windows.</strong></p>
+<p><strong>16-</strong></p>
+<p>Go back to the <code>.szs</code> box window, select <code>Tools</code> in the top menu, then the <code>This is the edited szs</code> option. You'll be prompted with a new window. Browse the unedited <code>ResidentMenu.szs</code> that we've been keeping in <code>Desktop/</code>, leave the checkbox as it is and click on <code>Generate diff</code>.</p>
+<p><img alt="Diffing" src="../tuto11.jpg" title="Diffing" /></p>
+<p>This will output a <code>.json</code> file we will be using to compile a <code>.nxtheme</code> with Switch Theme Injector. Finally done!</p>
+<p><img alt="Result" src="../home.jpg" title="Result" /></p>
+<p>(the hovered game icon scaling has been reduced to <code>1.2</code> since it was overlapping and I also hid the game title text)</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Checking the output <code>.json</code>, you can see that groups were added at the end of the <code>RdtBtnIconGame.bflyt</code> section. There is also an added <code>Anims</code> section at the very end of the code. Theoretically you could totally make animations without using Layout Editor at all, but I don't recommend this option as the text formatting of the <code>Anims</code> section is quite messed up and unintelligible, although it's fine for minor adjustments.</p>
+<table>
+<thead>
+<tr>
+<th><img alt="AddGroups section" src="../tuto12.jpg" title="AddGroups section" /></th>
+<th><img alt="Anims section" src="../tuto13.jpg" title="Anils section" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>AddGroups</code> section</td>
+<td><code>Anims</code> section</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../js/color_blocks.js"></script>
+      
+    
+  </body>
+</html>
