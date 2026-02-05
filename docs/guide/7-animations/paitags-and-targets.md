@@ -1,5 +1,3 @@
-##### :octicons-arrow-left-16: [Back to Animations: extras](./going-further.md)
-
 # PaiTags and targets for FLAN Animations
 
 ---

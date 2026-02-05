@@ -1,5 +1,3 @@
-##### :octicons-arrow-left-16: [Back to Animations: PaiTags and AnimationTargets](./paitags-and-targets.md)
-
 # szs, bflyt, bflan files
 ---
 

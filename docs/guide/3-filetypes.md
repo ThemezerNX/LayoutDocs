@@ -1,5 +1,3 @@
-##### :octicons-arrow-left-16: [Back to Menu Files](menu-files.md)
-
 # Filetypes
 
 This page contains a list of all filetypes related to custom layouts and theming.

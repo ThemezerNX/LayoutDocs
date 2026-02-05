@@ -1,5 +1,3 @@
-##### :octicons-arrow-left-16: [Back to Getting Started](index.md)
-
 # USD Sections
 
 USD sections define additional data about another pane. It usually just follows the pane it is related to, but can be in any order as long as it has the name of the pane it belongs to.

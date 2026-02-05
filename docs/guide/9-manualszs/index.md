@@ -1,5 +1,3 @@
-##### :octicons-arrow-left-16: [Back to Diffpatching example](../diffpatch/diff-example.md)
-
 # Themes for unsupported applets: manual szs theming
 _Written by [Capybara](https://themezer.net/creators/382997176307154945). Last updated: June 2023_
 

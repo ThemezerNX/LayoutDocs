@@ -1,5 +1,3 @@
-##### :octicons-arrow-left-16: [Back to Animations: refresher course](refresher.md)
-
 # Animations: Main tutorial
 ---
 

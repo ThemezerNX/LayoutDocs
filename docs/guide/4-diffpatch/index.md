@@ -1,5 +1,3 @@
-##### :octicons-arrow-left-16: [Back to Animations: szs, bflyt, bflan files](../animations/szs-bflyt-bflan.md)
-
 # Diffing
 
 Diffing is the process of making a JSON file

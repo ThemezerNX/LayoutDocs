@@ -1,5 +1,3 @@
-##### :octicons-arrow-left-16: [Back to Animations: templates](anim-templates.md)
-
 # More on animations
 ---
 

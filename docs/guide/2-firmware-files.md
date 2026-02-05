@@ -1,5 +1,3 @@
-##### :octicons-arrow-left-16: [Back to Introduction](index.md)
-
 # Menu Files
 
 In order to work efficiently, it is important to understand the structure of the Switch's menus and get familiar with the theming slang. This and a few following pages will introduce you to some basics.

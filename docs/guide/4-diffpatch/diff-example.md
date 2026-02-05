@@ -1,5 +1,3 @@
-##### :octicons-arrow-left-16: [Back to What is Diffing](index.md)
-
 # Diffpatching
 
 This guide is an example of Diffpatching using a pre made json (diffpatch).<br> 

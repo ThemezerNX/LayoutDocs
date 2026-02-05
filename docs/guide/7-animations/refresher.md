@@ -1,5 +1,3 @@
-##### :octicons-arrow-left-16: [Back to Animations: introduction](index.md)
-
 # Animations: refresher course on files and diffing
 ---
 

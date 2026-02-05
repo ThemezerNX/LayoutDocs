@@ -1,5 +1,3 @@
-##### :octicons-arrow-left-16: [Back to Filetypes](../filetypes.md)
-
 # Getting Started
 
 It is recommend to make a mockup first, so you know at what position you want all elements to be! Starting without one
