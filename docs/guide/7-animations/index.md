@@ -1,5 +1,5 @@
-# Creating custom animations for your NX themes
-_Written by [Capybara](https://themezer.net/creators/382997176307154945), revisioned by Migush. Last updated: June 2023_
+# Custom animations
+_Written by [Capybara](https://themezer.net/creators/382997176307154945). Last updated: June 2023_
 
 ---
 
